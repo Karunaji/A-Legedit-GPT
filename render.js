@@ -1598,7 +1598,7 @@ const AUTO_BOLD_TERMS = [
 const AUTO_BOLD_KEYWORD_TERMS = [
   ...new Set(globalThis.MASTER_STRIKE_KEYWORD_AUTO_BOLD_TERMS || [])
 ];
-const AUTO_BOLD_SECTION_HEADER_RE = '\\b(?:Fight|Ambush|Escape|Always Leads|Master Strike|Mastermind Tactic|Evil Wins|Setup|Special Setup|When Recruited|Transform|Twist|Twists\\s+[\\d-]+)\\s*:';
+const AUTO_BOLD_SECTION_HEADER_RE = '\\b(?:Fight|Ambush|Escape|KO|Always Leads|Master Strike|Mastermind Tactic|Evil Wins|Setup|Special Setup|When Recruited|Transform|Twist|Twists\\s+[\\d-]+)\\s*:';
 const AUTO_BOLD_KEYWORD_PHRASE_RES = [
   '\\b(?:Focus|Versatile)\\s+\\d+(?:\\s*\\/(?:recruit|attack|r|a)\\b)?',
   '\\bBurn\\s+\\d+\\s+Shards?\\b',
@@ -1612,12 +1612,12 @@ const AUTO_BOLD_RE = new RegExp(
     '\\+\\d*',
     '\\b\\d+\\b(?=\\s*\\/(?:recruit|attack|r|a)\\b)',
     AUTO_BOLD_SECTION_HEADER_RE,
-    ...AUTO_BOLD_KEYWORD_PHRASE_RES,
-    ':',
+    // A colon belongs to its header/keyword expression, never to punctuation alone.
+    ...AUTO_BOLD_KEYWORD_PHRASE_RES.map(pattern => `(?:${pattern})(?:[ \\t]*:)?`),
     ...AUTO_BOLD_TERMS
       .concat(AUTO_BOLD_KEYWORD_TERMS)
       .sort((a, b) => b.length - a.length)
-      .map(x => `(?<![A-Za-z])${x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![A-Za-z])`),
+      .map(x => `(?<![A-Za-z])${x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![A-Za-z])(?:[ \\t]*:)?`),
   ].join('|'),
   'gi'
 );
@@ -1796,6 +1796,47 @@ function selectionHasNoAutoBoldById(targetId) {
   const range = sel.getRangeAt(0);
   if (range.collapsed || !root.contains(range.commonAncestorContainer)) return false;
   return Array.from(root.querySelectorAll('[data-noautobold="1"]')).some(node => range.intersectsNode(node));
+}
+
+// Test the selected characters, not merely whether an auto-bold node is touched.
+// A mixed selection (e.g. "KO: Draw") should become bold as a whole.
+function selectionIsEntirelyBold(targetId) {
+  const root = document.getElementById(targetId);
+  const selection = window.getSelection();
+  if (!root || !selection?.rangeCount) return false;
+  const range = selection.getRangeAt(0);
+  if (range.collapsed || !root.contains(range.commonAncestorContainer)) return false;
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+  let found = false;
+  let node;
+  while ((node = walker.nextNode())) {
+    if (!range.intersectsNode(node) || node.parentElement.closest('[data-format-boundary], [data-sel-marker]')) continue;
+    const start = range.startContainer === node ? range.startOffset : 0;
+    const end = range.endContainer === node ? range.endOffset : node.length;
+    if (!node.textContent.slice(start, end).trim()) continue;
+    found = true;
+    const weight = getComputedStyle(node.parentElement).fontWeight;
+    if (weight !== 'bold' && Number(weight) < 600) return false;
+  }
+  return found;
+}
+
+function toggleAbilityBold(targetId) {
+  const root = document.getElementById(targetId);
+  const selection = window.getSelection();
+  if (!root || !selection?.rangeCount || selection.isCollapsed) return false;
+  if (!root.contains(selection.getRangeAt(0).commonAncestorContainer)) return false;
+  root.focus();
+  if (selectionIsEntirelyBold(targetId)) {
+    // Remove manual formatting first, then remember the explicit override so
+    // keyword parsing and a subsequent save/load cannot reapply it.
+    document.execCommand('bold', false, null);
+    suppressAutoBoldInSelectionById(targetId);
+  } else {
+    if (selectionHasNoAutoBoldById(targetId)) restoreAutoBoldInSelectionById(targetId);
+    document.execCommand('bold', false, null);
+  }
+  return true;
 }
 
 function restoreAutoBoldInSelectionById(targetId) {
@@ -2047,6 +2088,42 @@ function parseRTE(el) {
   return runs;
 }
 
+// Keep fragments of one word together even when markup splits its style runs.
+// Whitespace advances retain the legacy policy (including trailing run spaces).
+function getLayoutUnits(runs) {
+  const units = [];
+  let word = [];
+  const flush = () => {
+    if (word.length) units.push({ fragments: word });
+    word = [];
+  };
+  for (const run of runs) {
+    if (run.br || run.icon) {
+      flush();
+      units.push(run);
+      continue;
+    }
+    const parts = run.t.match(/\s+|\S+/g) || [];
+    let space = '';
+    for (const part of parts) {
+      if (/^\s+$/.test(part)) {
+        flush();
+        space += part;
+      } else {
+        word.push({ ...run, t: space + part });
+        space = '';
+      }
+    }
+    if (space) {
+      flush();
+      units.push({ space: { ...run, t: space } });
+    }
+    if (!parts.length) units.push({ empty: true });
+  }
+  flush();
+  return units;
+}
+
 function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   let cx=x, cy=y;
   const lh = Math.round(getRunLineHeight(sz) * (options.lineHeightScale ?? 0.86));
@@ -2087,147 +2164,108 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
     if (right - left < 40) right = left + 40;
     return { left, right, width: right - left };
   }
-  function curMaxW() {
-    return curBounds().width;
+  const items = [];
+  const lines = [];
+  const missingIcons = new Set();
+  let paintedBounds = null;
+  let horizontalOverflow = 0;
+  function line() {
+    if (!lines[lineIndex]) lines[lineIndex] = { index: lineIndex, y: cy, ...curBounds(), items: [] };
+    return lines[lineIndex];
+  }
+  function nextLine(advance) {
+    cy += advance;
+    lineIndex += 1;
+    cx = curBounds().left;
+    line();
+  }
+  function includeBounds(left, top, right, bottom) {
+    const bounds = curBounds();
+    horizontalOverflow = Math.max(horizontalOverflow, bounds.left - left, right - bounds.right);
+    paintedBounds = paintedBounds
+      ? { left: Math.min(paintedBounds.left, left), top: Math.min(paintedBounds.top, top),
+          right: Math.max(paintedBounds.right, right), bottom: Math.max(paintedBounds.bottom, bottom) }
+      : { left, top, right, bottom };
+  }
+  function measureFragment(fragment) {
+    const family = fragment.b ? 'eurostile_ltstd_bold' : 'eurostile_ltstd_regular';
+    const font = (fragment.i ? 'italic ' : '') + sz + "px '" + family + "',sans-serif";
+    ctx.font = font;
+    return { ...fragment, font, metrics: ctx.measureText(fragment.t) };
   }
   cx = curBounds().left;
-  for (const run of runs) {
-    if (run.br) {
-      cy += prevWasBr ? blankExtra : lh;
-      lineIndex += 1;
-      cx = curBounds().left;
+  line();
+  for (const unit of getLayoutUnits(runs)) {
+    if (unit.br) {
+      nextLine(prevWasBr ? blankExtra : lh);
       prevWasBr = true;
       continue;
     }
     prevWasBr = false;
-    if (run.icon) {
-      const icon = getInlineIconPlacement(run.icon, sz);
+    if (unit.empty) continue;
+    if (unit.space) {
+      cx += measureFragment(unit.space).metrics.width;
+      continue;
+    }
+    if (unit.icon) {
+      const icon = getInlineIconPlacement(unit.icon, sz);
       const bounds = curBounds();
-      if (cx + icon.width > bounds.right && cx > bounds.left) { cy += lh; lineIndex += 1; cx = curBounds().left; }
+      if (cx + icon.width > bounds.right && cx > bounds.left) nextLine(lh);
+      const item = { type: 'icon', key: unit.icon, x: cx, y: cy + icon.offsetY, ...icon };
+      items.push(item);
+      line().items.push(item);
+      includeBounds(cx, item.y, cx + icon.width, item.y + icon.height);
+      if (!icon.img || !icon.bounds) missingIcons.add(unit.icon);
       cx += icon.width + icon.gap;
       drewText = true;
       continue;
     }
-    const runSz = sz;
-    const family = run.b ? 'eurostile_ltstd_bold' : 'eurostile_ltstd_regular';
-    const fs = `${run.i?'italic ':''}${runSz}px '${family}',sans-serif`;
-    ctx.font = fs;
-    const parts = run.t.match(/\s+|\S+/g) || [];
-    let pendingSpace = '';
-    for (const part of parts) {
-      if (/^\s+$/.test(part)) {
-        pendingSpace += part;
-        continue;
-      }
-      const chunk = pendingSpace + part;
-      const ww = ctx.measureText(chunk).width;
-      const bounds = curBounds();
-      if (cx+ww > bounds.right && cx > bounds.left) { cy+=lh; lineIndex += 1; cx=curBounds().left; }
-      cx += ww;
+    const fragments = unit.fragments.map(measureFragment);
+    const width = fragments.reduce((sum, fragment) => sum + fragment.metrics.width, 0);
+    const bounds = curBounds();
+    if (cx + width > bounds.right && cx > bounds.left) nextLine(lh);
+    for (const fragment of fragments) {
+      const m = fragment.metrics;
+      const item = { type: 'text', text: fragment.t, font: fragment.font, underline: fragment.u,
+        x: cx, y: cy, width: m.width, size: sz };
+      items.push(item);
+      line().items.push(item);
+      // Canvas metrics use the caller's text baseline (the card uses 'top').
+      includeBounds(cx - (m.actualBoundingBoxLeft || 0), cy - (m.actualBoundingBoxAscent || 0),
+        cx + Math.max(m.width, m.actualBoundingBoxRight || 0), cy + (m.actualBoundingBoxDescent ?? lh));
+      if (fragment.u) includeBounds(cx, cy + sz * 0.12, cx + m.width, cy + sz * 0.12 + 1);
+      cx += m.width;
       drewText = true;
-      pendingSpace = '';
     }
-    if (pendingSpace) cx += ctx.measureText(pendingSpace).width;
   }
-  return { lastY: cy, bottomY: drewText ? cy + lh : y, lineH: lh };
+  const bottomY = drewText ? cy + lh : y;
+  const finalBottom = Math.max(bottomY, paintedBounds?.bottom ?? y);
+  const verticalOverflow = Number.isFinite(options.maxBottom) ? Math.max(0, finalBottom - options.maxBottom) : 0;
+  return {
+    items, lines, lastY: cy, bottomY, lineH: lh, paintedBounds,
+    bounds: { top: Math.min(y, paintedBounds?.top ?? y), bottom: finalBottom },
+    requestedFontSize: options.requestedFontSize ?? sz, effectiveFontSize: sz,
+    overflow: { vertical: verticalOverflow, horizontal: Math.max(0, horizontalOverflow),
+      belowRegion: verticalOverflow > 0, missingIcons: [...missingIcons] }
+  };
 }
 
-function drawRuns(ctx, runs, x, y, maxW, sz, color, avoidZones=[], options={}) {
-  let cx=x, cy=y;
-  const lh = Math.round(getRunLineHeight(sz) * (options.lineHeightScale ?? 0.86));
-  const blankExtra = Math.round(lh * (options.blankLineScale ?? 0.32));
-  let prevWasBr = false;
-  let lineIndex = 0;
-  function boundaryXAt(sampleY) {
-    if (typeof options.leftLineStep === 'number') {
-      return (typeof options.leftLineStart === 'number' ? options.leftLineStart : x) + (lineIndex * options.leftLineStep);
-    }
-    const points = options.leftBoundary;
-    if (!Array.isArray(points) || !points.length) return x;
-    if (sampleY <= points[0].y) return points[0].x;
-    for (let i = 1; i < points.length; i++) {
-      const prev = points[i - 1];
-      const next = points[i];
-      if (sampleY <= next.y) {
-        const span = Math.max(1, next.y - prev.y);
-        const t = (sampleY - prev.y) / span;
-        return prev.x + ((next.x - prev.x) * t);
+// Drawing consumes the final measured positions; it never measures or wraps again.
+function drawRuns(ctx, layout, color) {
+  for (const item of layout.items) {
+    if (item.type === 'icon') {
+      if (item.img && item.bounds) {
+        const b = item.bounds;
+        ctx.drawImage(item.img, b.sx, b.sy, b.sw, b.sh, item.x, item.y, item.width, item.height);
       }
-    }
-    return points[points.length - 1].x;
-  }
-  function curBounds() {
-    let left = x;
-    let right = x + maxW;
-    const sampleY = cy + (sz * (options.boundarySample ?? 0.5));
-    left = Math.max(left, boundaryXAt(sampleY));
-    for (const z of avoidZones) {
-      if (sampleY >= z.y0 && sampleY <= z.y1) {
-        if (typeof z.x0 === 'number') left = Math.max(left, z.x0);
-        if (typeof z.x1 === 'number') right = Math.min(right, z.x1);
-        if (typeof z.x === 'number') right = Math.min(right, z.x);
-      }
-    }
-    if (right - left < 40) right = left + 40;
-    return { left, right, width: right - left };
-  }
-  function curMaxW() {
-    return curBounds().width;
-  }
-  cx = curBounds().left;
-  for (const run of runs) {
-    if (run.br) {
-      cy += prevWasBr ? blankExtra : lh;
-      lineIndex += 1;
-      cx = curBounds().left;
-      prevWasBr = true;
-      continue;
-    }
-    prevWasBr = false;
-    if (run.icon) {
-      const icon = getInlineIconPlacement(run.icon, sz);
-      const bounds = curBounds();
-      if (cx + icon.width > bounds.right && cx > bounds.left) { cy += lh; lineIndex += 1; cx = curBounds().left; }
-      if (icon.img && icon.bounds) {
-        ctx.drawImage(
-          icon.img,
-          icon.bounds.sx,
-          icon.bounds.sy,
-          icon.bounds.sw,
-          icon.bounds.sh,
-          cx,
-          cy + icon.offsetY,
-          icon.width,
-          icon.height
-        );
-      }
-      cx += icon.width + icon.gap;
-      continue;
-    }
-    const runSz = sz;
-    const family = run.b ? 'eurostile_ltstd_bold' : 'eurostile_ltstd_regular';
-    const fs = `${run.i?'italic ':''}${runSz}px '${family}',sans-serif`;
-    ctx.font = fs;
-    const parts = run.t.match(/\s+|\S+/g) || [];
-    let pendingSpace = '';
-    for (const part of parts) {
-      if (/^\s+$/.test(part)) {
-        pendingSpace += part;
-        continue;
-      }
-      const chunk = pendingSpace + part;
-      const ww = ctx.measureText(chunk).width;
-      const bounds = curBounds();
-      if (cx+ww > bounds.right && cx > bounds.left) { cy+=lh; lineIndex += 1; cx=curBounds().left; }
+    } else {
+      ctx.font = item.font;
       ctx.fillStyle = color;
-      ctx.fillText(chunk, cx, cy);
-      if (run.u) ctx.fillRect(cx, cy+sz*0.12, ww, 1);
-      cx += ww;
-      pendingSpace = '';
+      ctx.fillText(item.text, item.x, item.y);
+      if (item.underline) ctx.fillRect(item.x, item.y + item.size * 0.12, item.width, 1);
     }
-    if (pendingSpace) cx += ctx.measureText(pendingSpace).width;
   }
-  return cy;
+  return layout.lastY;
 }
 
 function runsHaveVisibleContent(runs) {
@@ -2264,10 +2302,10 @@ function drawAdaptiveTextBlock(ctx, cfg) {
   let flavorGap = hasFlavor ? preferredFlavorGap : 0;
 
   function measure() {
-    const abilityLayout = layoutRuns(ctx, abRuns, x, y, w, abilitySize, avoidZones, options);
+    const abilityLayout = layoutRuns(ctx, abRuns, x, y, w, abilitySize, avoidZones, { ...options, maxBottom, requestedFontSize: abSz });
     if (!hasFlavor) return { abilityLayout, flavorLayout: null, flavorY: null, overflow: Math.max(0, abilityLayout.bottomY - maxBottom) };
     const flavorY = abilityLayout.bottomY + flavorGap;
-    const flavorLayout = layoutRuns(ctx, flRuns, x, flavorY, w, flavorSize, avoidZones, options);
+    const flavorLayout = layoutRuns(ctx, flRuns, x, flavorY, w, flavorSize, avoidZones, { ...options, maxBottom, requestedFontSize: flSz });
     return {
       abilityLayout,
       flavorLayout,
@@ -2290,18 +2328,22 @@ function drawAdaptiveTextBlock(ctx, cfg) {
     measured = measure();
   }
 
-  drawRuns(ctx, abRuns, x, y, w, abilitySize, abilityColor, avoidZones, options);
+  drawRuns(ctx, measured.abilityLayout, abilityColor);
   if (hasFlavor) {
     if (typeof clipBottom === 'number') {
       ctx.save();
       ctx.beginPath();
       ctx.rect(x - 2, y - 2, w + 4, Math.max(1, clipBottom - y));
       ctx.clip();
-      drawRuns(ctx, flRuns, x, measured.flavorY, w, flavorSize, flavorColor, avoidZones, options);
+      drawRuns(ctx, measured.flavorLayout, flavorColor);
       ctx.restore();
     } else {
-      drawRuns(ctx, flRuns, x, measured.flavorY, w, flavorSize, flavorColor, avoidZones, options);
+      drawRuns(ctx, measured.flavorLayout, flavorColor);
     }
+  }
+  // Opt-in developer hook; no retained canvas/images or production logging.
+  if (typeof globalThis.onAbilityLayoutDiagnostics === 'function') {
+    globalThis.onAbilityLayoutDiagnostics(measured);
   }
   return measured;
 }

@@ -2113,12 +2113,12 @@ function resetArt() {
 }
 
 function fmt(cmd)   {
-  if (cmd === 'bold' && selectionHasNoAutoBoldById('f-ability') && restoreAutoBoldInSelectionById('f-ability')) {
+  if (cmd === 'bold' && toggleAbilityBold('f-ability')) {
     autoFormatAbilityEditor();
     render();
     return;
   }
-  if ((cmd === 'removeFormat' || (cmd === 'bold' && selectionHasAutoBoldById('f-ability'))) && suppressAutoBoldInSelectionById('f-ability')) {
+  if (cmd === 'removeFormat' && suppressAutoBoldInSelectionById('f-ability')) {
     render();
     return;
   }
@@ -2130,12 +2130,12 @@ function fmtFl(cmd) { document.getElementById('f-flavor').focus(); document.exec
 function fmtTarget(targetId, cmd) {
   const el = document.getElementById(targetId);
   if (!el) return;
-  if (targetId.includes('ability') && cmd === 'bold' && selectionHasNoAutoBoldById(targetId) && restoreAutoBoldInSelectionById(targetId)) {
+  if (targetId.includes('ability') && cmd === 'bold' && toggleAbilityBold(targetId)) {
     autoFormatAbilityEditorById(targetId);
     render();
     return;
   }
-  if (targetId.includes('ability') && (cmd === 'removeFormat' || (cmd === 'bold' && selectionHasAutoBoldById(targetId))) && suppressAutoBoldInSelectionById(targetId)) {
+  if (targetId.includes('ability') && cmd === 'removeFormat' && suppressAutoBoldInSelectionById(targetId)) {
     render();
     return;
   }
