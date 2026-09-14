@@ -2066,6 +2066,7 @@ function getInlineIconBounds(img, cacheKey) {
 }
 
 function parseRTE(el) {
+  if (el.id === 'f-ability' || /^split-ability-[12]$/.test(el.id)) return parseAbilityRTE(el);
   const runs = [];
   function walk(node, b, i, u, noAutoBold = false) {
     if (node.nodeType === 3) {
@@ -2086,6 +2087,57 @@ function parseRTE(el) {
   }
   el.childNodes.forEach(ch => walk(ch, false, false, false, false));
   return runs;
+}
+
+// Interpret browser blocks and line breaks without rewriting the saved HTML.
+// A terminal <br> is Chromium's caret placeholder; block boundaries represent
+// their own line transition. Empty blocks still occupy a line.
+function parseAbilityRTE(root) {
+  const hardBreak = () => ({ br: true, fullLine: true });
+  const isBlock = node => node.nodeType === 1 && /^(DIV|P)$/.test(node.tagName);
+  function inline(node, marks) {
+    if (node.nodeType === 3) {
+      const result = [];
+      node.textContent.replace(/\r\n?/g, '\n').split('\n').forEach((text, index) => {
+        // With pre-wrap Chromium may use a final newline instead of <br> as
+        // its caret placeholder. Treat both spellings identically.
+        if (index) result.push({ ...hardBreak(), domBreak: true });
+        if (marks.noAutoBold) { if (text) result.push({ t: text, ...marks }); }
+        else splitTokens(text, marks.b, marks.i, marks.u, result);
+      });
+      return result;
+    }
+    if (node.nodeType !== 1 || node.matches('[data-format-boundary], [data-sel-marker]')) return [];
+    if (node.tagName === 'BR') return [{ ...hardBreak(), domBreak: true }];
+    if (node.tagName === 'IMG') {
+      const icon = node.getAttribute('data-icon');
+      return icon ? [{ icon: icon.toLowerCase() }] : [];
+    }
+    const next = {
+      b: marks.b || /^(B|STRONG)$/.test(node.tagName),
+      i: marks.i || /^(I|EM)$/.test(node.tagName),
+      u: marks.u || node.tagName === 'U',
+      noAutoBold: marks.noAutoBold || node.getAttribute('data-noautobold') === '1'
+    };
+    return children(node, next, false);
+  }
+  function children(container, marks, trimPlaceholder) {
+    const result = [];
+    let occupied = false, previousBlock = false;
+    for (const node of container.childNodes) {
+      const block = isBlock(node);
+      const content = block ? children(node, marks, true) : inline(node, marks);
+      if (!block && !content.length) continue;
+      if (occupied && (previousBlock || (block && !result[result.length - 1]?.br))) result.push(hardBreak());
+      result.push(...content);
+      occupied = true;
+      previousBlock = block;
+    }
+    if (trimPlaceholder && result[result.length - 1]?.domBreak) result.pop();
+    return result;
+  }
+  return children(root, { b: false, i: false, u: false, noAutoBold: false }, true)
+    .map(({ domBreak, ...run }) => run);
 }
 
 // Keep fragments of one word together even when markup splits its style runs.
@@ -2197,7 +2249,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   line();
   for (const unit of getLayoutUnits(runs)) {
     if (unit.br) {
-      nextLine(prevWasBr ? blankExtra : lh);
+      nextLine(unit.fullLine ? lh : (prevWasBr ? blankExtra : lh));
       prevWasBr = true;
       continue;
     }

@@ -2155,22 +2155,35 @@ function abilityEditorNeedsAutoFormat(targetId) {
   return AUTO_BOLD_RE.test(text);
 }
 const abilityAutoFormatTimers = new Map();
-function scheduleAbilityAutoFormat(targetId) {
-  if (!abilityEditorNeedsAutoFormat(targetId)) return;
+function cancelAbilityAutoFormat(targetId) {
   clearTimeout(abilityAutoFormatTimers.get(targetId));
+  abilityAutoFormatTimers.delete(targetId);
+}
+function scheduleAbilityAutoFormat(targetId) {
+  cancelAbilityAutoFormat(targetId);
+  if (document.getElementById(targetId)?.dataset.composing === 'true') return;
+  if (!abilityEditorNeedsAutoFormat(targetId)) return;
   abilityAutoFormatTimers.set(targetId, setTimeout(() => {
     abilityAutoFormatTimers.delete(targetId);
     autoFormatAbilityEditorById(targetId);
     render();
   }, 350));
 }
-function onAbilityInput() {
-  scheduleAbilityAutoFormat('f-ability');
+function scheduleAbilityInputFormat(targetId, event) {
+  cancelAbilityAutoFormat(targetId);
+  // A break/history edit must not be followed by a DOM rewrite that invalidates
+  // its native editing transaction. Rendering still resolves automatic bold.
+  if (event?.isComposing || (typeof insertingAbilityBreak !== 'undefined' && insertingAbilityBreak)
+      || /^(insertParagraph|insertLineBreak|historyUndo|historyRedo)$/.test(event?.inputType || '')) return;
+  scheduleAbilityAutoFormat(targetId);
+}
+function onAbilityInput(event) {
+  scheduleAbilityInputFormat('f-ability', event);
   render();
 }
-function onSplitAbilityInput(side) {
+function onSplitAbilityInput(side, event) {
   const targetId = `split-ability-${side}`;
-  scheduleAbilityAutoFormat(targetId);
+  scheduleAbilityInputFormat(targetId, event);
   render();
 }
 function openLegendaryNotes() { document.getElementById('legendary-notes-modal').classList.add('open'); }

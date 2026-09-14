@@ -182,7 +182,7 @@
         <button class="rb" onclick="insertTeamIconFromPicker('f-ability','ability-team-icon-select')">Team</button>
         <span style="font-size:10px;color:#4a5568;margin-left:3px">Select text then click</span>
       </div>
-      <div class="rte" id="f-ability" contenteditable="true" oninput="onAbilityInput()">Ability text goes here.</div>
+      <div class="rte" id="f-ability" contenteditable="true" oninput="onAbilityInput(event)">Ability text goes here.</div>
     </div>
   </div>
   <div class="sec" id="flavor-sec">
@@ -289,7 +289,7 @@
             </select>
             <button class="rb" onclick="insertTeamIconFromPicker('split-ability-1','split-ability-team-icon-select-1')">Team</button>
           </div>
-          <div class="rte" id="split-ability-1" contenteditable="true" oninput="onSplitAbilityInput('1')">Ability text 1.</div>
+          <div class="rte" id="split-ability-1" contenteditable="true" oninput="onSplitAbilityInput('1', event)">Ability text 1.</div>
         </div>
         <div class="h2row split-h2row">
           <h2>Flavor Text 1</h2>
@@ -391,7 +391,7 @@
             </select>
             <button class="rb" onclick="insertTeamIconFromPicker('split-ability-2','split-ability-team-icon-select-2')">Team</button>
           </div>
-          <div class="rte" id="split-ability-2" contenteditable="true" oninput="onSplitAbilityInput('2')">Ability text 2.</div>
+          <div class="rte" id="split-ability-2" contenteditable="true" oninput="onSplitAbilityInput('2', event)">Ability text 2.</div>
         </div>
         <div class="h2row split-h2row">
           <h2>Flavor Text 2</h2>

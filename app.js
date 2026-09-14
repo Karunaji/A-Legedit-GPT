@@ -65,17 +65,58 @@ document.addEventListener('click', event => {
   if (document.activeElement !== editor) placeCaretAtEnd(editor);
 });
 
+function isAbilityEditor(editor) {
+  return editor?.id === 'f-ability' || /^split-ability-[12]$/.test(editor?.id || '');
+}
+
+function breakEndsBeforeNonEditable(range, editor) {
+  let node = range.endContainer;
+  if (node.nodeType === Node.TEXT_NODE && range.endOffset < node.length) return false;
+  let next = node.nodeType === Node.ELEMENT_NODE ? node.childNodes[range.endOffset] : null;
+  while (!next && node !== editor) { next = node.nextSibling; node = node.parentNode; }
+  return next?.nodeType === Node.ELEMENT_NODE && next.getAttribute('contenteditable') === 'false';
+}
+
+let insertingAbilityBreak = false;
 document.addEventListener('beforeinput', event => {
   const editor = event.target.closest?.('.rte[contenteditable="true"]');
   if (!editor) return;
+  // Enter can confirm composition; never turn that action into an extra break.
+  if (event.isComposing || editor.dataset.composing === 'true') return;
   const sel = window.getSelection();
   if (!sel || !sel.rangeCount) {
     placeCaretAtEnd(editor);
-    return;
   }
-  const range = ensureEditableCaretRange(editor, sel.getRangeAt(0), editor.getBoundingClientRect().left);
+  const range = ensureEditableCaretRange(editor, window.getSelection().getRangeAt(0), editor.getBoundingClientRect().left);
   if (!range) return;
   applyCaretRange(editor, range);
+  if (isAbilityEditor(editor) && !insertingAbilityBreak && event.cancelable
+      && (event.inputType === 'insertParagraph' || event.inputType === 'insertLineBreak')) {
+    event.preventDefault();
+    cancelAbilityAutoFormat(editor.id);
+    insertingAbilityBreak = true;
+    try {
+      // Use Chromium's editing transaction so native selection/undo/redo survive.
+      // Chromium's insertLineBreak adds an extra placeholder BEFORE a locked
+      // inline node. insertHTML is also a native undoable transaction and
+      // inserts exactly one break at that boundary.
+      if (breakEndsBeforeNonEditable(range, editor)) document.execCommand('insertHTML', false, '<br>');
+      else document.execCommand('insertLineBreak', false, null);
+    } finally {
+      insertingAbilityBreak = false;
+    }
+  }
+});
+
+document.addEventListener('compositionstart', event => {
+  if (!isAbilityEditor(event.target)) return;
+  event.target.dataset.composing = 'true';
+  cancelAbilityAutoFormat(event.target.id);
+});
+document.addEventListener('compositionend', event => {
+  if (!isAbilityEditor(event.target)) return;
+  delete event.target.dataset.composing;
+  scheduleAbilityAutoFormat(event.target.id);
 });
 
 window.addEventListener('resize',scaleCanvas);
