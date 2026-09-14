@@ -632,6 +632,7 @@ function drawSplitHalfText(ctx, half, rarity) {
     minFlavorGap: 6,
     maxBottom: 666,
     minAbilitySize: Math.max(13, (half.abilitySize || 15) - 1),
+    abilityAbsoluteMinimum: 13,
     minFlavorSize: Math.max(9, (half.abilitySize || 15) * 0.55),
     flavorSizeRatio: 0.62,
     clipBottom: 666
@@ -1073,6 +1074,7 @@ function renderVillainToCanvas(cv, scale = 1) {
     minFlavorGap: 6,
     maxBottom: villainTextLayout.maxBottom || 648,
     minAbilitySize: Math.max(14, abSz - 1),
+    abilityAbsoluteMinimum: 14,
     minFlavorSize: Math.max(9, abSz * 0.55),
     flavorSizeRatio: 0.62,
     clipBottom: villainTextLayout.maxBottom || 648
@@ -1292,6 +1294,7 @@ function renderSchemeToCanvas(cv, scale = 1) {
     minFlavorGap: 6,
     maxBottom: schemeLayout === 'b' ? 650 : 646,
     minAbilitySize: Math.max(14, abSz - 1),
+    abilityAbsoluteMinimum: 14,
     minFlavorSize: Math.max(9, abSz * 0.55),
     flavorSizeRatio: 0.62,
     clipBottom: schemeLayout === 'b' ? 650 : 646
@@ -2140,6 +2143,41 @@ function parseAbilityRTE(root) {
     .map(({ domBreak, ...run }) => run);
 }
 
+// Classification is a rendering hint only; never rewrite saved HTML or runs.
+function classifyAbilityBlock(runs) {
+  let text = runs.map(run => run.icon ? '\uFFFC' : (run.t || '')).join('').trim();
+  if (!text) return { eligible: false, reason: 'empty' };
+  let ambiguousAcronym = false;
+  text = text.replace(/\bWhat If(?:\.\.\.|…)\?/gi, 'What If')
+    .replace(/\b(?:[A-Za-z]\.){2,}/g, (match, offset, source) => {
+      const following = source.slice(offset + match.length).trimStart();
+      // An acronym's final dot may also end a sentence. Known keyword suffixes
+      // are safe; otherwise a following capital makes the boundary uncertain.
+      if (/^[A-Z]/.test(following) && !(match === 'S.H.I.E.L.D.' && /^(?:Clearance|Level)\b/.test(following))) ambiguousAcronym = true;
+      return match.replace(/\./g, '');
+    })
+    .replace(/(\d)\.(?=\d)/g, '$1');
+  // Abbreviations and ellipses can conceal a sentence boundary: prefer prose.
+  if (ambiguousAcronym || /\b(?:Mr|Mrs|Ms|Dr|Prof|St|Jr|Sr|vs|etc|approx|No)\.|\b[A-Za-z]\.|\.{2,}|…/i.test(text)) {
+    return { eligible: false, reason: 'ambiguous' };
+  }
+  const endings = text.match(/[.!?]+/g) || [];
+  const tail = text.replace(/[.!?]+["'”’\)\]]*\s*$/, '');
+  const count = endings.length + (tail === text ? 1 : 0);
+  return { eligible: count === 1, reason: count === 1 ? 'single' : 'multiple' };
+}
+
+function getAbilityBlocks(runs) {
+  const blocks = [{ runs: [] }];
+  for (const run of runs) {
+    if (run.br) {
+      blocks.at(-1).breakAfter = run;
+      blocks.push({ runs: [] });
+    } else blocks.at(-1).runs.push(run);
+  }
+  return blocks.map((block, index) => ({ ...block, index, ...classifyAbilityBlock(block.runs) }));
+}
+
 // Keep fragments of one word together even when markup splits its style runs.
 // Whitespace advances retain the legacy policy (including trailing run spaces).
 function getLayoutUnits(runs) {
@@ -2247,7 +2285,34 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   }
   cx = curBounds().left;
   line();
-  for (const unit of getLayoutUnits(runs)) {
+  const blocks = options.abilityBlocks;
+  const blockDiagnostics = [];
+  const units = blocks ? blocks.flatMap(block => [
+    { block }, ...getLayoutUnits(block.runs), ...(block.breakAfter ? [block.breakAfter] : [])
+  ]) : getLayoutUnits(runs);
+  let protect = false;
+  for (const unit of units) {
+    if (unit.block) {
+      const block = unit.block;
+      let advance = 0, width = 0;
+      for (const part of getLayoutUnits(block.runs)) {
+        if (part.icon) {
+          const icon = getInlineIconPlacement(part.icon, sz);
+          width = Math.max(width, advance + icon.width);
+          advance += icon.width + icon.gap;
+        } else if (part.space) {
+          advance += measureFragment(part.space).metrics.width;
+        } else if (part.fragments) {
+          advance += part.fragments.reduce((sum, fragment) => sum + measureFragment(fragment).metrics.width, 0);
+          width = Math.max(width, advance);
+        }
+      }
+      const availableWidth = curBounds().right - cx;
+      protect = block.eligible && width <= availableWidth;
+      blockDiagnostics.push({ index: block.index, eligible: block.eligible, reason: block.reason,
+        protected: protect, fallback: block.eligible && !protect, measuredWidth: width, availableWidth });
+      continue;
+    }
     if (unit.br) {
       nextLine(unit.fullLine ? lh : (prevWasBr ? blankExtra : lh));
       prevWasBr = true;
@@ -2262,7 +2327,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
     if (unit.icon) {
       const icon = getInlineIconPlacement(unit.icon, sz);
       const bounds = curBounds();
-      if (cx + icon.width > bounds.right && cx > bounds.left) nextLine(lh);
+      if (!protect && cx + icon.width > bounds.right && cx > bounds.left) nextLine(lh);
       const item = { type: 'icon', key: unit.icon, x: cx, y: cy + icon.offsetY, ...icon };
       items.push(item);
       line().items.push(item);
@@ -2275,7 +2340,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
     const fragments = unit.fragments.map(measureFragment);
     const width = fragments.reduce((sum, fragment) => sum + fragment.metrics.width, 0);
     const bounds = curBounds();
-    if (cx + width > bounds.right && cx > bounds.left) nextLine(lh);
+    if (!protect && cx + width > bounds.right && cx > bounds.left) nextLine(lh);
     for (const fragment of fragments) {
       const m = fragment.metrics;
       const item = { type: 'text', text: fragment.t, font: fragment.font, underline: fragment.u,
@@ -2294,7 +2359,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   const finalBottom = Math.max(bottomY, paintedBounds?.bottom ?? y);
   const verticalOverflow = Number.isFinite(options.maxBottom) ? Math.max(0, finalBottom - options.maxBottom) : 0;
   return {
-    items, lines, lastY: cy, bottomY, lineH: lh, paintedBounds,
+    items, lines, lastY: cy, bottomY, lineH: lh, paintedBounds, blocks: blockDiagnostics,
     bounds: { top: Math.min(y, paintedBounds?.top ?? y), bottom: finalBottom },
     requestedFontSize: options.requestedFontSize ?? sz, effectiveFontSize: sz,
     overflow: { vertical: verticalOverflow, horizontal: Math.max(0, horizontalOverflow),
@@ -2341,11 +2406,13 @@ function drawAdaptiveTextBlock(ctx, cfg) {
     minFlavorGap = 8,
     maxBottom = CH - 28,
     minAbilitySize = Math.max(12, abSz - 2),
+    abilityAbsoluteMinimum = 12,
     minFlavorSize = Math.max(9, flSz - 1),
     flavorSizeRatio = null,
     clipBottom = null
   } = cfg;
 
+  const abilityBlocks = getAbilityBlocks(abRuns);
   const hasFlavor = runsHaveVisibleContent(flRuns || []);
   let abilitySize = abSz;
   let flavorSize = flavorSizeRatio
@@ -2354,7 +2421,7 @@ function drawAdaptiveTextBlock(ctx, cfg) {
   let flavorGap = hasFlavor ? preferredFlavorGap : 0;
 
   function measure() {
-    const abilityLayout = layoutRuns(ctx, abRuns, x, y, w, abilitySize, avoidZones, { ...options, maxBottom, requestedFontSize: abSz });
+    const abilityLayout = layoutRuns(ctx, abRuns, x, y, w, abilitySize, avoidZones, { ...options, abilityBlocks, maxBottom, requestedFontSize: abSz });
     if (!hasFlavor) return { abilityLayout, flavorLayout: null, flavorY: null, overflow: Math.max(0, abilityLayout.bottomY - maxBottom) };
     const flavorY = abilityLayout.bottomY + flavorGap;
     const flavorLayout = layoutRuns(ctx, flRuns, x, flavorY, w, flavorSize, avoidZones, { ...options, maxBottom, requestedFontSize: flSz });
@@ -2378,6 +2445,26 @@ function drawAdaptiveTextBlock(ctx, cfg) {
   while (measured.overflow > 0 && abilitySize > minAbilitySize) {
     abilitySize -= 0.5;
     measured = measure();
+  }
+
+  // Preserve normal vertical fitting first. Only a protection gain can justify
+  // the additional allowance; impossible long phrases cannot drive shrinking.
+  const baseline = measured;
+  const protectedCount = result => result.abilityLayout.blocks.filter(block => block.protected).length;
+  const overflowAmounts = result => [result.overflow, result.abilityLayout.overflow.vertical,
+    result.abilityLayout.overflow.horizontal, result.flavorLayout?.overflow.vertical || 0,
+    result.flavorLayout?.overflow.horizontal || 0];
+  const baselineOverflow = overflowAmounts(baseline);
+  const floor = Math.min(abilitySize, Math.max(abilityAbsoluteMinimum, abSz - 3));
+  if (measured.abilityLayout.blocks.some(block => block.fallback)) {
+    for (let candidate = abilitySize - 0.5; candidate >= floor; candidate -= 0.5) {
+      abilitySize = candidate;
+      const trial = measure();
+      if (protectedCount(trial) > protectedCount(measured)
+          && overflowAmounts(trial).every((amount, index) => amount <= baselineOverflow[index] + 0.001)) {
+        measured = trial;
+      }
+    }
   }
 
   drawRuns(ctx, measured.abilityLayout, abilityColor);
@@ -2498,6 +2585,7 @@ function drawText(ctx) {
     minFlavorGap: 6,
     maxBottom: useRareHeroTextLayout ? 668 : 666,
     minAbilitySize: Math.max(16, abSz - 1),
+    abilityAbsoluteMinimum: 16,
     minFlavorSize: Math.max(11, abSz * 0.55),
     flavorSizeRatio: 0.62,
     clipBottom: useRareHeroTextLayout ? 668 : 666
