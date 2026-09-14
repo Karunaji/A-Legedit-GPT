@@ -1,0 +1,14 @@
+{
+  "name": "legedit-gpt",
+  "version": "0.1.0",
+  "description": "Marvel Legendary Card Creator desktop app",
+  "main": "electron-main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^41.2.1"
+  }
+}

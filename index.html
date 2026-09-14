@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Marvel Legendary Card Creator</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <div class="sec" id="project-type-sec">
+    <h2>Project Type</h2>
+    <div id="project-type-value" class="project-type-value">Hero</div>
+  </div>
+  <div class="sec" id="title-sec">
+    <div class="h2row">
+      <h2>Card Title</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="name-sz" value="34" min="10" max="40" oninput="render()">
+    </div>
+    <input type="text" id="f-name" value="Card Title" oninput="render()">
+  </div>
+  <div class="sec" id="hero-sec">
+    <div class="h2row">
+      <h2>Hero Name</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="hero-sz" value="24" min="8" max="28" oninput="onProjectSharedInput()">
+    </div>
+    <input type="text" id="f-hero" value="Hero Name" oninput="onProjectSharedInput()">
+  </div>
+  <div class="sec" id="layout-sec">
+    <h2>Card Layout</h2>
+    <select id="s-layout" onchange="setLayout(this.value)">
+      <option value="single">Hero - Single Color</option>
+      <option value="multicolor">Hero - Multicolor</option>
+      <option value="split">Hero - Split</option>
+    </select>
+  </div>
+  <div class="sec" id="villain-name-sec" style="display:none">
+    <div class="h2row">
+      <h2>Card Name</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="v-name-sz" value="34" min="10" max="48" oninput="render()">
+    </div>
+    <input type="text" id="v-name" value="Villain Name" oninput="onVillainNameInput()">
+  </div>
+  <div class="sec" id="villain-subtitle-sec" style="display:none">
+    <div class="h2row">
+      <h2 id="project-subtitle-label">Villain Group</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="v-subtitle-sz" value="24" min="8" max="32" oninput="onProjectSharedInput()">
+    </div>
+    <input type="text" id="v-subtitle" value="Villain Group" oninput="onProjectSharedInput()">
+  </div>
+  <div class="sec" id="villain-template-sec" style="display:none">
+    <h2 id="project-layout-label">Villain Layout</h2>
+    <select id="v-layout" onchange="setVillainLayout(this.value)">
+      <option value="villain">Villain</option>
+      <option value="adversary">Adversary</option>
+      <option value="location">Location</option>
+      <option value="trap">Trap</option>
+    </select>
+  </div>
+  <div class="sec" id="scheme-layout-sec" style="display:none">
+    <h2>Scheme Layout</h2>
+    <select id="scheme-layout" onchange="setSchemeLayout(this.value)">
+      <option value="a">Scheme Layout A</option>
+      <option value="b">Scheme Layout B</option>
+    </select>
+  </div>
+  <div class="sec" id="mastermind-layout-sec" style="display:none">
+    <h2>Mastermind Layout</h2>
+    <select id="m-layout" onchange="setMastermindLayout(this.value)">
+      <option value="mastermind">Mastermind</option>
+      <option value="tactic">Mastermind Tactic</option>
+    </select>
+  </div>
+  <div class="sec" id="villain-stats-sec" style="display:none">
+    <h2 id="project-stats-label">Villain Stats</h2>
+    <div class="row">
+      <div class="f"><label style="font-size:10px;color:#6b7280;display:block;margin-bottom:2px">Attack</label><input type="number" id="v-atk" value="4" min="0" max="20" oninput="render()"></div>
+      <div class="f"><label style="font-size:10px;color:#6b7280;display:block;margin-bottom:2px">VP</label><input type="number" id="v-vp" value="2" min="0" max="20" oninput="render()"></div>
+    </div>
+    <div class="pill-row compact-stats" style="margin-top:6px">
+      <button class="pill on" id="villain-show-atk-num" onclick="toggleVillainMod(this)">Attack</button>
+      <button class="pill" id="villain-atk-plus" onclick="toggleVillainMod(this)">+</button>
+      <button class="pill pill-asterisk" id="villain-atk-asterisk" onclick="toggleVillainMod(this)"><span class="pill-asterisk-glyph">*</span></button>
+      <button class="pill on" id="villain-show-vp" onclick="toggleVillainMod(this)">VP</button>
+      <button class="pill" id="villain-vp-plus" onclick="toggleVillainMod(this)">+</button>
+      <button class="pill pill-asterisk" id="villain-vp-asterisk" onclick="toggleVillainMod(this)"><span class="pill-asterisk-glyph">*</span></button>
+    </div>
+  </div>
+  <div class="sec" id="class-sec">
+    <h2>Card Class</h2>
+    <div class="pills">
+      <button class="pill on" data-cls="instinct" onclick="setCls(this)">Instinct</button>
+      <button class="pill" data-cls="covert" onclick="setCls(this)">Covert</button>
+      <button class="pill" data-cls="strength" onclick="setCls(this)">Strength</button>
+      <button class="pill" data-cls="range" onclick="setCls(this)">Range</button>
+      <button class="pill" data-cls="tech" onclick="setCls(this)">Tech</button>
+      <button class="pill" data-cls="grey" onclick="setCls(this)">Grey</button>
+    </div>
+  </div>
+  <div class="sec" id="multicolor-class-sec" style="display:none">
+    <h2>Second Class</h2>
+    <div class="pills">
+      <button class="pill" data-cls2="instinct" onclick="setCls2(this)">Instinct</button>
+      <button class="pill" data-cls2="covert" onclick="setCls2(this)">Covert</button>
+      <button class="pill" data-cls2="strength" onclick="setCls2(this)">Strength</button>
+      <button class="pill" data-cls2="range" onclick="setCls2(this)">Range</button>
+      <button class="pill" data-cls2="tech" onclick="setCls2(this)">Tech</button>
+    </div>
+  </div>
+  <div class="sec" id="team-faction-sec">
+    <h2>Team / Faction</h2>
+    <select id="s-team" onchange="setTeam()">
+      <option value="none">None</option>
+    </select>
+    <div id="team-icon-ctrls" style="display:none;margin-top:6px">
+      <input type="text" id="team-icon-name" placeholder="Icon name..." style="margin-bottom:4px">
+      <label class="upload-box" for="team-icon-file">+ Upload icon</label>
+      <input type="file" id="team-icon-file" accept="image/*" style="display:none" onchange="loadTeamIcon(event)">
+      <div class="upload-status" id="team-icon-status"></div>
+      <button class="btn" id="team-add-btn" onclick="addCustomTeam()" style="margin-top:4px;opacity:0.5" disabled>Add to List</button>
+    </div>
+    <div id="team-remove-ctrl" style="display:none;margin-top:4px">
+      <button class="btn" onclick="removeCustomTeam()">Remove Icon</button>
+    </div>
+  </div>
+
+  <div class="sec" id="rarity-sec">
+    <h2>Rarity</h2>
+    <div class="pills">
+      <button class="pill" data-rar="common" onclick="setRar(this)">Common</button>
+      <button class="pill" data-rar="uncommon" onclick="setRar(this)">Uncommon</button>
+      <button class="pill on" id="rarity-rare-pill" data-rar="rare" onclick="setRar(this)">Rare</button>
+    </div>
+  </div>
+  <div class="sec" id="show-stats-sec">
+    <h2>Show Stats</h2>
+    <div class="pill-row compact-stats">
+      <button class="pill on" data-stat="recruit"  onclick="togStat(this)">Recruit</button>
+      <button class="pill on" data-stat="rplus"    onclick="togStat(this)">+</button>
+      <button class="pill on" data-stat="attack"   onclick="togStat(this)">Attack</button>
+      <button class="pill on" data-stat="aplus"    onclick="togStat(this)">+</button>
+    </div>
+  </div>
+  <div class="sec" id="stats-sec">
+    <h2>Stats</h2>
+    <div class="row">
+      <div class="f"><label style="font-size:10px;color:#6b7280;display:block;margin-bottom:2px">Recruit</label><input type="number" id="f-rec" value="0" min="0" max="12" oninput="render()"></div>
+      <div class="f"><label style="font-size:10px;color:#6b7280;display:block;margin-bottom:2px">Attack</label><input type="number" id="f-atk" value="0" min="0" max="12" oninput="render()"></div>
+      <div class="f"><label style="font-size:10px;color:#6b7280;display:block;margin-bottom:2px">Cost</label><input type="number" id="f-cost" value="4" min="0" max="9" oninput="render()"></div>
+    </div>
+    <div style="margin-top:5px">
+      <button class="pill" id="cost-asterisk" onclick="togCostAst()" style="font-size:12px">Cost * Off</button>
+    </div>
+  </div>
+  <div class="sec" id="ability-sec">
+    <div class="h2row">
+      <h2>Ability Text</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="ab-sz" value="22" min="8" max="40" oninput="render()">
+    </div>
+    <div class="rte-wrap">
+      <div class="rte-bar">
+        <button class="rb" onclick="fmt('bold')"><b>B</b></button>
+        <button class="rb" onclick="fmt('italic')"><i>I</i></button>
+        <button class="rb" onclick="fmt('underline')"><u>U</u></button>
+        <button class="rb" onclick="fmt('removeFormat')">Clear</button>
+        <span style="color:#374151;margin:0 2px">|</span>
+        <button class="rb" onclick="insertIcon('r')" title="Recruit (/r)">/r</button>
+        <button class="rb" onclick="insertIcon('a')" title="Attack (/a)">/a</button>
+        <button class="rb" onclick="insertIcon('cost')" title="Cost (/cost)">Cost</button>
+        <button class="rb" onclick="insertIcon('in')" title="Instinct (/in)">/in</button>
+        <button class="rb" onclick="insertIcon('c')" title="Covert (/c)">/c</button>
+        <button class="rb" onclick="insertIcon('st')" title="Strength (/st)">/st</button>
+        <button class="rb" onclick="insertIcon('ra')" title="Range (/ra)">/ra</button>
+        <button class="rb" onclick="insertIcon('t')" title="Tech (/t)">/t</button>
+        <select id="ability-team-icon-select" class="rb" style="max-width:110px">
+          <option value="">Team icon...</option>
+        </select>
+        <button class="rb" onclick="insertTeamIconFromPicker('f-ability','ability-team-icon-select')">Team</button>
+        <span style="font-size:10px;color:#4a5568;margin-left:3px">Select text then click</span>
+      </div>
+      <div class="rte" id="f-ability" contenteditable="true" oninput="onAbilityInput()">Ability text goes here.</div>
+    </div>
+  </div>
+  <div class="sec" id="flavor-sec">
+    <div class="h2row">
+      <h2>Flavor Text</h2>
+      <span class="szlbl">size:</span>
+      <input type="number" id="fl-sz" value="11" min="8" max="18" oninput="render()">
+    </div>
+    <div class="rte-wrap">
+      <div class="rte-bar">
+        <button class="rb" onclick="fmtFl('italic')"><i>I</i></button>
+        <button class="rb" onclick="fmtFl('bold')"><b>B</b></button>
+        <button class="rb" onclick="fmtFl('removeFormat')">Clear</button>
+      </div>
+      <div class="rte" id="f-flavor" contenteditable="true" oninput="render()" style="min-height:36px"></div>
+    </div>
+  </div>
+  <div class="sec" id="card-art-sec">
+    <h2>Card Art</h2>
+    <label class="upload-box" for="art-file">+ Upload art</label>
+    <input type="file" id="art-file" accept="image/*" style="display:none" onchange="loadArt(event)">
+    <div id="art-ctrls" style="display:none;margin-top:6px">
+      <div class="srow"><span class="slbl">Scale</span><input type="range" id="sc-s" min="30" max="400" value="100" oninput="syncArt('s','r')"><input type="number" id="sc-sv" value="100" min="30" max="400" oninput="syncArt('s','n')"></div>
+      <div class="srow"><span class="slbl">X</span><input type="range" id="sc-x" min="-300" max="300" value="0" oninput="syncArt('x','r')"><input type="number" id="sc-xv" value="0" min="-300" max="300" oninput="syncArt('x','n')"></div>
+      <div class="srow"><span class="slbl">Y</span><input type="range" id="sc-y" min="-300" max="300" value="0" oninput="syncArt('y','r')"><input type="number" id="sc-yv" value="0" min="-300" max="300" oninput="syncArt('y','n')"></div>
+      <button class="btn" onclick="resetArt()" style="margin-top:3px">Reset Position</button>
+    </div>
+    <button class="btn" onclick="clearArt()" style="margin-top:4px">Clear Art</button>
+  </div>
+  <div class="sec" id="split-editor-sec" style="display:none">
+    <h2>Split Card</h2>
+    <div class="split-editor">
+      <div class="split-half-editor">
+        <div class="split-half-title">Half 1</div>
+        <div class="split-grid">
+          <div>
+            <label class="mini-label">Class 1</label>
+            <select id="split-cls-1" onchange="render()">
+              <option value="instinct">Instinct</option>
+              <option value="covert">Covert</option>
+              <option value="strength">Strength</option>
+              <option value="range">Range</option>
+              <option value="tech">Tech</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <div>
+            <label class="mini-label">Second Class 1</label>
+            <select id="split-cls2-1" onchange="render()">
+              <option value="none">None</option>
+              <option value="instinct">Instinct</option>
+              <option value="covert">Covert</option>
+              <option value="strength">Strength</option>
+              <option value="range">Range</option>
+              <option value="tech">Tech</option>
+            </select>
+          </div>
+          <div class="split-stat-grid">
+            <div><label class="mini-label">Recruit 1</label><input type="number" id="split-rec-1" value="2" min="0" max="12" oninput="render()"></div>
+            <div><label class="mini-label">Attack 1</label><input type="number" id="split-atk-1" value="2" min="0" max="12" oninput="render()"></div>
+            <div><label class="mini-label">Cost 1</label><input type="number" id="split-cost-1" value="3" min="0" max="9" oninput="render()"></div>
+          </div>
+          <div class="pill-row compact-stats split-stat-pills">
+            <button class="pill on" id="split-show-rec-1" onclick="toggleSplitStat('1','showRecruit',this)">Recruit</button>
+            <button class="pill" id="split-rplus-1" onclick="toggleSplitStat('1','showRPlus',this)">+</button>
+            <button class="pill on" id="split-show-atk-1" onclick="toggleSplitStat('1','showAttack',this)">Attack</button>
+            <button class="pill" id="split-aplus-1" onclick="toggleSplitStat('1','showAPlus',this)">+</button>
+          </div>
+        </div>
+        <div class="h2row split-h2row">
+          <h2>Card Title 1</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-name-sz-1" value="34" min="10" max="40" oninput="render()">
+        </div>
+        <input type="text" id="split-name-1" value="Card Title 1" oninput="render()">
+        <div class="h2row split-h2row">
+          <h2>Hero Name 1</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-hero-sz-1" value="24" min="8" max="28" oninput="render()">
+        </div>
+        <input type="text" id="split-hero-1" value="Hero Name" oninput="render()">
+        <div class="h2row split-h2row">
+          <h2>Ability Text 1</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-ab-sz-1" value="15" min="8" max="28" oninput="render()">
+        </div>
+        <div class="rte-wrap">
+          <div class="rte-bar">
+            <button class="rb" onclick="fmtTarget('split-ability-1','bold')"><b>B</b></button>
+            <button class="rb" onclick="fmtTarget('split-ability-1','italic')"><i>I</i></button>
+            <button class="rb" onclick="fmtTarget('split-ability-1','underline')"><u>U</u></button>
+            <button class="rb" onclick="fmtTarget('split-ability-1','removeFormat')">Clear</button>
+            <span style="color:#374151;margin:0 2px">|</span>
+            <button class="rb" onclick="insertIconInto('split-ability-1','r')">/r</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','a')">/a</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','cost')">Cost</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','in')">/in</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','c')">/c</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','st')">/st</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','ra')">/ra</button>
+            <button class="rb" onclick="insertIconInto('split-ability-1','t')">/t</button>
+            <select id="split-ability-team-icon-select-1" class="rb" style="max-width:110px">
+              <option value="">Team icon...</option>
+            </select>
+            <button class="rb" onclick="insertTeamIconFromPicker('split-ability-1','split-ability-team-icon-select-1')">Team</button>
+          </div>
+          <div class="rte" id="split-ability-1" contenteditable="true" oninput="onSplitAbilityInput('1')">Ability text 1.</div>
+        </div>
+        <div class="h2row split-h2row">
+          <h2>Flavor Text 1</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-fl-sz-1" value="10" min="8" max="18" oninput="render()">
+        </div>
+        <div class="rte-wrap">
+          <div class="rte-bar">
+            <button class="rb" onclick="fmtTarget('split-flavor-1','italic')"><i>I</i></button>
+            <button class="rb" onclick="fmtTarget('split-flavor-1','bold')"><b>B</b></button>
+            <button class="rb" onclick="fmtTarget('split-flavor-1','removeFormat')">Clear</button>
+          </div>
+          <div class="rte" id="split-flavor-1" contenteditable="true" oninput="render()" style="min-height:36px"></div>
+        </div>
+        <div class="split-art-box">
+          <label class="mini-label">Art 1</label>
+          <label class="upload-box" for="split-art-file-1">+ Upload art</label>
+          <input type="file" id="split-art-file-1" accept="image/*" style="display:none" onchange="loadSplitArt(event,'1')">
+          <div id="split-art-ctrls-1" style="display:none;margin-top:6px">
+            <div class="srow"><span class="slbl">Scale</span><input type="range" id="split-sc-s-1" min="30" max="400" value="100" oninput="syncSplitArt('1','s','r')"><input type="number" id="split-sc-sv-1" value="100" min="30" max="400" oninput="syncSplitArt('1','s','n')"></div>
+            <div class="srow"><span class="slbl">X</span><input type="range" id="split-sc-x-1" min="-300" max="300" value="0" oninput="syncSplitArt('1','x','r')"><input type="number" id="split-sc-xv-1" value="0" min="-300" max="300" oninput="syncSplitArt('1','x','n')"></div>
+            <div class="srow"><span class="slbl">Y</span><input type="range" id="split-sc-y-1" min="-300" max="300" value="0" oninput="syncSplitArt('1','y','r')"><input type="number" id="split-sc-yv-1" value="0" min="-300" max="300" oninput="syncSplitArt('1','y','n')"></div>
+            <button class="btn" onclick="resetSplitArt('1')" style="margin-top:3px">Reset Position</button>
+          </div>
+          <button class="btn" onclick="clearSplitArt('1')" style="margin-top:4px">Clear Art</button>
+        </div>
+      </div>
+      <div class="split-half-editor">
+        <div class="split-half-title">Half 2</div>
+        <div class="split-grid">
+          <div>
+            <label class="mini-label">Class 2</label>
+            <select id="split-cls-2" onchange="render()">
+              <option value="instinct">Instinct</option>
+              <option value="covert">Covert</option>
+              <option value="strength">Strength</option>
+              <option value="range">Range</option>
+              <option value="tech">Tech</option>
+              <option value="grey">Grey</option>
+            </select>
+          </div>
+          <div>
+            <label class="mini-label">Second Class 2</label>
+            <select id="split-cls2-2" onchange="render()">
+              <option value="none">None</option>
+              <option value="instinct">Instinct</option>
+              <option value="covert">Covert</option>
+              <option value="strength">Strength</option>
+              <option value="range">Range</option>
+              <option value="tech">Tech</option>
+            </select>
+          </div>
+          <div class="split-stat-grid">
+            <div><label class="mini-label">Recruit 2</label><input type="number" id="split-rec-2" value="4" min="0" max="12" oninput="render()"></div>
+            <div><label class="mini-label">Attack 2</label><input type="number" id="split-atk-2" value="2" min="0" max="12" oninput="render()"></div>
+            <div><label class="mini-label">Cost 2</label><input type="number" id="split-cost-2" value="3" min="0" max="9" oninput="render()"></div>
+          </div>
+          <div class="pill-row compact-stats split-stat-pills">
+            <button class="pill on" id="split-show-rec-2" onclick="toggleSplitStat('2','showRecruit',this)">Recruit</button>
+            <button class="pill" id="split-rplus-2" onclick="toggleSplitStat('2','showRPlus',this)">+</button>
+            <button class="pill on" id="split-show-atk-2" onclick="toggleSplitStat('2','showAttack',this)">Attack</button>
+            <button class="pill" id="split-aplus-2" onclick="toggleSplitStat('2','showAPlus',this)">+</button>
+          </div>
+        </div>
+        <div class="h2row split-h2row">
+          <h2>Card Title 2</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-name-sz-2" value="34" min="10" max="40" oninput="render()">
+        </div>
+        <input type="text" id="split-name-2" value="Card Title 2" oninput="render()">
+        <div class="h2row split-h2row">
+          <h2>Hero Name 2</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-hero-sz-2" value="24" min="8" max="28" oninput="render()">
+        </div>
+        <input type="text" id="split-hero-2" value="Hero Name" oninput="render()">
+        <div class="h2row split-h2row">
+          <h2>Ability Text 2</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-ab-sz-2" value="15" min="8" max="28" oninput="render()">
+        </div>
+        <div class="rte-wrap">
+          <div class="rte-bar">
+            <button class="rb" onclick="fmtTarget('split-ability-2','bold')"><b>B</b></button>
+            <button class="rb" onclick="fmtTarget('split-ability-2','italic')"><i>I</i></button>
+            <button class="rb" onclick="fmtTarget('split-ability-2','underline')"><u>U</u></button>
+            <button class="rb" onclick="fmtTarget('split-ability-2','removeFormat')">Clear</button>
+            <span style="color:#374151;margin:0 2px">|</span>
+            <button class="rb" onclick="insertIconInto('split-ability-2','r')">/r</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','a')">/a</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','cost')">Cost</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','in')">/in</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','c')">/c</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','st')">/st</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','ra')">/ra</button>
+            <button class="rb" onclick="insertIconInto('split-ability-2','t')">/t</button>
+            <select id="split-ability-team-icon-select-2" class="rb" style="max-width:110px">
+              <option value="">Team icon...</option>
+            </select>
+            <button class="rb" onclick="insertTeamIconFromPicker('split-ability-2','split-ability-team-icon-select-2')">Team</button>
+          </div>
+          <div class="rte" id="split-ability-2" contenteditable="true" oninput="onSplitAbilityInput('2')">Ability text 2.</div>
+        </div>
+        <div class="h2row split-h2row">
+          <h2>Flavor Text 2</h2>
+          <span class="szlbl">size:</span>
+          <input type="number" id="split-fl-sz-2" value="10" min="8" max="18" oninput="render()">
+        </div>
+        <div class="rte-wrap">
+          <div class="rte-bar">
+            <button class="rb" onclick="fmtTarget('split-flavor-2','italic')"><i>I</i></button>
+            <button class="rb" onclick="fmtTarget('split-flavor-2','bold')"><b>B</b></button>
+            <button class="rb" onclick="fmtTarget('split-flavor-2','removeFormat')">Clear</button>
+          </div>
+          <div class="rte" id="split-flavor-2" contenteditable="true" oninput="render()" style="min-height:36px"></div>
+        </div>
+        <div class="split-art-box">
+          <label class="mini-label">Art 2</label>
+          <label class="upload-box" for="split-art-file-2">+ Upload art</label>
+          <input type="file" id="split-art-file-2" accept="image/*" style="display:none" onchange="loadSplitArt(event,'2')">
+          <div id="split-art-ctrls-2" style="display:none;margin-top:6px">
+            <div class="srow"><span class="slbl">Scale</span><input type="range" id="split-sc-s-2" min="30" max="400" value="100" oninput="syncSplitArt('2','s','r')"><input type="number" id="split-sc-sv-2" value="100" min="30" max="400" oninput="syncSplitArt('2','s','n')"></div>
+            <div class="srow"><span class="slbl">X</span><input type="range" id="split-sc-x-2" min="-300" max="300" value="0" oninput="syncSplitArt('2','x','r')"><input type="number" id="split-sc-xv-2" value="0" min="-300" max="300" oninput="syncSplitArt('2','x','n')"></div>
+            <div class="srow"><span class="slbl">Y</span><input type="range" id="split-sc-y-2" min="-300" max="300" value="0" oninput="syncSplitArt('2','y','r')"><input type="number" id="split-sc-yv-2" value="0" min="-300" max="300" oninput="syncSplitArt('2','y','n')"></div>
+            <button class="btn" onclick="resetSplitArt('2')" style="margin-top:3px">Reset Position</button>
+          </div>
+          <button class="btn" onclick="clearSplitArt('2')" style="margin-top:4px">Clear Art</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn gold" onclick="exportCard()">Export PNG...</button>
+</div>
+
+<div class="canvas-wrap">
+  <div class="project-tabs" id="project-tabs"></div>
+  <div class="preview-zoom">
+    <button class="rb" onclick="adjustPreviewZoom(-0.1)">-</button>
+    <span id="preview-zoom-label">100%</span>
+    <button class="rb" onclick="adjustPreviewZoom(0.1)">+</button>
+    <button class="rb" onclick="resetPreviewZoom()">Reset</button>
+  </div>
+  <div class="canvas-stage">
+    <div class="canvas-stage-inner">
+      <canvas id="card" width="504" height="700"></canvas>
+    </div>
+  </div>
+</div>
+
+<div class="props">
+  <div class="sec" id="card-list-sec">
+    <h2>Card List</h2>
+    <div class="card-manager">
+      <div class="card-actions">
+        <button class="btn" onclick="newCard()">New Card</button>
+        <button class="btn" id="delete-card-btn" onclick="deleteCard()">Delete Card</button>
+      </div>
+      <div class="card-sort-row">
+        <label for="card-sort-mode">Sort</label>
+        <select id="card-sort-mode" onchange="setCardSortMode(this.value)">
+          <option value="manual">Manual</option>
+          <option value="az">A-Z</option>
+          <option value="rarity">Rarity</option>
+        </select>
+      </div>
+      <div class="card-list" id="card-list"></div>
+    </div>
+  </div>
+  <div class="sec" id="project-sec">
+    <h2>Project</h2>
+    <div class="project-actions">
+      <button class="btn" onclick="newProject()">New</button>
+      <button class="btn" onclick="saveProject()">Save</button>
+      <button class="btn" onclick="triggerLoadProject()">Load</button>
+    </div>
+    <div id="project-status">Autosave ready</div>
+    <input type="file" id="project-load-file" accept=".json,.legendary.json,application/json" style="display:none" onchange="handleProjectLoad(event)">
+  </div>
+  <div class="sec" id="legendary-notes-sec">
+    <div class="project-actions">
+      <button class="btn" onclick="openLegendaryNotes()">Legendary Notes</button>
+      <button class="btn" onclick="openKeywordList()">Keywords</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-backdrop" id="legendary-notes-modal" onclick="if(event.target===this) closeLegendaryNotes()">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Legendary Notes</h3>
+      <button class="btn modal-close" onclick="closeLegendaryNotes()">Close</button>
+    </div>
+    <div class="modal-body">-If you need to put multiple classes in a card's colors and/or rules text, they are always ordered as such: :icon_class_Strength: , :icon_class_Instinct:, :icon_class_Covert:, :icon_class_Tech:, :icon_class_Ranged:.
+(Divided cards do not follow this rule relative to each of their "halves")
+
+-In rules text, with "Reveal the top card from   _ deck" effects you'd return the revealed card back to the top of that deck after resolving all of that card's effects, without the need for more wording.  However, the same effect for multiple cards must always specify what happens with all/the rest of the cards that are revealed.
+
+-In Legendary Language™, you "Gain" things with physical substance to them, like Hero and Wound cards, as well as Shards and Throne's Favor, which are meant to be represented with solid tokens.
+
+On the flipside, you "Get" resources are purely imaginary, such as :icon_legendary_currency_Attack: , :icon_legendary_currency_Recruit: and :icon_legendary_PiercingEnergy:
+
+-List of words and terms you should Capitalize on your cards:
+Card Types, like Hero, Villain, Bystander;
+Deck Types like Hero Deck, Villain Deck (Do not capitalize the word "deck" when it's isolated)
+Victory Pile and Escape Pile, but NOT KO pile or discard pile
+City Spaces (like Sewers, Bridge). Do not capitalize the words "city" or "city spaces."
+All Keywords.
+
+-Words and terms you should bold on your cards:
+Section Headers (like Fight:, Ambush:, Master Strike:, Evil Wins:, etc.)
+Keywords, and numbers/descriptors that are part of Keywords (like Focus 3 :icon_legendary_currency_Recruit: or Sewers Conqueror 1)
+Attack & Recruit Numbers within card text (like You get +1 :icon_legendary_currency_Attack: or You get +3 :icon_legendary_currency_Recruit:)
+
+-Most Villains follow a simple balance formula that tells how much Attack (:icon_legendary_currency_Attack:) they should have:
+
+Villain :icon_legendary_currency_Attack: = Villain :icon_legendary_VP: +2
+
+-Keywords and special abilities can alter the "formula" slightly:
+
+Most abilities that range between +0-5 :icon_legendary_currency_Attack: are valued as if they were a flat +2 (e.g. Striker, Dark Memories, Empowered, etc.)
+
+Conditional abilities that give 0 :icon_legendary_currency_Attack:, -2 :icon_legendary_currency_Attack:, or +2 :icon_legendary_currency_Attack: are valued as equal to a flat 1 :icon_legendary_currency_Attack:  on the formula. (e.g. Size-Changing.)
+
+Non-numeric effects that may prevent you from fighting a Villain normally (e.g. Chivalrous Duel) are sometimes valued as  +2 :icon_legendary_currency_Attack: on the formula, but can vary depending on the difficulty of the requirement.</div>
+  </div>
+</div>
+<div class="modal-backdrop project-chooser-backdrop" id="project-chooser-modal">
+  <div class="project-chooser-card">
+    <button class="project-chooser-last" id="project-chooser-reopen" style="display:none">
+      <span class="project-chooser-last-icon">↻</span>
+      <span>
+        <strong>Recent Projects</strong>
+        <em id="project-chooser-last-path"></em>
+      </span>
+    </button>
+    <h3 id="project-chooser-title">New project</h3>
+    <p id="project-chooser-subtitle">Choose the kind of Legendary project you want to create.</p>
+    <div class="project-type-grid">
+      <button class="project-type-tile project-type-hero" data-project-choice="hero">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-hero.png" alt="">
+        </span>
+        <span>Hero</span>
+      </button>
+      <button class="project-type-tile project-type-villain" data-project-choice="villain">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-villain.png" alt="">
+        </span>
+        <span>Villain</span>
+      </button>
+      <button class="project-type-tile project-type-henchman" data-project-choice="henchman">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-henchman.png" alt="">
+        </span>
+        <span>Henchman</span>
+      </button>
+      <button class="project-type-tile project-type-mastermind" data-project-choice="mastermind">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-mastermind.png" alt="">
+        </span>
+        <span>Mastermind</span>
+      </button>
+      <button class="project-type-tile project-type-scheme" data-project-choice="scheme">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-scheme.png" alt="">
+        </span>
+        <span>Scheme</span>
+      </button>
+      <button class="project-type-tile project-type-bystander" data-project-choice="bystander">
+        <span class="project-icon" aria-hidden="true">
+          <img src="./assets/embedded/project-icon-bystander.png" alt="">
+        </span>
+        <span>Bystander</span>
+      </button>
+    </div>
+    <div class="project-chooser-footer">
+      <button class="project-chooser-link" id="project-chooser-open">Open existing project</button>
+      <button class="project-chooser-link" id="project-chooser-cancel">Cancel</button>
+    </div>
+  </div>
+</div>
+<div class="modal-backdrop app-choice-backdrop" id="app-choice-modal">
+  <div class="app-choice-card">
+    <h3 id="app-choice-title">Confirm</h3>
+    <p id="app-choice-message"></p>
+    <div class="app-choice-actions" id="app-choice-actions"></div>
+  </div>
+</div>
+<div class="modal-backdrop" id="keyword-list-modal" onclick="if(event.target===this) closeKeywordList()">
+  <div class="modal-card">
+    <div class="modal-head">
+      <h3>Keyword List</h3>
+      <button class="btn modal-close" onclick="closeKeywordList()">Close</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-subnav">
+        <button class="btn keyword-tab-btn" id="keyword-view-list-btn" onclick="setKeywordView('list')">A-Z List</button>
+        <button class="btn keyword-tab-btn" id="keyword-view-reference-btn" onclick="setKeywordView('reference')">Master Strike Reference</button>
+      </div>
+      <div id="keyword-list-panel" class="keyword-panel">
+        <div id="keyword-list-body" class="keyword-list"></div>
+      </div>
+      <div id="keyword-reference-panel" class="keyword-panel" style="display:none">
+        <iframe
+          id="keyword-reference-frame"
+          class="keyword-reference-frame"
+          title="Master Strike Keyword Reference"
+          src="https://master-strike.com/keywords"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./hero-template-config.js"></script>
+<script src="./assets.js"></script>
+<script src="./keywords.js"></script>
+<script src="./state.js"></script>
+<script src="./render.js"></script>
+<script src="./ui.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
