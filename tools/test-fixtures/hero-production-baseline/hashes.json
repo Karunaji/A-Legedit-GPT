@@ -1,0 +1,32 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "85A976610827B8DDFDBB27DE8B153AEE469E3DFABF9CAF1A5A7BF5D092AFE2F6",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\render.js"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B7358812FEF64450A09F29B424A02BA575C552BEFFBD2C3DCABFBC122F5491D4",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\hero-template-config.js"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C412F581D17934A919935C562B6B64E62FF9A4DEC80173662D2336F6E47A3E6F",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\assets.js"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "123E35BBE23D749661AF3C9C8102AB3AB7C3A23DEE0995C38FAF6315E1DAC001",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\keywords.js"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2159E32121A60D69B80A4844ED76319ABCF8F9EC30946383A36AB29C65A57717",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\state.js"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "E082A95A8C218FAEB6483CB8AF055381E3A998FB66493EDD87205C086EA3B3FD",
+    "Path": "C:\\Users\\richa\\OneDrive\\Documents\\A Legedit GPT\\ui.js"
+  }
+]

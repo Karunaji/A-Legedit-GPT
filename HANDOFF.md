@@ -1,5 +1,20 @@
 # A Legedit GPT Handoff
 
+## Latest Ability Text decision: rare Hero calibration accepted
+
+This section supersedes older notes below where they conflict with the current Ability Text renderer.
+
+- Rare single-color Hero production is accepted as-is: origin 108/526, width 330, ordinary advance `round(effectiveFontSize * 27/22)`, actual cost-badge/number alpha contour with full painted-band clearance. All changes remain uncommitted; do not commit without a new user instruction.
+- Prior Phase 2.6 font-relative icon alignment and bounds-aware spacing remain intact. Inline Attack/Recruit scale stays 1.72. Preserve existing fitting, Phase 2 newline/protection behavior and flavor policy.
+- The repeated-prose synthetic fixture's logical overflow increase from 3 to 14 is reviewed and accepted. It requires six lines at font 21 under the current constraints; the initial divergence comes from width 330 above the badge. The solver does not introduce an avoidable extra line. Final ink exceeds the rules region by only 3.75 units; the fixture already overflowed and flavor was already clipped. Do not special-case it.
+- Common/uncommon Heroes are explicitly deferred and unchanged. Do not approximate their embedded badges. Revisit only with a reliably aligned source mask/layer or other independently validated contour source. Split, multicolor and other families retain their previous behavior.
+- Permanent report: `tools/HERO-PRODUCTION-VALIDATION.md`. Accepted regression review: `tools/review-artifacts/rare-hero-overflow/Rare Hero Overflow Before and After.pdf` and the self-contained `review.html` alongside it. Preserve these files and their measurements/images.
+- Permanent test inputs are under `tools/test-fixtures/hero-production-baseline/` and `tools/test-fixtures/hero-calibration-330-27/`. Both `hero-production-regression.cjs` and `hero-production-probe.cjs` run with repository-contained default inputs; see `tools/test-fixtures/README.md` for fresh-checkout commands. The old temporary baseline is retained only as local audit history.
+
+### Persistent visual-review deliverables
+
+For future visual/rendering work, when before/after images, galleries or diagnostic sheets would help the user verify a change, create a persistent downloadable artifact. Prefer a PDF and a self-contained HTML version when practical, stored under `tools/review-artifacts/`. Provide exact paths in the final response. Temporary files may be used internally but must not be the only review copy.
+
 ## Project Folder
 - Active folder: `C:\Users\richa\OneDrive\Documents\A Legedit GPT`
 - This is an Electron desktop app for making Marvel Legendary custom cards.

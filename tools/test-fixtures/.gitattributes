@@ -1,0 +1,5 @@
+# Baseline hashes cover exact historical bytes, including CRLF line endings.
+hero-production-baseline/*.js -text
+hero-production-baseline/hashes.json -text
+# The calibration provenance manifest also hashes this JSON byte-for-byte.
+hero-calibration-330-27/measurements.json -text

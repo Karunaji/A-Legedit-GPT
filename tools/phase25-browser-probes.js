@@ -81,7 +81,7 @@ async function phase25BrowserProbes(version) {
     const broken=[...runs,{br:true,fullLine:true},{br:true,fullLine:true},{t:'Draw.'}];
     const b=drawAdaptiveTextBlock(ctx,{...cfg,abRuns:broken}).abilityLayout;
     check(b.blocks.length===3&&!b.blocks[1].eligible,'Empty explicit block preserved');
-    check(b.items.at(-1).y===b.items[0].y-getInlineIconPlacement('team:avengers',b.effectiveFontSize).offsetY+2*b.lineH,'Full empty line preserved');
+    check(b.items.at(-1).y===b.lines[0].y+2*b.lineH,'Full empty line preserved');
     check(getAbilityBlocks([{icon:'attack'}])[0].eligible,'Icon-only content eligible');
     for(const [name,d] of Object.entries(diagnostics)) {
       check(d.length>0,name+' captured real geometry');

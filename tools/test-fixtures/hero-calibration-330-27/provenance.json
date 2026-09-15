@@ -1,0 +1,26 @@
+{
+  "sourceExperiment": "legedit-modern-hero-86iixE",
+  "sourceMeasurementsSha256": "3959ac38b5369004b95f17ab0b24dd779c30c0da1c74452c38c7a3544b859578",
+  "selection": {
+    "width": 330,
+    "advance": 27,
+    "model": "contour"
+  },
+  "recordCount": 14,
+  "files": {
+    "330-27-contour-short.png": "80b8e5aae7894f703748ca0bf20471e7d5644fa356843a9228d092f7d8f63ceb",
+    "330-27-contour-stat-short.png": "fb061baf1d3493cb2483f280f2e3703b5a20e2e8b7c5715b06aaed9565bec4fb",
+    "330-27-contour-lady-thor.png": "cb32df9455e263f5b0cb318357b9cdc838952561f45cebb1abf46e8272ffeb84",
+    "330-27-contour-prose-three.png": "54476e35ad892d40ad4e98648169d84f0443a2bba886948c09918fa2d80901e5",
+    "330-27-contour-prose-four.png": "7c4530a6b17f178bf548c3e30c3329c6e780414e1be438119386cb3e6f9c4d2b",
+    "330-27-contour-mixed.png": "32b28ce6847b43d6c36cb4e1b0b030ca4f25bfb127761424d47be4e5a7056e79",
+    "330-27-contour-badge.png": "66c1842dd821e4169dc2e5ddf994728e7e856dd60599475070777be7ae813c5c",
+    "330-27-contour-flavor.png": "42f31557849af2c630ee2d63468511c9989f267f14f5dd9c3f9588daedb1d156",
+    "330-27-contour-no-flavor.png": "872456d8c2092badf038bec881703bea6400e02d0e006e54d6783eead220dcd3",
+    "330-27-contour-crowded.png": "29eaefe90cc402086e401ed80015f5a0663a86d46aa8155c1a58da99507bc9fd",
+    "330-27-contour-p26-stat.png": "a54d5e271097cb8309b2b769b355e7175234bded4319ab14e4b26990055403db",
+    "330-27-contour-p26-mixed.png": "e6720316305fb18200c6883c205881b20ceb4a84538efc8f3cb37deeff749b5f",
+    "330-27-contour-p26-comparison.png": "7992cc9f715a45752554e2f08c5218dc06932dd0ac9859bf048a4a433e9122fd",
+    "measurements.json": "1d59f1aa868c9596815676a279933d247288c41ee45bb2f31a33dd8aa5bda2a5"
+  }
+}

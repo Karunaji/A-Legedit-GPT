@@ -242,7 +242,7 @@ function drawCenteredAssetBounds(ctx, key, cx, cy, opts = {}) {
   return true;
 }
 
-function drawOverlayStatNumbers(ctx) {
+function drawOverlayStatNumbers(ctx, { costOnly = false } = {}) {
   ctx.save();
   ctx.textAlign='center';
   ctx.textBaseline='middle';
@@ -302,13 +302,13 @@ function drawOverlayStatNumbers(ctx) {
     ctx.textAlign = 'center';
   }
 
-  if (st.showRecruit) {
+  if (!costOnly && st.showRecruit) {
     const recEl = document.getElementById('f-rec');
     const rec = recEl ? (+recEl.value || 0) : 0;
     drawStatGroup('recruit', recruitPos.cx, recruitPos.cy, rec, st.showRPlus);
   }
 
-  if (st.showAttack) {
+  if (!costOnly && st.showAttack) {
     const atkEl = document.getElementById('f-atk');
     const atk = atkEl ? (+atkEl.value || 0) : 0;
     drawStatGroup('attack', attackPos.cx, attackPos.cy, atk, st.showAPlus);
@@ -1985,9 +1985,12 @@ function getInlineIconMetrics(iconKey, textSize) {
   };
 }
 
-function getInlineIconPlacement(iconKey, textSize) {
+function getInlineIconPlacement(iconKey, textSize, reference = null) {
   const { img, cacheKey } = resolveInlineIconAsset(iconKey);
   const metrics = getInlineIconMetrics(iconKey, textSize);
+  // Ability icons share the regular font's capital-height center at every size.
+  // Other inline consumers retain their existing alignment.
+  if (reference) metrics.offsetY = (reference.top + reference.bottom - metrics.size) / 2;
   if (!img) {
     return { width: metrics.size, height: metrics.size, gap: metrics.gap, offsetY: metrics.offsetY };
   }
@@ -2214,9 +2217,118 @@ function getLayoutUnits(runs) {
   return units;
 }
 
+// A contour is measured from the same badge asset and number painter used by
+// the card. Rebuild per render so asset/font loads and cost edits cannot stale it.
+function getHeroCostContour() {
+  const canvas = document.createElement('canvas');
+  canvas.width = CW; canvas.height = CH;
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  const cp = P.cost, cfg = STAT_NUMBERS.cost || {};
+  drawCenteredAssetBounds(ctx, 'cost_rare', (cp.x0 + cp.x1) / 2 + (cfg.offsetX || 0),
+    (cp.y0 + cp.y1) / 2 + (cfg.offsetY || 0));
+  drawOverlayStatNumbers(ctx, { costOnly: true });
+  const pixels = ctx.getImageData(0, 0, CW, CH).data;
+  const rows = new Float64Array(CH); rows.fill(Infinity);
+  for (let y = 0; y < CH; y++) {
+    for (let x = 0; x < CW; x++) {
+      if (pixels[(y * CW + x) * 4 + 3] > 64) { rows[y] = x; break; }
+    }
+  }
+  return { rows, clearance: 3 };
+}
+
+function contourRightForBand(contour, top, bottom) {
+  const { rows, clearance } = contour;
+  let right = Infinity;
+  // Include every pixel row touched by the expanded fractional painted band.
+  for (let y = Math.max(0, Math.floor(top - clearance)); y < Math.min(rows.length, Math.ceil(bottom + clearance)); y++) {
+    right = Math.min(right, rows[y] - clearance);
+  }
+  return right;
+}
+
 function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
+  if (!options.rightContour) return layoutRunsWithIconSpacing(ctx, runs, x, y, maxW, sz, avoidZones, options);
+  const rights = [];
+  for (let pass = 1; pass <= 128; pass++) {
+    const result = layoutRunsWithIconSpacing(ctx, runs, x, y, maxW, sz, avoidZones,
+      { ...options, lineRightLimits: rights });
+    let changed = false;
+    for (const line of result.lines) {
+      if (!line.paintedBounds) continue;
+      const bandRight = contourRightForBand(options.rightContour, line.paintedBounds.top, line.paintedBounds.bottom);
+      // Glyph ink can overhang its advance width. If that ink enters the badge
+      // margin, reserve the overhang and let the same wrapping engine reflow.
+      // Unbreakable overflow remains reported; it must not cause endless tightening.
+      const advanceRight = Math.max(...line.items.map(item => item.x + item.width));
+      const overhang = line.paintedRight > bandRight + 0.001
+        ? Math.max(0, line.paintedRight - advanceRight) : 0;
+      const right = bandRight - overhang;
+      if (right < (rights[line.index] ?? Infinity) - 0.001) {
+        rights[line.index] = right;
+        changed = true;
+      }
+    }
+    // Retain conservative limits when membership changes, as in calibration.
+    // Both wrapping and icon clearance are resolved again before accepting it.
+    if (!changed && result.spacingResolved !== false) {
+      result.contourResolved = true;
+      result.contourPasses = pass;
+      return result;
+    }
+  }
+  throw new Error('Hero ability contour layout did not converge');
+}
+
+// Resolve spacing inside layout, rerunning wrapping/boundary sampling at the
+// resolved origins. Never translate an already-wrapped drawing after the fact.
+function layoutRunsWithIconSpacing(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
+  if (!options.abilityBlocks || !runs.some(run => run.icon)) {
+    return layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones, options);
+  }
+  const savedFont = ctx.font;
+  ctx.font = sz + "px 'eurostile_ltstd_regular',sans-serif";
+  const cap = ctx.measureText('H');
+  ctx.font = savedFont;
+  const reference = { top: -cap.actualBoundingBoxAscent, bottom: cap.actualBoundingBoxDescent };
+  const clearance = Math.max(1, sz * 0.08);
+  const origins = [];
+  let result;
+  // Origins only move forward. Once a boundary changes line membership, the
+  // next pass rechecks actual contents; retained clearance prevents oscillation
+  // at a narrow/wide boundary. The limit is a defensive diagnostic, not clipping.
+  for (let pass = 1; pass <= 128; pass++) {
+    result = layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones,
+      { ...options, iconReference: reference, lineOrigins: origins });
+    result.iconReference = reference;
+    result.minimumIconClearance = clearance;
+    result.layoutPasses = pass;
+    let previous = null, extra = 0, changed = false;
+    for (const line of result.lines) {
+      const paint = line.paintedBounds;
+      if (paint && previous && (line.hasIcon || previous.hasIcon)) {
+        extra = Math.max(extra, previous.bottom + clearance - paint.top);
+      }
+      if (extra > 0.001) {
+        origins[line.index] = line.y + extra;
+        changed = true;
+      }
+      if (paint) previous = { bottom: paint.bottom + extra, hasIcon: line.hasIcon };
+    }
+    if (!changed) {
+      result.spacingResolved = true;
+      return result;
+    }
+  }
+  result.spacingResolved = false;
+  return result;
+}
+
+function layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   let cx=x, cy=y;
-  const lh = Math.round(getRunLineHeight(sz) * (options.lineHeightScale ?? 0.86));
+  const lh = Math.round(typeof options.lineAdvanceRatio === 'number'
+    ? sz * options.lineAdvanceRatio
+    : getRunLineHeight(sz) * (options.lineHeightScale ?? 0.86));
   const blankExtra = Math.round(lh * (options.blankLineScale ?? 0.32));
   let drewText = false;
   let prevWasBr = false;
@@ -2251,7 +2363,8 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
         if (typeof z.x === 'number') right = Math.min(right, z.x);
       }
     }
-    if (right - left < 40) right = left + 40;
+    right = Math.min(right, options.lineRightLimits?.[lineIndex] ?? Infinity);
+    if (right - left < 40 && !options.rightContour) right = left + 40;
     return { left, right, width: right - left };
   }
   const items = [];
@@ -2260,16 +2373,22 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
   let paintedBounds = null;
   let horizontalOverflow = 0;
   function line() {
-    if (!lines[lineIndex]) lines[lineIndex] = { index: lineIndex, y: cy, ...curBounds(), items: [] };
+    if (!lines[lineIndex]) lines[lineIndex] = { index: lineIndex, y: cy, ...curBounds(), items: [], paintedBounds: null, hasIcon: false };
     return lines[lineIndex];
   }
   function nextLine(advance) {
     cy += advance;
     lineIndex += 1;
+    cy = Math.max(cy, options.lineOrigins?.[lineIndex] ?? cy);
     cx = curBounds().left;
     line();
   }
   function includeBounds(left, top, right, bottom) {
+    const current = line();
+    if (options.rightContour) current.paintedRight = Math.max(current.paintedRight ?? -Infinity, right);
+    current.paintedBounds = current.paintedBounds
+      ? { top: Math.min(current.paintedBounds.top, top), bottom: Math.max(current.paintedBounds.bottom, bottom) }
+      : { top, bottom };
     const bounds = curBounds();
     horizontalOverflow = Math.max(horizontalOverflow, bounds.left - left, right - bounds.right);
     paintedBounds = paintedBounds
@@ -2297,7 +2416,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
       let advance = 0, width = 0;
       for (const part of getLayoutUnits(block.runs)) {
         if (part.icon) {
-          const icon = getInlineIconPlacement(part.icon, sz);
+          const icon = getInlineIconPlacement(part.icon, sz, options.iconReference);
           width = Math.max(width, advance + icon.width);
           advance += icon.width + icon.gap;
         } else if (part.space) {
@@ -2325,9 +2444,10 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
       continue;
     }
     if (unit.icon) {
-      const icon = getInlineIconPlacement(unit.icon, sz);
+      const icon = getInlineIconPlacement(unit.icon, sz, options.iconReference);
       const bounds = curBounds();
       if (!protect && cx + icon.width > bounds.right && cx > bounds.left) nextLine(lh);
+      line().hasIcon = true;
       const item = { type: 'icon', key: unit.icon, x: cx, y: cy + icon.offsetY, ...icon };
       items.push(item);
       line().items.push(item);
@@ -2402,6 +2522,7 @@ function drawAdaptiveTextBlock(ctx, cfg) {
     flavorColor = '#333',
     avoidZones = [],
     options = {},
+    abilityLayout = null,
     preferredFlavorGap = 42,
     minFlavorGap = 8,
     maxBottom = CH - 28,
@@ -2421,12 +2542,14 @@ function drawAdaptiveTextBlock(ctx, cfg) {
   let flavorGap = hasFlavor ? preferredFlavorGap : 0;
 
   function measure() {
-    const abilityLayout = layoutRuns(ctx, abRuns, x, y, w, abilitySize, avoidZones, { ...options, abilityBlocks, maxBottom, requestedFontSize: abSz });
-    if (!hasFlavor) return { abilityLayout, flavorLayout: null, flavorY: null, overflow: Math.max(0, abilityLayout.bottomY - maxBottom) };
-    const flavorY = abilityLayout.bottomY + flavorGap;
+    const rules = layoutRuns(ctx, abRuns, x, y, abilityLayout?.width ?? w, abilitySize,
+      abilityLayout?.avoidZones ?? avoidZones,
+      { ...options, ...abilityLayout?.options, abilityBlocks, maxBottom, requestedFontSize: abSz });
+    if (!hasFlavor) return { abilityLayout: rules, flavorLayout: null, flavorY: null, overflow: Math.max(0, rules.bottomY - maxBottom) };
+    const flavorY = rules.bottomY + flavorGap;
     const flavorLayout = layoutRuns(ctx, flRuns, x, flavorY, w, flavorSize, avoidZones, { ...options, maxBottom, requestedFontSize: flSz });
     return {
-      abilityLayout,
+      abilityLayout: rules,
       flavorLayout,
       flavorY,
       overflow: Math.max(0, flavorLayout.bottomY - maxBottom)
@@ -2581,6 +2704,13 @@ function drawText(ctx) {
     abSz,
     flSz,
     avoidZones,
+    // The calibrated template is single-color rare Hero. Other templates and
+    // flavor retain their existing widths, boundaries and minimum advances.
+    abilityLayout: st.layout === 'single' && isRare ? {
+      width: 330,
+      avoidZones: [],
+      options: { lineAdvanceRatio: 27 / 22, rightContour: getHeroCostContour() }
+    } : null,
     preferredFlavorGap: 68,
     minFlavorGap: 6,
     maxBottom: useRareHeroTextLayout ? 668 : 666,

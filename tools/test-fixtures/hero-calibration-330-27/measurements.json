@@ -1,0 +1,1185 @@
+{
+  "productionHashes": {
+    "hero-template-config.js": "b7358812fef64450a09f29b424a02ba575c552beffbd2c3dcabfbc122f5491d4",
+    "assets.js": "c412f581d17934a919935c562b6b64e62ff9a4dec80173662d2336f6e47a3e6f",
+    "keywords.js": "123e35bbe23d749661af3c9c8102ab3ab7c3a23dee0995c38faf6315e1dac001",
+    "state.js": "2159e32121a60d69b80a4844ed76319abcf8f9ec30946383a36ab29c65a57717",
+    "render.js": "85a976610827b8ddfdbb27de8b153aee469e3dfabf9caf1a5a7bf5d092afe2f6",
+    "ui.js": "e082a95a8c218faeb6483cb8af055381e3a998fb66493edd87205c086ea3b3fd"
+  },
+  "results": [
+    {
+      "id": "330-27-contour-short",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "short",
+      "fontSize": 22,
+      "html": "Draw a card.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw a card.",
+          "badgeClearance": null
+        }
+      ],
+      "gaps": [],
+      "height": 27,
+      "paintedHeight": 17,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 112.83790588378906,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 1
+    },
+    {
+      "id": "330-27-contour-stat-short",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "stat-short",
+      "fontSize": 22,
+      "html": "You get +2 <img data-icon=\"recruit\" contenteditable=\"false\"> and +2 <img data-icon=\"attack\" contenteditable=\"false\">.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 515,
+          "bottom": 553,
+          "hasIcon": true,
+          "text": "You get+2[recruit] and+2[attack].",
+          "badgeClearance": null
+        }
+      ],
+      "gaps": [],
+      "height": 27,
+      "paintedHeight": 38,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 263.4658660888672,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 1
+    },
+    {
+      "id": "330-27-contour-lady-thor",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "lady-thor",
+      "fontSize": 22,
+      "html": "Once per turn, if you made at least 6 <img data-icon=\"recruit\" contenteditable=\"false\"> this turn, you get +6 <img data-icon=\"attack\" contenteditable=\"false\">.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 546.5,
+          "hasIcon": false,
+          "text": "Once per turn, if you made at least 6",
+          "badgeClearance": null
+        },
+        {
+          "y": 559.26,
+          "left": 108,
+          "right": 396,
+          "width": 288,
+          "top": 548.26,
+          "bottom": 586.26,
+          "hasIcon": true,
+          "text": "[recruit] this turn, you get+6[attack].",
+          "badgeClearance": 9.780166625976562
+        }
+      ],
+      "gaps": [
+        1.759999999999991
+      ],
+      "height": 60.25999999999999,
+      "paintedHeight": 60.75999999999999,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 609.6355438232422,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 2
+    },
+    {
+      "id": "330-27-contour-prose-three",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "prose-three",
+      "fontSize": 22,
+      "html": "Draw two cards. Then discard a card from your hand. You may put it on top of your deck.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw two cards. Then discard a card",
+          "badgeClearance": null
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 552.5,
+          "bottom": 573.5,
+          "hasIcon": false,
+          "text": " from your hand. You may put it on",
+          "badgeClearance": null
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 381,
+          "width": 273,
+          "top": 579.5,
+          "bottom": 600.5,
+          "hasIcon": false,
+          "text": " top of your deck.",
+          "badgeClearance": 125.19012451171875
+        }
+      ],
+      "gaps": [
+        10,
+        6
+      ],
+      "height": 81,
+      "paintedHeight": 75,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 773.3873291015625,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 2
+    },
+    {
+      "id": "330-27-contour-prose-four",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "prose-four",
+      "fontSize": 22,
+      "html": "Reveal the top three cards of your deck. Put one into your hand and discard the rest. Then you may defeat a Villain in the city.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 546.5,
+          "hasIcon": false,
+          "text": "Reveal the top three cards of your",
+          "badgeClearance": null
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 552.5,
+          "bottom": 573.5,
+          "hasIcon": false,
+          "text": " deck. Put one into your hand and",
+          "badgeClearance": null
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 381,
+          "width": 273,
+          "top": 579.5,
+          "bottom": 600.5,
+          "hasIcon": false,
+          "text": " discard the rest. Then you",
+          "badgeClearance": 41.74421691894531
+        },
+        {
+          "y": 607,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 606.5,
+          "bottom": 627.5,
+          "hasIcon": false,
+          "text": " may defeat a Villain in the",
+          "badgeClearance": 38.584228515625
+        },
+        {
+          "y": 634,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 633.5,
+          "bottom": 654.5,
+          "hasIcon": false,
+          "text": " city.",
+          "badgeClearance": 226.4200439453125
+        }
+      ],
+      "gaps": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "height": 135,
+      "paintedHeight": 129,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1091.6829681396484,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 3
+    },
+    {
+      "id": "330-27-contour-mixed",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "mixed",
+      "fontSize": 22,
+      "html": "<img data-icon=\"strength\" contenteditable=\"false\">: You get +2 <img data-icon=\"attack\" contenteditable=\"false\"><br>Draw two cards. Then discard a card. You may put it on top of your deck.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 515,
+          "bottom": 553,
+          "hasIcon": true,
+          "text": "[strength]: You get+2[attack]",
+          "badgeClearance": null
+        },
+        {
+          "y": 555.26,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 554.76,
+          "bottom": 571.76,
+          "hasIcon": false,
+          "text": "Draw two cards. Then discard a card.",
+          "badgeClearance": null
+        },
+        {
+          "y": 582.26,
+          "left": 108,
+          "right": 380,
+          "width": 272,
+          "top": 581.76,
+          "bottom": 602.76,
+          "hasIcon": false,
+          "text": " You may put it on top of your",
+          "badgeClearance": 18.986236572265625
+        },
+        {
+          "y": 609.26,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 608.76,
+          "bottom": 625.76,
+          "hasIcon": false,
+          "text": " deck.",
+          "badgeClearance": 216.67404174804688
+        }
+      ],
+      "gaps": [
+        1.759999999999991,
+        10,
+        6
+      ],
+      "height": 110.25999999999999,
+      "paintedHeight": 110.75999999999999,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 184.0799102783203,
+          "availableWidth": 330
+        },
+        {
+          "index": 1,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 636.0634307861328,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 3
+    },
+    {
+      "id": "330-27-contour-badge",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "badge",
+      "fontSize": 22,
+      "html": "Draw two cards. Then discard a card from your hand. Reveal the top three cards of your deck and put one into your hand. Discard the rest.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw two cards. Then discard a card",
+          "badgeClearance": null
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 552.5,
+          "bottom": 573.5,
+          "hasIcon": false,
+          "text": " from your hand. Reveal the top three",
+          "badgeClearance": null
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 381,
+          "width": 273,
+          "top": 579.5,
+          "bottom": 600.5,
+          "hasIcon": false,
+          "text": " cards of your deck and put",
+          "badgeClearance": 39.28021240234375
+        },
+        {
+          "y": 607,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 606.5,
+          "bottom": 627.5,
+          "hasIcon": false,
+          "text": " one into your hand. Discard",
+          "badgeClearance": 23.470230102539062
+        },
+        {
+          "y": 634,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 633.5,
+          "bottom": 650.5,
+          "hasIcon": false,
+          "text": " the rest.",
+          "badgeClearance": 186.11607360839844
+        }
+      ],
+      "gaps": [
+        10,
+        6,
+        6,
+        6
+      ],
+      "height": 135,
+      "paintedHeight": 125,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1212.1549072265625,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 3
+    },
+    {
+      "id": "330-27-contour-flavor",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "flavor",
+      "fontSize": 22,
+      "html": "Draw two cards. Then discard a card from your hand.",
+      "flavor": "Even a thunderstorm must eventually pass.",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw two cards. Then discard a card",
+          "badgeClearance": null
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 552.5,
+          "bottom": 573.5,
+          "hasIcon": false,
+          "text": " from your hand.",
+          "badgeClearance": null
+        }
+      ],
+      "gaps": [
+        10
+      ],
+      "height": 54,
+      "paintedHeight": 48,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 466.047607421875,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": 648,
+      "contourPasses": 1
+    },
+    {
+      "id": "330-27-contour-no-flavor",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "no-flavor",
+      "fontSize": 22,
+      "html": "Draw two cards. Then discard a card from your hand.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw two cards. Then discard a card",
+          "badgeClearance": null
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 552.5,
+          "bottom": 573.5,
+          "hasIcon": false,
+          "text": " from your hand.",
+          "badgeClearance": null
+        }
+      ],
+      "gaps": [
+        10
+      ],
+      "height": 54,
+      "paintedHeight": 48,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 466.047607421875,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 1
+    },
+    {
+      "id": "330-27-contour-crowded",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "crowded",
+      "fontSize": 22,
+      "html": "You get +2 <img data-icon=\"attack\" contenteditable=\"false\">. Reveal the top four cards of your deck. Put each <img data-icon=\"strength\" contenteditable=\"false\"> Hero into your hand. Discard the rest. Then you may defeat a Villain in the city that has 4 <img data-icon=\"attack\" contenteditable=\"false\"> or less.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 515,
+          "bottom": 553,
+          "hasIcon": true,
+          "text": "You get+2[attack]. Reveal the top four",
+          "badgeClearance": null
+        },
+        {
+          "y": 560.76,
+          "left": 108,
+          "right": 403,
+          "width": 295,
+          "top": 554.76,
+          "bottom": 582.76,
+          "hasIcon": true,
+          "text": " cards of your deck. Put each[strength]",
+          "badgeClearance": 9.4442138671875
+        },
+        {
+          "y": 587.76,
+          "left": 108,
+          "right": 377,
+          "width": 269,
+          "top": 587.26,
+          "bottom": 608.26,
+          "hasIcon": false,
+          "text": " Hero into your hand. Discard",
+          "badgeClearance": 16.074234008789062
+        },
+        {
+          "y": 614.76,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 614.26,
+          "bottom": 635.26,
+          "hasIcon": false,
+          "text": " the rest. Then you may",
+          "badgeClearance": 62.23417663574219
+        },
+        {
+          "y": 641.76,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 641.26,
+          "bottom": 662.26,
+          "hasIcon": false,
+          "text": " defeat a Villain in the city",
+          "badgeClearance": 43.86424255371094
+        },
+        {
+          "y": 675.02,
+          "left": 108,
+          "right": 381,
+          "width": 273,
+          "top": 664.02,
+          "bottom": 702.02,
+          "hasIcon": true,
+          "text": " that has 4[attack] or less.",
+          "badgeClearance": 58.98014831542969
+        }
+      ],
+      "gaps": [
+        1.759999999999991,
+        4.5,
+        6,
+        6,
+        1.759999999999991
+      ],
+      "height": 176.01999999999998,
+      "paintedHeight": 187.01999999999998,
+      "overflow": {
+        "vertical": 34.01999999999998,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1513.5487365722656,
+          "availableWidth": 330
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 3
+    },
+    {
+      "id": "330-27-contour-p26-stat",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "p26-stat",
+      "fontSize": 22,
+      "html": "Draw a card.<br>You get +2 <img data-icon=\"attack\" contenteditable=\"false\">.<br>You get +1 <img data-icon=\"recruit\" contenteditable=\"false\">.<br>Draw again.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw a card.",
+          "badgeClearance": null
+        },
+        {
+          "y": 555.26,
+          "left": 108,
+          "right": 403,
+          "width": 295,
+          "top": 544.26,
+          "bottom": 582.26,
+          "hasIcon": true,
+          "text": "You get+2[attack].",
+          "badgeClearance": 148.0360870361328
+        },
+        {
+          "y": 595.02,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 584.02,
+          "bottom": 622.02,
+          "hasIcon": true,
+          "text": "You get+1[recruit].",
+          "badgeClearance": 121.03608703613281
+        },
+        {
+          "y": 624.28,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 623.78,
+          "bottom": 644.78,
+          "hasIcon": false,
+          "text": "Draw again.",
+          "badgeClearance": 164.51210021972656
+        }
+      ],
+      "gaps": [
+        1.759999999999991,
+        1.759999999999991,
+        1.759999999999991
+      ],
+      "height": 125.27999999999997,
+      "paintedHeight": 119.27999999999997,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 112.83790588378906,
+          "availableWidth": 330
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 149.9639129638672,
+          "availableWidth": 295
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 146.9639129638672,
+          "availableWidth": 265
+        },
+        {
+          "index": 3,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 103.48789978027344,
+          "availableWidth": 265
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 2
+    },
+    {
+      "id": "330-27-contour-p26-mixed",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "p26-mixed",
+      "fontSize": 22,
+      "html": "Draw a card.<br><img data-icon=\"strength\" contenteditable=\"false\">: You get +2 <img data-icon=\"attack\" contenteditable=\"false\"><br><img data-icon=\"recruit\" contenteditable=\"false\"> +1<br>Draw again.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 542.5,
+          "hasIcon": false,
+          "text": "Draw a card.",
+          "badgeClearance": null
+        },
+        {
+          "y": 555.26,
+          "left": 108,
+          "right": 403,
+          "width": 295,
+          "top": 544.26,
+          "bottom": 582.26,
+          "hasIcon": true,
+          "text": "[strength]: You get+2[attack]",
+          "badgeClearance": 113.92008972167969
+        },
+        {
+          "y": 595.02,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 584.02,
+          "bottom": 622.02,
+          "hasIcon": true,
+          "text": "[recruit]+1",
+          "badgeClearance": 197.6840057373047
+        },
+        {
+          "y": 624.28,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 623.78,
+          "bottom": 644.78,
+          "hasIcon": false,
+          "text": "Draw again.",
+          "badgeClearance": 164.51210021972656
+        }
+      ],
+      "gaps": [
+        1.759999999999991,
+        1.759999999999991,
+        1.759999999999991
+      ],
+      "height": 125.27999999999997,
+      "paintedHeight": 119.27999999999997,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 112.83790588378906,
+          "availableWidth": 330
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 184.0799102783203,
+          "availableWidth": 295
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 70.31599426269531,
+          "availableWidth": 265
+        },
+        {
+          "index": 3,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 103.48789978027344,
+          "availableWidth": 265
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 2
+    },
+    {
+      "id": "330-27-contour-p26-comparison",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "p26-comparison",
+      "fontSize": 22,
+      "html": "Ability text goes here.<br><img data-icon=\"strength\" contenteditable=\"false\">: You may gain 4 <img data-icon=\"attack\" contenteditable=\"false\"> this turn if you made at least 5 <img data-icon=\"recruit\" contenteditable=\"false\">.<br>This is a test text block. This is a test text block.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.5,
+          "bottom": 546.5,
+          "hasIcon": false,
+          "text": "Ability text goes here.",
+          "badgeClearance": null
+        },
+        {
+          "y": 559.26,
+          "left": 108,
+          "right": 396,
+          "width": 288,
+          "top": 548.26,
+          "bottom": 586.26,
+          "hasIcon": true,
+          "text": "[strength]: You may gain 4[attack] this",
+          "badgeClearance": 29.68017578125
+        },
+        {
+          "y": 588.52,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 588.02,
+          "bottom": 609.02,
+          "hasIcon": false,
+          "text": " turn if you made at least 5",
+          "badgeClearance": 34.4442138671875
+        },
+        {
+          "y": 621.78,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 610.78,
+          "bottom": 648.78,
+          "hasIcon": true,
+          "text": "[recruit].",
+          "badgeClearance": 221.88400268554688
+        },
+        {
+          "y": 651.04,
+          "left": 108,
+          "right": 375,
+          "width": 267,
+          "top": 650.54,
+          "bottom": 667.54,
+          "hasIcon": false,
+          "text": "This is a test text block. This",
+          "badgeClearance": 19.046234130859375
+        },
+        {
+          "y": 678.04,
+          "left": 108,
+          "right": 394,
+          "width": 286,
+          "top": 677.54,
+          "bottom": 694.54,
+          "hasIcon": false,
+          "text": " is a test text block.",
+          "badgeClearance": 115.00216674804688
+        }
+      ],
+      "gaps": [
+        1.759999999999991,
+        1.759999999999991,
+        1.759999999999991,
+        1.759999999999991,
+        10
+      ],
+      "height": 179.03999999999996,
+      "paintedHeight": 169.03999999999996,
+      "overflow": {
+        "vertical": 37.039999999999964,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 190.71780395507812,
+          "availableWidth": 330
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 551.1076049804688,
+          "availableWidth": 288
+        },
+        {
+          "index": 2,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 424.95159912109375,
+          "availableWidth": 267
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 3
+    },
+    {
+      "id": "330-27-contour-p26-replay21",
+      "width": 330,
+      "advance": 27,
+      "model": "contour",
+      "name": "p26-replay21",
+      "fontSize": 21,
+      "html": "Ability text goes here.<br><img data-icon=\"strength\" contenteditable=\"false\">: You may gain 4 <img data-icon=\"attack\" contenteditable=\"false\"> this turn if you made at least 5 <img data-icon=\"recruit\" contenteditable=\"false\">.<br>This is a test text block. This is a test text block.",
+      "flavor": "",
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438,
+          "width": 330,
+          "top": 525.75,
+          "bottom": 545.75,
+          "hasIcon": false,
+          "text": "Ability text goes here.",
+          "badgeClearance": null
+        },
+        {
+          "y": 557.68,
+          "left": 108,
+          "right": 401,
+          "width": 293,
+          "top": 547.43,
+          "bottom": 583.43,
+          "hasIcon": true,
+          "text": "[strength]: You may gain 4[attack] this turn",
+          "badgeClearance": 6.193145751953125
+        },
+        {
+          "y": 595.3599999999999,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 585.1099999999999,
+          "bottom": 621.1099999999999,
+          "hasIcon": true,
+          "text": " if you made at least 5[recruit].",
+          "badgeClearance": 31.613128662109375
+        },
+        {
+          "y": 623.0399999999998,
+          "left": 108,
+          "right": 373,
+          "width": 265,
+          "top": 622.7899999999998,
+          "bottom": 638.7899999999998,
+          "hasIcon": false,
+          "text": "This is a test text block. This is",
+          "badgeClearance": 8.608200073242188
+        },
+        {
+          "y": 650.0399999999998,
+          "left": 108,
+          "right": 374,
+          "width": 266,
+          "top": 649.7899999999998,
+          "bottom": 665.7899999999998,
+          "hasIcon": false,
+          "text": " a test text block.",
+          "badgeClearance": 122.756103515625
+        }
+      ],
+      "gaps": [
+        1.67999999999995,
+        1.67999999999995,
+        1.67999999999995,
+        11
+      ],
+      "height": 151.03999999999985,
+      "paintedHeight": 140.03999999999985,
+      "overflow": {
+        "vertical": 9.03999999999985,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 182.04885864257812,
+          "availableWidth": 330
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 526.1937255859375,
+          "availableWidth": 293
+        },
+        {
+          "index": 2,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 405.6356964111328,
+          "availableWidth": 265
+        }
+      ],
+      "flavorY": null,
+      "contourPasses": 2
+    }
+  ]
+}
