@@ -1,11 +1,20 @@
 # A Legedit GPT Handoff
 
+## Latest change: rare single-color Hero flavor (uncommitted)
+
+- Recovery commit is `35a9302`; it contains the accepted rules layout and Phase 2.6 work. Do not rewrite it. The new flavor work remains uncommitted for manual review.
+- Only rare single-color Hero flavor changes. Final flavor prefers painted bottom 648, moves downward if needed for a six-unit painted gap from the selected rules, and uses the actual cost badge/number contour with full-band three-unit clearance. Nominal flavor width remains 360; its original font/line advance and clipping are retained.
+- Preserve the original fitting pass, including its flavor-driven rules shrinking and font-floor behavior. New placement runs afterward on the exact selected rules and flavor size; it does not feed back into fitting. The legacy fitting measurements are exposed separately from final overflow diagnostics.
+- Rules, no-flavor cards, common/uncommon, multicolor, split and other families must remain unchanged. Common/uncommon contour work remains deferred; do not approximate embedded badges.
+- Permanent focused tests: `tools/hero-flavor-production.cjs`, `tools/hero-flavor-browser-probes.js`, and `tools/test-fixtures/rare-hero-flavor/fixtures.json`. Before images load source directly from `35a9302`.
+- Current validation: `tools/HERO-FLAVOR-PRODUCTION-VALIDATION.md`. Persistent before/after review: `tools/review-artifacts/rare-hero-flavor-production/`. The previous vertical/horizontal diagnostic reviews are retained unchanged.
+
 ## Latest Ability Text decision: rare Hero calibration accepted
 
 This section supersedes older notes below where they conflict with the current Ability Text renderer.
 
-- Rare single-color Hero production is accepted as-is: origin 108/526, width 330, ordinary advance `round(effectiveFontSize * 27/22)`, actual cost-badge/number alpha contour with full painted-band clearance. All changes remain uncommitted; do not commit without a new user instruction.
-- Prior Phase 2.6 font-relative icon alignment and bounds-aware spacing remain intact. Inline Attack/Recruit scale stays 1.72. Preserve existing fitting, Phase 2 newline/protection behavior and flavor policy.
+- Rare single-color Hero rules production was accepted and committed in `35a9302`: origin 108/526, width 330, ordinary advance `round(effectiveFontSize * 27/22)`, actual cost-badge/number alpha contour with full painted-band clearance.
+- Prior Phase 2.6 font-relative icon alignment and bounds-aware spacing remain intact. Inline Attack/Recruit scale stays 1.72. Preserve existing fitting and Phase 2 newline/protection behavior; the new rare single-color flavor policy is described above.
 - The repeated-prose synthetic fixture's logical overflow increase from 3 to 14 is reviewed and accepted. It requires six lines at font 21 under the current constraints; the initial divergence comes from width 330 above the badge. The solver does not introduce an avoidable extra line. Final ink exceeds the rules region by only 3.75 units; the fixture already overflowed and flavor was already clipped. Do not special-case it.
 - Common/uncommon Heroes are explicitly deferred and unchanged. Do not approximate their embedded badges. Revisit only with a reliably aligned source mask/layer or other independently validated contour source. Split, multicolor and other families retain their previous behavior.
 - Permanent report: `tools/HERO-PRODUCTION-VALIDATION.md`. Accepted regression review: `tools/review-artifacts/rare-hero-overflow/Rare Hero Overflow Before and After.pdf` and the self-contained `review.html` alongside it. Preserve these files and their measurements/images.

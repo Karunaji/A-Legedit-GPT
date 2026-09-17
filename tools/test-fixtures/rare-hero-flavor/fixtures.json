@@ -1,0 +1,50 @@
+[
+  {
+    "id": "short",
+    "name": "Short rules / two-line flavor",
+    "html": "Draw a card.",
+    "flavor": "Every victory begins with a hero willing to take the first step."
+  },
+  {
+    "id": "medium",
+    "name": "Medium rules / two-line flavor",
+    "html": "Draw two cards. Then discard a card from your hand. You may rescue a Bystander.",
+    "flavor": "Every victory begins with a hero willing to take the first step."
+  },
+  {
+    "id": "long",
+    "name": "Long rules / two-line flavor",
+    "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander.",
+    "flavor": "Every victory begins with a hero willing to take the first step."
+  },
+  {
+    "id": "one-line",
+    "name": "One-line flavor extrapolation",
+    "html": "Draw two cards. Then discard a card from your hand.",
+    "flavor": "Heroes never give up."
+  },
+  {
+    "id": "three-line",
+    "name": "Three-line flavor reference pattern",
+    "html": "Draw a card. Then rescue a Bystander.",
+    "flavor": "What kind of Villain would dare to face Captain America, Iron Man, and Thor...all at the same time?"
+  },
+  {
+    "id": "crowded",
+    "name": "Crowded rules / two-line flavor",
+    "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander. Each player draws a card. You may defeat a Villain in the city.",
+    "flavor": "Every victory begins with a hero willing to take the first step."
+  },
+  {
+    "id": "thor-like",
+    "name": "God of Thunder reference-like",
+    "html": "You can spend any amount of your <img data-icon=\"recruit\"> as <img data-icon=\"attack\"> this turn.",
+    "flavor": "They call him the God of Thunder. His enemies better start praying."
+  },
+  {
+    "id": "no-flavor",
+    "name": "No-flavor rare control",
+    "html": "Draw two cards. Then discard a card from your hand. You may rescue a Bystander.",
+    "flavor": ""
+  }
+]

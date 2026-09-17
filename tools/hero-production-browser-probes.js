@@ -57,8 +57,9 @@ async function heroProductionChecks(fixtures, current) {
           };
           try{
             const reference=referenceAdaptiveTextBlock(ctx,lastCfg);
-            check(JSON.stringify(serialize(reference.flavorLayout))===JSON.stringify(serialize(measured.flavorLayout)),label+' original flavor/fitting output retained');
-            check(reference.flavorY===measured.flavorY,label+' original flavor origin formula retained');
+            check(JSON.stringify(serialize(reference.abilityLayout))===JSON.stringify(serialize(measured.abilityLayout)),label+' original rules fitting retained');
+            check(reference.flavorLayout.effectiveFontSize===measured.flavorLayout.effectiveFontSize,label+' original flavor size retained');
+            check(reference.flavorY===(measured.flavorFitting?.flavorY ?? measured.flavorY),label+' original fitting origin retained before final flavor placement');
           }finally{layoutRuns=originalLayout;}
         }
       }

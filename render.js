@@ -2509,6 +2509,49 @@ function runsHaveVisibleContent(runs) {
   return runs.some(run => (run.t && run.t.trim()) || run.icon);
 }
 
+// Final placement only: do not feed this layout back into rules/font selection.
+function layoutHeroFlavor(ctx, cfg, rules, size) {
+  const { targetBottom, minPaintedGap, rightContour } = cfg.finalFlavorLayout;
+  const layoutAt = y => layoutRuns(ctx, cfg.flRuns, cfg.x, y, cfg.w, size, [],
+    { ...cfg.options, maxBottom: cfg.maxBottom, requestedFontSize: cfg.flSz, rightContour });
+  let y = cfg.y;
+  let layout = layoutAt(y);
+  let best = { y, layout };
+  const seen = new Set();
+  let targetConverged = false;
+  let iterations = 0;
+  // Each trial already has a fully converged contour layout. A line-count jump
+  // can make an exact bottom unattainable; retain the closest measured trial
+  // instead of oscillating, changing font size, or altering the rules.
+  for (; iterations < 128; iterations++) {
+    const error = targetBottom - layout.paintedBounds.bottom;
+    if (Math.abs(error) < Math.abs(targetBottom - best.layout.paintedBounds.bottom)) best = { y, layout };
+    if (Math.abs(error) < 0.001) { targetConverged = true; best = { y, layout }; break; }
+    const key = y.toFixed(6);
+    if (seen.has(key)) break;
+    seen.add(key);
+    y += error;
+    layout = layoutAt(y);
+  }
+  ({ y, layout } = best);
+  const minimumTop = (rules.paintedBounds?.bottom ?? cfg.y) + minPaintedGap;
+  const gapFallback = layout.paintedBounds.top < minimumTop - 0.001;
+  let gapPasses = 0;
+  while (layout.paintedBounds.top < minimumTop - 0.001) {
+    if (++gapPasses > 128) throw new Error('Hero flavor gap layout did not converge');
+    y += minimumTop - layout.paintedBounds.top;
+    layout = layoutAt(y);
+  }
+  const clipEdge = typeof cfg.clipBottom === 'number'
+    ? cfg.y - 2 + Math.max(1, cfg.clipBottom - cfg.y) : null;
+  return { flavorY: y, flavorLayout: layout, flavorPlacement: {
+    targetBottom, minPaintedGap, targetConverged, targetIterations: iterations + 1,
+    gapFallback, gapPasses, targetReached: Math.abs(layout.paintedBounds.bottom - targetBottom) < 0.001,
+    clipEdge, paintedBottomBeyondClip: clipEdge === null ? 0 : Math.max(0, layout.paintedBounds.bottom - clipEdge),
+    fullyClipped: clipEdge !== null && layout.paintedBounds.top >= clipEdge
+  } };
+}
+
 function drawAdaptiveTextBlock(ctx, cfg) {
   const {
     abRuns,
@@ -2590,6 +2633,15 @@ function drawAdaptiveTextBlock(ctx, cfg) {
     }
   }
 
+  if (hasFlavor && cfg.finalFlavorLayout) {
+    // Preserve the existing fitter, including flavor-driven rules shrinking and
+    // the selected flavor floor. Only the final flavor positions change.
+    const flavorFitting = { flavorY: measured.flavorY, overflow: measured.overflow,
+      flavorSize: measured.flavorLayout.effectiveFontSize };
+    const placed = layoutHeroFlavor(ctx, cfg, measured.abilityLayout, flavorFitting.flavorSize);
+    measured = { ...measured, ...placed, flavorFitting,
+      overflow: placed.flavorLayout.overflow.vertical };
+  }
   drawRuns(ctx, measured.abilityLayout, abilityColor);
   if (hasFlavor) {
     if (typeof clipBottom === 'number') {
@@ -2695,6 +2747,7 @@ function drawText(ctx) {
   const abRuns = parseRTE(document.getElementById('f-ability'));
   const flSz = +document.getElementById('fl-sz').value || 11;
   const flRuns = parseRTE(document.getElementById('f-flavor'));
+  const rareHeroContour = st.layout === 'single' && isRare ? getHeroCostContour() : null;
   drawAdaptiveTextBlock(ctx, {
     abRuns,
     flRuns,
@@ -2704,12 +2757,14 @@ function drawText(ctx) {
     abSz,
     flSz,
     avoidZones,
-    // The calibrated template is single-color rare Hero. Other templates and
-    // flavor retain their existing widths, boundaries and minimum advances.
-    abilityLayout: st.layout === 'single' && isRare ? {
+    // Only single-color rare Heroes use either calibrated layout.
+    abilityLayout: rareHeroContour ? {
       width: 330,
       avoidZones: [],
-      options: { lineAdvanceRatio: 27 / 22, rightContour: getHeroCostContour() }
+      options: { lineAdvanceRatio: 27 / 22, rightContour: rareHeroContour }
+    } : null,
+    finalFlavorLayout: rareHeroContour ? {
+      targetBottom: 648, minPaintedGap: 6, rightContour: rareHeroContour
     } : null,
     preferredFlavorGap: 68,
     minFlavorGap: 6,

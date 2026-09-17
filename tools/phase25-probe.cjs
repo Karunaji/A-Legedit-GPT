@@ -47,7 +47,9 @@ async function run(version) {
 
 app.whenReady().then(async () => {
   try {
-    const before = await run('baseline'), after = await run('current');
+    // Assertion-only mode avoids comparing unrelated later milestones against
+    // the historical Phase 2 images. Dedicated current-baseline runners do that.
+    const before = process.argv.includes('--checks') ? { images: {} } : await run('baseline'), after = await run('current');
     const same = [], changed = [];
     for (const [name, image] of Object.entries(before.images)) {
       const other = after.images[name];

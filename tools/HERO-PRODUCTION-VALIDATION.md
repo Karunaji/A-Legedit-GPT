@@ -1,5 +1,7 @@
 # Hero production calibration: rare single-color accepted; common/uncommon deferred
 
+**Historical rules-milestone report.** That milestone is now committed as `35a9302`. The subsequent uncommitted rare single-color flavor implementation is documented in `HERO-FLAVOR-PRODUCTION-VALIDATION.md`; it supersedes this report's statements that final flavor placement is unchanged. Rules/font selection remains unchanged. The historical validation counts below describe the rules milestone.
+
 No commit was created. Phase 2.6 and all prior experiments are preserved.
 
 The user accepted the rare single-color Hero implementation as-is after reviewing the exact repeated-prose overflow comparison. This acceptance does not authorize a commit or extension to common/uncommon Heroes.
