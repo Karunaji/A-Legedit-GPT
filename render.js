@@ -1966,11 +1966,11 @@ function autoFormatAbilityEditor() {
   autoFormatAbilityEditorById('f-ability');
 }
 
-function getInlineIconMetrics(iconKey, textSize) {
+function getInlineIconMetrics(iconKey, textSize, ability = false) {
   const key = String(iconKey || '').toLowerCase();
   const isStat = key === 'recruit' || key === 'r' || key === 'attack' || key === 'a';
   const scale = isStat
-    ? (TEXTBOX_ICONS.statScale ?? 2.15)
+    ? ((ability ? TEXTBOX_ICONS.abilityStatScale : null) ?? TEXTBOX_ICONS.statScale ?? 2.15)
     : (TEXTBOX_ICONS.classScale ?? 1.45);
   const gap = isStat
     ? (TEXTBOX_ICONS.statGap ?? 4)
@@ -1987,7 +1987,7 @@ function getInlineIconMetrics(iconKey, textSize) {
 
 function getInlineIconPlacement(iconKey, textSize, reference = null) {
   const { img, cacheKey } = resolveInlineIconAsset(iconKey);
-  const metrics = getInlineIconMetrics(iconKey, textSize);
+  const metrics = getInlineIconMetrics(iconKey, textSize, !!reference);
   // Ability icons share the regular font's capital-height center at every size.
   // Other inline consumers retain their existing alignment.
   if (reference) metrics.offsetY = (reference.top + reference.bottom - metrics.size) / 2;

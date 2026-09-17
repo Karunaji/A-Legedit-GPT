@@ -51,8 +51,8 @@ async function phase26BrowserProbes(version, checksOnly = false) {
     if(current){
       if(runs.some(r=>r.icon))checkClearance(summary,size+' '+name);
       for(const item of layout.items.filter(i=>i.type==='icon')) {
-        const old=getInlineIconPlacement(item.key,size);
-        check(item.width===old.width&&item.height===old.height,size+' '+name+' icon dimensions unchanged');
+        const expected=getInlineIconPlacement(item.key,size,layout.iconReference);
+        check(item.width===expected.width&&item.height===expected.height,size+' '+name+' ability icon dimensions match placement');
         check(Math.abs(item.y+item.height/2-layout.lines.find(l=>l.items.includes(item)).y-(layout.iconReference.top+layout.iconReference.bottom)/2)<0.001,size+' '+name+' cap centered');
       }
       if(name==='textOnly') {

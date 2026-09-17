@@ -2,7 +2,7 @@
 const {app,BrowserWindow,session,nativeImage}=require('electron');
 const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
 const {execFileSync}=require('child_process');
-const root=path.resolve(__dirname,'..'),baseline='35a9302',out=path.join(__dirname,'review-artifacts/rare-hero-flavor-production');fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(__dirname,'..'),baseline='35a9302',out=process.env.LEGEDIT_REVIEW_OUTPUT||path.join(__dirname,'review-artifacts/rare-hero-flavor-production');fs.mkdirSync(out,{recursive:true});
 const fixtures=JSON.parse(fs.readFileSync(path.join(__dirname,'test-fixtures/rare-hero-flavor/fixtures.json')));
 const scripts=['hero-template-config.js','assets.js','keywords.js','state.js','render.js','ui.js'];
 app.setPath('userData',fs.mkdtempSync(path.join(os.tmpdir(),'hero-flavor-production-')));app.disableHardwareAcceleration();app.on('window-all-closed',()=>{});
@@ -15,7 +15,10 @@ async function run(current){
  const corpus=['phase1-browser-probes.js','phase2-browser-probes.js','phase25-browser-probes.js','phase26-browser-probes.js'].map(f=>{
   const t=fs.readFileSync(path.join(__dirname,f),'utf8');return /phase2[56]-browser/.test(f)?t:t.replace(/images\[([^\n]+?)\]\s*=\s*canvas.toDataURL\(\);/g,'$&\n globalThis.phase25Record($1);');
  }).join('\n');
- const r=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+corpus+'\n'+probe+'\nconst full=await phase26BrowserProbes("current",false);const focused=await heroFlavorChecks('+JSON.stringify(fixtures)+','+current+');return {full,focused};})()',true);
+ // Historical geometry/flavor oracle uses its original icon basis; actual 1.60
+ // shared-path coverage lives in inline-stat-production.cjs.
+ const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;';
+ const r=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+iconBasis+'\n'+corpus+'\n'+probe+'\nconst full=await phase26BrowserProbes("current",false);const focused=await heroFlavorChecks('+JSON.stringify(fixtures)+','+current+');return {full,focused};})()',true);
  win.destroy();return r;
 }
 const equal=(a,b)=>nativeImage.createFromDataURL(a).toBitmap().equals(nativeImage.createFromDataURL(b).toBitmap());
@@ -43,7 +46,7 @@ app.whenReady().then(async()=>{try{
  }
  for(const [key,img]of Object.entries(before.focused.rulesImages)){assert(equal(img,after.focused.rulesImages[key]),'Rules pixels changed '+key);rulesSame.push(key);}
  const paired=Object.keys(before.focused.results).filter(k=>!k.startsWith('color__')).map(k=>({key:k,before:before.focused.results[k],after:after.focused.results[k]}));
- const summary={baseline,checks:after.focused.checks.length,corpusChecks:after.full.checks.length,same,changed,rulesSame,corpusSame,corpusChanged,
+ const summary={baseline,iconBasis:1.72,checks:after.focused.checks.length,corpusChecks:after.full.checks.length,same,changed,rulesSame,corpusSame,corpusChanged,
   newlyOverflowing:paired.filter(r=>r.before.flavor?.overflow.vertical===0&&r.after.flavor?.overflow.vertical>0).map(r=>r.key),
   newlyClipped:paired.filter(r=>r.before.clipped===0&&r.after.clipped>0).map(r=>r.key),
   recoveredClipping:paired.filter(r=>r.before.clipped>0&&r.after.clipped===0).map(r=>r.key)};

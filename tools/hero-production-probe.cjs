@@ -14,7 +14,10 @@ async function run(current){
  const probe=fs.readFileSync(path.join(__dirname,'hero-production-browser-probes.js'),'utf8');
  const oldRender=fs.readFileSync(path.join(baseline,'render.js'),'utf8');
  const reference=oldRender.slice(oldRender.indexOf('function drawAdaptiveTextBlock('),oldRender.indexOf('function drawText(')).replace('function drawAdaptiveTextBlock(','function referenceAdaptiveTextBlock(');
- const result=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+reference+'\n'+probe+'\nreturn await heroProductionChecks('+JSON.stringify(fixtures)+','+current+');})()',true);
+ // Historical geometry/flavor oracle uses its original icon basis; actual 1.60
+ // shared-path coverage lives in inline-stat-production.cjs.
+ const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;';
+ const result=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+iconBasis+'\n'+reference+'\n'+probe+'\nreturn await heroProductionChecks('+JSON.stringify(fixtures)+','+current+');})()',true);
  win.destroy();assert.deepEqual(errors,[]);return result;
 }
 app.whenReady().then(async()=>{try{
@@ -39,5 +42,5 @@ app.whenReady().then(async()=>{try{
  }
  fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({checks:after.checks,same,changed,diagnosticSame,diagnosticChanged,adaptiveDifferences,overflowChanges,before:before.results,after:after.results,direct:after.direct},null,2));
  fs.writeFileSync(path.join(output,'review.html'),'<!doctype html><meta charset="utf-8"><style>body{font:16px system-ui}section{display:flex;gap:15px}img{max-width:48%;object-fit:contain}</style><h1>Phase 2.6 / rare Hero production</h1>'+Object.keys(after.images).filter(n=>n.startsWith('adaptive__')).map(n=>'<h2>'+n+'</h2><section><img src="'+n+'-before.png"><img src="'+n+'-after.png"></section>').join(''));
- console.log(JSON.stringify({output,checks:after.checks.length,directLayouts:after.direct.length,identical:same.length,changed:changed.length,diagnosticSame,diagnosticChanged,adaptiveDifferences:adaptiveDifferences.map(r=>({name:r.name,size:r.size})),newOverflow:overflowChanges.filter(r=>r.before.vertical===0&&r.after.vertical>0).map(r=>r.name)},null,2));app.exit(0);
+ console.log(JSON.stringify({output,iconBasis:1.72,checks:after.checks.length,directLayouts:after.direct.length,identical:same.length,changed:changed.length,diagnosticSame,diagnosticChanged,adaptiveDifferences:adaptiveDifferences.map(r=>({name:r.name,size:r.size})),newOverflow:overflowChanges.filter(r=>r.before.vertical===0&&r.after.vertical>0).map(r=>r.name)},null,2));app.exit(0);
 }catch(e){console.error(e.stack);console.error(output);app.exit(1);}});

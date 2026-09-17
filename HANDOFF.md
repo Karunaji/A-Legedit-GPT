@@ -1,8 +1,17 @@
 # A Legedit GPT Handoff
 
-## Latest change: rare single-color Hero flavor (uncommitted)
+## Latest change: ability Attack/Recruit scale 1.60 (uncommitted)
 
-- Recovery commit is `35a9302`; it contains the accepted rules layout and Phase 2.6 work. Do not rewrite it. The new flavor work remains uncommitted for manual review.
+- Accepted recovery checkpoint: `a8232b2`, rare Hero rules/flavor calibration. Do not rewrite it. Current icon work remains uncommitted.
+- `textboxIcons.abilityStatScale` is 1.60, used only for Attack/Recruit (including `/a` and `/r`) placements with the ability font reference. `statScale` stays 1.72 for ordinary minimum line-height calculations and non-ability consumers; class scale stays 1.28.
+- Preserve Phase 2.6 centering/clearance, Phase 2.5 fitting, all geometry, large stats/cost graphics and flavor behavior. Shared ability paths in other families inherit the smaller icons; no family geometry is recalibrated.
+- The accepted uppercase/lowercase fixture crosses the existing protected-fit threshold: font 19 / one line. Mixed prose changes one wrap; dense rules recover 2.72 units of overflow, while dense flavor stays clipped. Do not special-case these fixtures.
+- Permanent current-production verification: `tools/inline-stat-production.cjs`, `tools/inline-stat-browser-probes.js`, `tools/test-fixtures/inline-stat-icons/fixtures.json`. It compares actual production against the accepted baseline with an isolated 1.60 override, including legacy short-token aliases, and runs existing cross-family/Hero/flavor assertions at actual production scale.
+- Historical Hero geometry/flavor runners explicitly retain 1.72 for their exact milestone oracles; their results must not be presented as current-scale comparisons. See `tools/INLINE-STAT-ICON-PRODUCTION-VALIDATION.md` and persistent review under `tools/review-artifacts/inline-stat-icon-production/`.
+
+## Accepted milestone: rare single-color Hero flavor (a8232b2)
+
+- The flavor milestone was accepted and committed as `a8232b2`, following rules/Phase 2.6 recovery commit `35a9302`. Do not rewrite either commit.
 - Only rare single-color Hero flavor changes. Final flavor prefers painted bottom 648, moves downward if needed for a six-unit painted gap from the selected rules, and uses the actual cost badge/number contour with full-band three-unit clearance. Nominal flavor width remains 360; its original font/line advance and clipping are retained.
 - Preserve the original fitting pass, including its flavor-driven rules shrinking and font-floor behavior. New placement runs afterward on the exact selected rules and flavor size; it does not feed back into fitting. The legacy fitting measurements are exposed separately from final overflow diagnostics.
 - Rules, no-flavor cards, common/uncommon, multicolor, split and other families must remain unchanged. Common/uncommon contour work remains deferred; do not approximate embedded badges.

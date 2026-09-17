@@ -16,7 +16,10 @@ async function run(before){
  const errors=[];win.webContents.on('console-message',(_e,level,msg)=>{if(level===3&&!msg.includes('ERR_BLOCKED_BY_CLIENT'))errors.push(msg);});
  await win.loadFile(path.join(root,'index.html'));
  const code=scripts.map(f=>fs.readFileSync(path.join(before?baseline:root,f),'utf8')).join('\n;\n');
- const result=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+probe+'\nreturn await phase26BrowserProbes("current",false);})()',true);
+ // Historical geometry/flavor oracle uses its original icon basis; actual 1.60
+ // shared-path coverage lives in inline-stat-production.cjs.
+ const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;';
+ const result=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+iconBasis+'\n'+probe+'\nreturn await phase26BrowserProbes("current",false);})()',true);
  win.destroy();assert.deepEqual(errors,[]);return result;
 }
 app.whenReady().then(async()=>{try{
@@ -36,5 +39,5 @@ app.whenReady().then(async()=>{try{
  });
  fs.writeFileSync(path.join(output,'results.json'),JSON.stringify({baseline,checks:after.checks,same,changed,overflowChanges,beforeDiagnostics:before.diagnostics,diagnostics:after.diagnostics},null,2));
  fs.writeFileSync(path.join(output,'review.html'),'<!doctype html><meta charset="utf-8"><style>body{font:16px system-ui}section{display:flex;gap:20px}img{max-width:48%;object-fit:contain}</style><h1>Preserved Phase 2.6 / current production</h1>'+changed.map(n=>'<h2>'+n+'</h2><section><img src="'+n+'-before.png"><img src="'+n+'-after.png"></section>').join(''));
- console.log(JSON.stringify({output,checks:after.checks.length,identical:same.length,changed:changed.length,overflowChanges,newlyOverflowing:overflowChanges.filter(r=>r.newlyOverflowing).length},null,2));app.exit(0);
+ console.log(JSON.stringify({output,iconBasis:1.72,checks:after.checks.length,identical:same.length,changed:changed.length,overflowChanges,newlyOverflowing:overflowChanges.filter(r=>r.newlyOverflowing).length},null,2));app.exit(0);
 }catch(e){console.error(e.stack);console.error(output);app.exit(1);}});

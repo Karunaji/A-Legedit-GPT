@@ -1,0 +1,48 @@
+[
+  {
+    "id": "recruit",
+    "name": "Recruit / modern Captain America text",
+    "html": "You get +1 <img data-icon=\"recruit\" contenteditable=\"false\"> for each Hero Class you have."
+  },
+  {
+    "id": "attack",
+    "name": "Attack / modern Black Widow text",
+    "html": "If you have at least 4 Bystanders in your Victory Pile, you get +2 <img data-icon=\"attack\" contenteditable=\"false\">."
+  },
+  {
+    "id": "both",
+    "name": "Recruit and Attack in one flowing ability",
+    "html": "You get +2 <img data-icon=\"recruit\" contenteditable=\"false\"> and +2 <img data-icon=\"attack\" contenteditable=\"false\">. Draw a card."
+  },
+  {
+    "id": "thor",
+    "name": "God of Thunder / accepted Thor-like fixture",
+    "html": "You can spend any amount of your <img data-icon=\"recruit\" contenteditable=\"false\"> as <img data-icon=\"attack\" contenteditable=\"false\"> this turn."
+  },
+  {
+    "id": "protected",
+    "name": "Protected class clause / ending Attack icon",
+    "html": "<img data-icon=\"strength\" contenteditable=\"false\">: You get +2 <img data-icon=\"attack\" contenteditable=\"false\">."
+  },
+  {
+    "id": "consecutive",
+    "name": "Consecutive explicit stat-icon lines",
+    "html": "You get +2 <img data-icon=\"recruit\" contenteditable=\"false\">.<br>You get +2 <img data-icon=\"attack\" contenteditable=\"false\">."
+  },
+  {
+    "id": "centering",
+    "name": "Uppercase and lowercase beside both icons",
+    "html": "HERO power: You get +2 <img data-icon=\"attack\" contenteditable=\"false\"> and +1 <img data-icon=\"recruit\" contenteditable=\"false\">."
+  },
+  {
+    "id": "dense",
+    "name": "Dense prose / three inline stat icons",
+    "html": "Draw two cards. You get +2 <img data-icon=\"attack\" contenteditable=\"false\">. You may discard a card to get +1 <img data-icon=\"recruit\" contenteditable=\"false\">. Then reveal the top card of your deck. If it costs 2 or less, you get +1 <img data-icon=\"attack\" contenteditable=\"false\">."
+  },
+  {
+    "id": "smaller",
+    "name": "Reduced-size rules / font control 18",
+    "font": 18,
+    "html": "You get +2 <img data-icon=\"attack\" contenteditable=\"false\"> this turn.<br>You may spend +1 <img data-icon=\"recruit\" contenteditable=\"false\"> to draw a card."
+  }
+]
