@@ -242,3 +242,11 @@ Use this if resuming elsewhere:
 - If the app seems to use stale template PNGs, fully close and reopen it to clear in-memory asset cache.
 - If PowerShell blocks `npm`, use `npm.cmd`.
 - The thread history does not travel with the folder; this file is the portable handoff.
+
+## Rare multicolor Hero production transfer (uncommitted)
+
+Rare single-color and rare multicolor now share the accepted rules/flavor contour options via the explicit selector in render.js. Geometry, fonts/fitting, icon scale1.60, badge/stat/class placement and persistence are unchanged. Split remains separate. Common/uncommon multicolor and single-color embedded contours remain deferred.
+
+Production matches all six saved Candidate B images/measurement records. Sixteen excluded-route before/after comparisons remain identical. See tools/RARE-MULTICOLOR-PRODUCTION-VALIDATION.md and tools/review-artifacts/rare-multicolor-hero-production/ for reproduction, validation and persistent PDF/HTML review. The original engineering/reference studies remain intact.
+
+Official sign-off used Beast / Multi-Variate Smackulus, Black Panther / King of Wakanda, and King Black Panther / Unite the Tribes of Wakanda. The dense2022 card still overflows at requested22 and fits at16; no card-specific fitting exception was introduced. The current changes are intentionally unstaged/uncommitted for manual review.

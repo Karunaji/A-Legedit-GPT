@@ -2,11 +2,13 @@
 const {app,BrowserWindow,session,nativeImage}=require('electron');
 const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
 const {execFileSync}=require('child_process');
-const root=path.resolve(__dirname,'..'),out=path.join(__dirname,'review-artifacts/inline-stat-icon-production');fs.mkdirSync(out,{recursive:true});
+const root=path.resolve(__dirname,'..'),out=process.env.LEGEDIT_REVIEW_OUTPUT||path.join(__dirname,'review-artifacts/inline-stat-icon-production');fs.mkdirSync(out,{recursive:true});
 const scripts=['hero-template-config.js','assets.js','keywords.js','state.js','render.js','ui.js'];
 const fixtures=JSON.parse(fs.readFileSync(path.join(__dirname,'test-fixtures/inline-stat-icons/fixtures.json')));
 const flavorFixtures=JSON.parse(fs.readFileSync(path.join(__dirname,'test-fixtures/rare-hero-flavor/fixtures.json')));
 const heroFixtures=JSON.parse(fs.readFileSync(path.join(__dirname,'test-fixtures/hero-calibration-330-27/measurements.json'))).results.filter(r=>r.width===330&&r.advance===27&&r.model==='contour');
+const historicalRouting=require('./historical-rare-multicolor-basis.cjs');
+console.log('Icon milestone oracle retains legacy rare-multicolor routing; actual route covered by rare-multicolor-production.cjs.');
 const diagOverride=`const diagnosticPlacement=getInlineIconPlacement;getInlineIconPlacement=function(key,size,reference=null){const saved=TEXTBOX_ICONS.statScale;if(reference&&['attack','recruit','a','r'].includes(key))TEXTBOX_ICONS.statScale=1.60;try{return diagnosticPlacement(key,size,reference);}finally{TEXTBOX_ICONS.statScale=saved;}};`;
 app.setPath('userData',fs.mkdtempSync(path.join(os.tmpdir(),'inline-stat-production-')));app.disableHardwareAcceleration();app.on('window-all-closed',()=>{});
 const corpus=['phase1-browser-probes.js','phase2-browser-probes.js','phase25-browser-probes.js','phase26-browser-probes.js'].map(f=>{const t=fs.readFileSync(path.join(__dirname,f),'utf8');return /phase2[56]-browser/.test(f)?t:t.replace(/images\[([^\n]+?)\]\s*=\s*canvas.toDataURL\(\);/g,'$&\n globalThis.phase25Record($1);');}).join('\n');
@@ -17,7 +19,7 @@ async function run(mode){
  const s=session.fromPartition('stat-production-'+mode);s.webRequest.onBeforeRequest((d,cb)=>cb({cancel:/\.js(?:[?#]|$)/.test(d.url)||/^https?:/.test(d.url)}));
  const w=new BrowserWindow({show:false,webPreferences:{session:s,contextIsolation:true,nodeIntegration:false,backgroundThrottling:false}});await w.loadFile(path.join(root,'index.html'));
  const source=scripts.map(f=>mode==='after'?fs.readFileSync(path.join(root,f),'utf8'):execFileSync('git',['show','a8232b2:'+f],{cwd:root,encoding:'utf8'})).join('\n;\n');
- const result=await w.webContents.executeJavaScript('(async()=>{'+source+'\n'+(mode==='diagnostic'?diagOverride:'')+'\n'+corpus+'\n'+probes+'\n'+reference+`
+ const result=await w.webContents.executeJavaScript('(async()=>{'+source+'\n'+(mode==='diagnostic'?diagOverride:'')+'\n'+historicalRouting+'\n'+corpus+'\n'+probes+'\n'+reference+`
  const full=await phase26BrowserProbes('current',false);
  const focused=await inlineStatProductionFixtures(${JSON.stringify(fixtures)});
  let flavor=null,hero=null,scope=[];

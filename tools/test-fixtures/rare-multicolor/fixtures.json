@@ -1,0 +1,74 @@
+[
+  {
+    "id": "short",
+    "html": "Draw a card.",
+    "flavor": "",
+    "cost": 4,
+    "star": false,
+    "pair": [
+      "strength",
+      "tech"
+    ],
+    "stats": true
+  },
+  {
+    "id": "medium",
+    "html": "Draw two cards. Then discard a card from your hand. You may rescue a Bystander.",
+    "flavor": "",
+    "cost": 8,
+    "star": false,
+    "pair": [
+      "covert",
+      "range"
+    ],
+    "stats": false
+  },
+  {
+    "id": "crowded",
+    "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander. Each player draws a card. You may defeat a Villain in the city.",
+    "flavor": "Every victory begins with a hero willing to take the first step.",
+    "cost": 12,
+    "star": true,
+    "pair": [
+      "strength",
+      "tech"
+    ],
+    "stats": true
+  },
+  {
+    "id": "short-flavor",
+    "html": "Draw a card.",
+    "flavor": "Every victory begins with a hero willing to take the first step.",
+    "cost": 8,
+    "star": false,
+    "pair": [
+      "covert",
+      "range"
+    ],
+    "stats": true
+  },
+  {
+    "id": "long-flavor",
+    "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander.",
+    "flavor": "Every victory begins with a hero willing to take the first step.",
+    "cost": 12,
+    "star": false,
+    "pair": [
+      "strength",
+      "tech"
+    ],
+    "stats": false
+  },
+  {
+    "id": "icons",
+    "html": "<img data-icon=\"strength\">: You get +2 <img data-icon=\"attack\">.<br>You get +1 <img data-icon=\"recruit\">. Then draw a card.",
+    "flavor": "Heroes never give up.",
+    "cost": 8,
+    "star": true,
+    "pair": [
+      "strength",
+      "range"
+    ],
+    "stats": true
+  }
+]

@@ -1,0 +1,2125 @@
+{
+  "summary": {
+    "checkpoint": "8f3e0fa",
+    "candidatePixelMatches": 6,
+    "candidateMetricMatches": 6,
+    "beforeAfterCompared": 6,
+    "beforeAfterChanged": 5,
+    "excludedRoutePixelMatches": 16,
+    "excludedRouteMetricMatches": 16,
+    "excludedRoutes": [
+      "single/common/false",
+      "single/common/true",
+      "single/uncommon/false",
+      "single/uncommon/true",
+      "single/rare/false",
+      "single/rare/true",
+      "multicolor/common/false",
+      "multicolor/common/true",
+      "multicolor/uncommon/false",
+      "multicolor/uncommon/true",
+      "split/common/false",
+      "split/common/true",
+      "split/uncommon/false",
+      "split/uncommon/true",
+      "split/rare/false",
+      "split/rare/true"
+    ],
+    "leftStatChecks": 6,
+    "assertions": 64
+  },
+  "before": [
+    {
+      "fixture": {
+        "id": "short",
+        "html": "Draw a card.",
+        "flavor": "",
+        "cost": 4,
+        "star": false,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 31,
+        "logicalBottom": 557,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 220.83790588378906,
+          "bottom": 542.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 112.83790588378906,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": null,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 220.83790588378906,
+              "clearance": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw a card.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "gap": null,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "medium",
+        "html": "Draw two cards. Then discard a card from your hand. You may rescue a Bystander.",
+        "flavor": "",
+        "cost": 8,
+        "star": false,
+        "pair": [
+          "covert",
+          "range"
+        ],
+        "stats": false
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 31,
+        "logicalBottom": 619,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 430.6077117919922,
+          "bottom": 608.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 722.7873687744141,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": 174.21009826660156,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 430.6077117919922,
+              "clearance": null
+            },
+            {
+              "y": 557,
+              "top": 556.5,
+              "bottom": 577.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 410.38975524902344,
+              "clearance": null
+            },
+            {
+              "y": 588,
+              "top": 587.5,
+              "bottom": 608.5,
+              "obstacleLeft": 380,
+              "conservativePaintedRight": 205.78990173339844,
+              "clearance": 174.21009826660156
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw two cards. Then discard a card",
+            "icons": []
+          },
+          {
+            "y": 557,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 556.5,
+              "bottom": 577.5
+            },
+            "text": " from your hand. You may rescue a",
+            "icons": []
+          },
+          {
+            "y": 588,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 587.5,
+              "bottom": 608.5
+            },
+            "text": " Bystander.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "gap": null,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "crowded",
+        "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander. Each player draws a card. You may defeat a Villain in the city.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 12,
+        "star": true,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 29,
+        "logicalBottom": 700,
+        "painted": {
+          "left": 108,
+          "top": 525.75,
+          "right": 444.4617462158203,
+          "bottom": 690.75
+        },
+        "overflow": {
+          "vertical": 32,
+          "horizontal": 0,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1550.8068084716797,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": 11.573165893554688,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.75,
+              "bottom": 545.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 440.57672119140625,
+              "clearance": null
+            },
+            {
+              "y": 555,
+              "top": 554.75,
+              "bottom": 574.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 444.4617462158203,
+              "clearance": null
+            },
+            {
+              "y": 584,
+              "top": 583.75,
+              "bottom": 603.75,
+              "obstacleLeft": 383,
+              "conservativePaintedRight": 366.5137939453125,
+              "clearance": 16.4862060546875
+            },
+            {
+              "y": 613,
+              "top": 612.75,
+              "bottom": 632.75,
+              "obstacleLeft": 375,
+              "conservativePaintedRight": 318.8728485107422,
+              "clearance": 56.12715148925781
+            },
+            {
+              "y": 642,
+              "top": 641.75,
+              "bottom": 661.75,
+              "obstacleLeft": 373,
+              "conservativePaintedRight": 361.4268341064453,
+              "clearance": 11.573165893554688
+            },
+            {
+              "y": 671,
+              "top": 670.75,
+              "bottom": 690.75,
+              "obstacleLeft": 389,
+              "conservativePaintedRight": 269.46888732910156,
+              "clearance": 119.53111267089844
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 525.75,
+              "bottom": 545.75
+            },
+            "text": "Reveal the top three cards of your deck.",
+            "icons": []
+          },
+          {
+            "y": 555,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 554.75,
+              "bottom": 574.75
+            },
+            "text": " Put one of them into your hand. Discard",
+            "icons": []
+          },
+          {
+            "y": 584,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 583.75,
+              "bottom": 603.75
+            },
+            "text": " the rest. Then you may rescue",
+            "icons": []
+          },
+          {
+            "y": 613,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 612.75,
+              "bottom": 632.75
+            },
+            "text": " a Bystander. Each player",
+            "icons": []
+          },
+          {
+            "y": 642,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 641.75,
+              "bottom": 661.75
+            },
+            "text": " draws a card. You may defeat",
+            "icons": []
+          },
+          {
+            "y": 671,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 670.75,
+              "bottom": 690.75
+            },
+            "text": " a Villain in the city.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 11.64,
+        "lineH": 15,
+        "logicalBottom": 721,
+        "painted": {
+          "left": 107,
+          "top": 705.734375,
+          "right": 387.3438415527344,
+          "bottom": 717.734375
+        },
+        "overflow": {
+          "vertical": 53,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "clearance": {
+          "minimum": null,
+          "bands": [
+            {
+              "y": 706,
+              "top": 705.734375,
+              "bottom": 717.734375,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 387.3438415527344,
+              "clearance": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 706,
+            "left": 108,
+            "right": 468,
+            "width": 360,
+            "painted": {
+              "top": 705.734375,
+              "bottom": 717.734375
+            },
+            "text": "Every victory begins with a hero willing to take the first step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 706,
+      "gap": 14.984375,
+      "clipped": 51.734375,
+      "fullyClipped": true,
+      "overflow": 53,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "short-flavor",
+        "html": "Draw a card.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 8,
+        "star": false,
+        "pair": [
+          "covert",
+          "range"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 31,
+        "logicalBottom": 557,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 220.83790588378906,
+          "bottom": 542.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 112.83790588378906,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": null,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 220.83790588378906,
+              "clearance": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw a card.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 13.64,
+        "lineH": 18,
+        "logicalBottom": 661,
+        "painted": {
+          "left": 108,
+          "top": 624.234375,
+          "right": 358.59129333496094,
+          "bottom": 656.234375
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "clearance": {
+          "minimum": 17.408706665039062,
+          "bands": [
+            {
+              "y": 625,
+              "top": 624.234375,
+              "bottom": 638.234375,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 358.59129333496094,
+              "clearance": 17.408706665039062
+            },
+            {
+              "y": 643,
+              "top": 642.234375,
+              "bottom": 656.234375,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 187.74710083007812,
+              "clearance": 188.25289916992188
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 625,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 624.234375,
+              "bottom": 638.234375
+            },
+            "text": "Every victory begins with a hero willing to take",
+            "icons": []
+          },
+          {
+            "y": 643,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 642.234375,
+              "bottom": 656.234375
+            },
+            "text": " the first step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 625,
+      "gap": 81.734375,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "long-flavor",
+        "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 12,
+        "star": false,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": false
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 29,
+        "logicalBottom": 642,
+        "painted": {
+          "left": 108,
+          "top": 525.75,
+          "right": 444.4617462158203,
+          "bottom": 632.75
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1036.181167602539,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": 16.4862060546875,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.75,
+              "bottom": 545.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 440.57672119140625,
+              "clearance": null
+            },
+            {
+              "y": 555,
+              "top": 554.75,
+              "bottom": 574.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 444.4617462158203,
+              "clearance": null
+            },
+            {
+              "y": 584,
+              "top": 583.75,
+              "bottom": 603.75,
+              "obstacleLeft": 383,
+              "conservativePaintedRight": 366.5137939453125,
+              "clearance": 16.4862060546875
+            },
+            {
+              "y": 613,
+              "top": 612.75,
+              "bottom": 632.75,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 216.90591430664062,
+              "clearance": 159.09408569335938
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 525.75,
+              "bottom": 545.75
+            },
+            "text": "Reveal the top three cards of your deck.",
+            "icons": []
+          },
+          {
+            "y": 555,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 554.75,
+              "bottom": 574.75
+            },
+            "text": " Put one of them into your hand. Discard",
+            "icons": []
+          },
+          {
+            "y": 584,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 583.75,
+              "bottom": 603.75
+            },
+            "text": " the rest. Then you may rescue",
+            "icons": []
+          },
+          {
+            "y": 613,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 612.75,
+              "bottom": 632.75
+            },
+            "text": " a Bystander.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 11.64,
+        "lineH": 15,
+        "logicalBottom": 678,
+        "painted": {
+          "left": 107,
+          "top": 647.734375,
+          "right": 361.9782409667969,
+          "bottom": 674.734375
+        },
+        "overflow": {
+          "vertical": 10,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "clearance": {
+          "minimum": 15.021759033203125,
+          "bands": [
+            {
+              "y": 648,
+              "top": 647.734375,
+              "bottom": 659.734375,
+              "obstacleLeft": 377,
+              "conservativePaintedRight": 361.9782409667969,
+              "clearance": 15.021759033203125
+            },
+            {
+              "y": 663,
+              "top": 663.734375,
+              "bottom": 674.734375,
+              "obstacleLeft": 384,
+              "conservativePaintedRight": 135.48948669433594,
+              "clearance": 248.51051330566406
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 648,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 647.734375,
+              "bottom": 659.734375
+            },
+            "text": "Every victory begins with a hero willing to take the first",
+            "icons": []
+          },
+          {
+            "y": 663,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 663.734375,
+              "bottom": 674.734375
+            },
+            "text": " step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 648,
+      "gap": 14.984375,
+      "clipped": 8.734375,
+      "fullyClipped": false,
+      "overflow": 10,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "icons",
+        "html": "<img data-icon=\"strength\">: You get +2 <img data-icon=\"attack\">.<br>You get +1 <img data-icon=\"recruit\">. Then draw a card.",
+        "flavor": "Heroes never give up.",
+        "cost": 8,
+        "star": true,
+        "pair": [
+          "strength",
+          "range"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 31,
+        "logicalBottom": 593.76,
+        "painted": {
+          "left": 107,
+          "top": 516.5,
+          "right": 415.2917785644531,
+          "bottom": 588.26
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 189.19590759277344,
+            "availableWidth": 344
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 307.2917785644531,
+            "availableWidth": 344
+          }
+        ],
+        "clearance": {
+          "minimum": -19.291778564453125,
+          "bands": [
+            {
+              "y": 526,
+              "top": 516.5,
+              "bottom": 551.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 297.19590759277344,
+              "clearance": null
+            },
+            {
+              "y": 562.76,
+              "top": 553.26,
+              "bottom": 588.26,
+              "obstacleLeft": 396,
+              "conservativePaintedRight": 415.2917785644531,
+              "clearance": -19.291778564453125
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 516.5,
+              "bottom": 551.5
+            },
+            "text": "[strength]: You get+2[attack].",
+            "icons": [
+              {
+                "key": "strength",
+                "height": 28,
+                "top": 520,
+                "bottom": 548
+              },
+              {
+                "key": "attack",
+                "height": 35,
+                "top": 516.5,
+                "bottom": 551.5
+              }
+            ]
+          },
+          {
+            "y": 562.76,
+            "left": 108,
+            "right": 452,
+            "width": 344,
+            "painted": {
+              "top": 553.26,
+              "bottom": 588.26
+            },
+            "text": "You get+1[recruit]. Then draw a card.",
+            "icons": [
+              {
+                "key": "recruit",
+                "height": 35,
+                "top": 553.26,
+                "bottom": 588.26
+              }
+            ]
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 13.64,
+        "lineH": 18,
+        "logicalBottom": 666,
+        "painted": {
+          "left": 108,
+          "top": 647.234375,
+          "right": 226.1981964111328,
+          "bottom": 661.234375
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "clearance": {
+          "minimum": 150.8018035888672,
+          "bands": [
+            {
+              "y": 648,
+              "top": 647.234375,
+              "bottom": 661.234375,
+              "obstacleLeft": 377,
+              "conservativePaintedRight": 226.1981964111328,
+              "clearance": 150.8018035888672
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 648,
+            "left": 108,
+            "right": 374,
+            "width": 266,
+            "painted": {
+              "top": 647.234375,
+              "bottom": 661.234375
+            },
+            "text": "Heroes never give up.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 648,
+      "gap": 58.97437500000001,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    }
+  ],
+  "after": [
+    {
+      "fixture": {
+        "id": "short",
+        "html": "Draw a card.",
+        "flavor": "",
+        "cost": 4,
+        "star": false,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 27,
+        "logicalBottom": 553,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 220.83790588378906,
+          "bottom": 542.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 112.83790588378906,
+            "availableWidth": 330
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 1,
+        "clearance": {
+          "minimum": null,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 220.83790588378906,
+              "clearance": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw a card.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "gap": null,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "medium",
+        "html": "Draw two cards. Then discard a card from your hand. You may rescue a Bystander.",
+        "flavor": "",
+        "cost": 8,
+        "star": false,
+        "pair": [
+          "covert",
+          "range"
+        ],
+        "stats": false
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 27,
+        "logicalBottom": 607,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 430.6077117919922,
+          "bottom": 600.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 722.7873687744141,
+            "availableWidth": 330
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 2,
+        "clearance": {
+          "minimum": 178.21009826660156,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 430.6077117919922,
+              "clearance": null
+            },
+            {
+              "y": 553,
+              "top": 552.5,
+              "bottom": 573.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 410.38975524902344,
+              "clearance": null
+            },
+            {
+              "y": 580,
+              "top": 579.5,
+              "bottom": 600.5,
+              "obstacleLeft": 384,
+              "conservativePaintedRight": 205.78990173339844,
+              "clearance": 178.21009826660156
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw two cards. Then discard a card",
+            "icons": []
+          },
+          {
+            "y": 553,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 552.5,
+              "bottom": 573.5
+            },
+            "text": " from your hand. You may rescue a",
+            "icons": []
+          },
+          {
+            "y": 580,
+            "left": 108,
+            "right": 381,
+            "width": 273,
+            "painted": {
+              "top": 579.5,
+              "bottom": 600.5
+            },
+            "text": " Bystander.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "gap": null,
+      "clipped": 0,
+      "fullyClipped": false,
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "crowded",
+        "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander. Each player draws a card. You may defeat a Villain in the city.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 12,
+        "star": true,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 26,
+        "logicalBottom": 682,
+        "painted": {
+          "left": 108,
+          "top": 525.75,
+          "right": 423.8607635498047,
+          "bottom": 675.75
+        },
+        "overflow": {
+          "vertical": 14,
+          "horizontal": 0,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1550.8068084716797,
+            "availableWidth": 330
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 2,
+        "clearance": {
+          "minimum": 12.183197021484375,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.75,
+              "bottom": 545.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 392.8137664794922,
+              "clearance": null
+            },
+            {
+              "y": 552,
+              "top": 551.75,
+              "bottom": 571.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 423.8607635498047,
+              "clearance": null
+            },
+            {
+              "y": 578,
+              "top": 577.75,
+              "bottom": 597.75,
+              "obstacleLeft": 387,
+              "conservativePaintedRight": 374.8168029785156,
+              "clearance": 12.183197021484375
+            },
+            {
+              "y": 604,
+              "top": 603.75,
+              "bottom": 623.75,
+              "obstacleLeft": 375,
+              "conservativePaintedRight": 324.1148376464844,
+              "clearance": 50.885162353515625
+            },
+            {
+              "y": 630,
+              "top": 629.75,
+              "bottom": 649.75,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 359.31883239746094,
+              "clearance": 16.681167602539062
+            },
+            {
+              "y": 656,
+              "top": 655.75,
+              "bottom": 675.75,
+              "obstacleLeft": 373,
+              "conservativePaintedRight": 327.00885009765625,
+              "clearance": 45.99114990234375
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 525.75,
+              "bottom": 545.75
+            },
+            "text": "Reveal the top three cards of your",
+            "icons": []
+          },
+          {
+            "y": 552,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 551.75,
+              "bottom": 571.75
+            },
+            "text": " deck. Put one of them into your hand.",
+            "icons": []
+          },
+          {
+            "y": 578,
+            "left": 108,
+            "right": 383.7229919433594,
+            "width": 275.7229919433594,
+            "painted": {
+              "top": 577.75,
+              "bottom": 597.75
+            },
+            "text": " Discard the rest. Then you may",
+            "icons": []
+          },
+          {
+            "y": 604,
+            "left": 108,
+            "right": 371.7229919433594,
+            "width": 263.7229919433594,
+            "painted": {
+              "top": 603.75,
+              "bottom": 623.75
+            },
+            "text": " rescue a Bystander. Each",
+            "icons": []
+          },
+          {
+            "y": 630,
+            "left": 108,
+            "right": 372.7229919433594,
+            "width": 264.7229919433594,
+            "painted": {
+              "top": 629.75,
+              "bottom": 649.75
+            },
+            "text": " player draws a card. You may",
+            "icons": []
+          },
+          {
+            "y": 656,
+            "left": 108,
+            "right": 370,
+            "width": 262,
+            "painted": {
+              "top": 655.75,
+              "bottom": 675.75
+            },
+            "text": " defeat a Villain in the city.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 11.64,
+        "lineH": 15,
+        "logicalBottom": 697.015625,
+        "painted": {
+          "left": 107,
+          "top": 681.75,
+          "right": 387.3438415527344,
+          "bottom": 693.75
+        },
+        "overflow": {
+          "vertical": 29.015625,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "contourResolved": true,
+        "contourPasses": 2,
+        "clearance": {
+          "minimum": 14.656158447265625,
+          "bands": [
+            {
+              "y": 682.015625,
+              "top": 681.75,
+              "bottom": 693.75,
+              "obstacleLeft": 402,
+              "conservativePaintedRight": 387.3438415527344,
+              "clearance": 14.656158447265625
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 682.015625,
+            "left": 108,
+            "right": 399,
+            "width": 291,
+            "painted": {
+              "top": 681.75,
+              "bottom": 693.75
+            },
+            "text": "Every victory begins with a hero willing to take the first step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 682.015625,
+      "gap": 6,
+      "clipped": 27.75,
+      "fullyClipped": true,
+      "placement": {
+        "targetBottom": 648,
+        "minPaintedGap": 6,
+        "targetConverged": true,
+        "targetIterations": 3,
+        "gapFallback": true,
+        "gapPasses": 1,
+        "targetReached": false,
+        "clipEdge": 666,
+        "paintedBottomBeyondClip": 27.75,
+        "fullyClipped": true
+      },
+      "fitting": {
+        "flavorY": 688,
+        "overflow": 35,
+        "flavorSize": 11.64
+      },
+      "overflow": 29.015625,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "short-flavor",
+        "html": "Draw a card.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 8,
+        "star": false,
+        "pair": [
+          "covert",
+          "range"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 27,
+        "logicalBottom": 553,
+        "painted": {
+          "left": 108,
+          "top": 525.5,
+          "right": 220.83790588378906,
+          "bottom": 542.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 112.83790588378906,
+            "availableWidth": 330
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 1,
+        "clearance": {
+          "minimum": null,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.5,
+              "bottom": 542.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 220.83790588378906,
+              "clearance": null
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 525.5,
+              "bottom": 542.5
+            },
+            "text": "Draw a card.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 13.64,
+        "lineH": 18,
+        "logicalBottom": 652.765625,
+        "painted": {
+          "left": 108,
+          "top": 616,
+          "right": 358.59129333496094,
+          "bottom": 648
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "contourResolved": true,
+        "contourPasses": 3,
+        "clearance": {
+          "minimum": 17.408706665039062,
+          "bands": [
+            {
+              "y": 616.765625,
+              "top": 616,
+              "bottom": 630,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 358.59129333496094,
+              "clearance": 17.408706665039062
+            },
+            {
+              "y": 634.765625,
+              "top": 634,
+              "bottom": 648,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 187.74710083007812,
+              "clearance": 188.25289916992188
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 616.765625,
+            "left": 108,
+            "right": 371.7919158935547,
+            "width": 263.7919158935547,
+            "painted": {
+              "top": 616,
+              "bottom": 630
+            },
+            "text": "Every victory begins with a hero willing to take",
+            "icons": []
+          },
+          {
+            "y": 634.765625,
+            "left": 108,
+            "right": 373,
+            "width": 265,
+            "painted": {
+              "top": 634,
+              "bottom": 648
+            },
+            "text": " the first step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 616.765625,
+      "gap": 73.5,
+      "clipped": 0,
+      "fullyClipped": false,
+      "placement": {
+        "targetBottom": 648,
+        "minPaintedGap": 6,
+        "targetConverged": true,
+        "targetIterations": 3,
+        "gapFallback": false,
+        "gapPasses": 0,
+        "targetReached": true,
+        "clipEdge": 666,
+        "paintedBottomBeyondClip": 0,
+        "fullyClipped": false
+      },
+      "fitting": {
+        "flavorY": 621,
+        "overflow": 0,
+        "flavorSize": 13.64
+      },
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "long-flavor",
+        "html": "Reveal the top three cards of your deck. Put one of them into your hand. Discard the rest. Then you may rescue a Bystander.",
+        "flavor": "Every victory begins with a hero willing to take the first step.",
+        "cost": 12,
+        "star": false,
+        "pair": [
+          "strength",
+          "tech"
+        ],
+        "stats": false
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 26,
+        "logicalBottom": 630,
+        "painted": {
+          "left": 108,
+          "top": 525.75,
+          "right": 423.8607635498047,
+          "bottom": 623.75
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1036.181167602539,
+            "availableWidth": 330
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 2,
+        "clearance": {
+          "minimum": 12.183197021484375,
+          "bands": [
+            {
+              "y": 526,
+              "top": 525.75,
+              "bottom": 545.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 392.8137664794922,
+              "clearance": null
+            },
+            {
+              "y": 552,
+              "top": 551.75,
+              "bottom": 571.75,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 423.8607635498047,
+              "clearance": null
+            },
+            {
+              "y": 578,
+              "top": 577.75,
+              "bottom": 597.75,
+              "obstacleLeft": 387,
+              "conservativePaintedRight": 374.8168029785156,
+              "clearance": 12.183197021484375
+            },
+            {
+              "y": 604,
+              "top": 603.75,
+              "bottom": 623.75,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 278.7298583984375,
+              "clearance": 97.2701416015625
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 525.75,
+              "bottom": 545.75
+            },
+            "text": "Reveal the top three cards of your",
+            "icons": []
+          },
+          {
+            "y": 552,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 551.75,
+              "bottom": 571.75
+            },
+            "text": " deck. Put one of them into your hand.",
+            "icons": []
+          },
+          {
+            "y": 578,
+            "left": 108,
+            "right": 383.7229919433594,
+            "width": 275.7229919433594,
+            "painted": {
+              "top": 577.75,
+              "bottom": 597.75
+            },
+            "text": " Discard the rest. Then you may",
+            "icons": []
+          },
+          {
+            "y": 604,
+            "left": 108,
+            "right": 373,
+            "width": 265,
+            "painted": {
+              "top": 603.75,
+              "bottom": 623.75
+            },
+            "text": " rescue a Bystander.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 11.64,
+        "lineH": 15,
+        "logicalBottom": 660.015625,
+        "painted": {
+          "left": 107,
+          "top": 629.75,
+          "right": 361.9782409667969,
+          "bottom": 656.75
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "contourResolved": true,
+        "contourPasses": 3,
+        "clearance": {
+          "minimum": 14.021759033203125,
+          "bands": [
+            {
+              "y": 630.015625,
+              "top": 629.75,
+              "bottom": 641.75,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 361.9782409667969,
+              "clearance": 14.021759033203125
+            },
+            {
+              "y": 645.015625,
+              "top": 645.75,
+              "bottom": 656.75,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 135.48948669433594,
+              "clearance": 240.51051330566406
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 630.015625,
+            "left": 108,
+            "right": 372.2359161376953,
+            "width": 264.2359161376953,
+            "painted": {
+              "top": 629.75,
+              "bottom": 641.75
+            },
+            "text": "Every victory begins with a hero willing to take the first",
+            "icons": []
+          },
+          {
+            "y": 645.015625,
+            "left": 108,
+            "right": 373,
+            "width": 265,
+            "painted": {
+              "top": 645.75,
+              "bottom": 656.75
+            },
+            "text": " step.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 630.015625,
+      "gap": 6,
+      "clipped": 0,
+      "fullyClipped": false,
+      "placement": {
+        "targetBottom": 648,
+        "minPaintedGap": 6,
+        "targetConverged": true,
+        "targetIterations": 3,
+        "gapFallback": true,
+        "gapPasses": 1,
+        "targetReached": false,
+        "clipEdge": 666,
+        "paintedBottomBeyondClip": 0,
+        "fullyClipped": false
+      },
+      "fitting": {
+        "flavorY": 644,
+        "overflow": 6,
+        "flavorSize": 11.64
+      },
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    },
+    {
+      "fixture": {
+        "id": "icons",
+        "html": "<img data-icon=\"strength\">: You get +2 <img data-icon=\"attack\">.<br>You get +1 <img data-icon=\"recruit\">. Then draw a card.",
+        "flavor": "Heroes never give up.",
+        "cost": 8,
+        "star": true,
+        "pair": [
+          "strength",
+          "range"
+        ],
+        "stats": true
+      },
+      "mode": "B",
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 27,
+        "logicalBottom": 617.52,
+        "painted": {
+          "left": 107,
+          "top": 516.5,
+          "right": 364.3838195800781,
+          "bottom": 607.02
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 189.19590759277344,
+            "availableWidth": 330
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 307.2917785644531,
+            "availableWidth": 285
+          }
+        ],
+        "contourResolved": true,
+        "contourPasses": 3,
+        "clearance": {
+          "minimum": 31.616180419921875,
+          "bands": [
+            {
+              "y": 526,
+              "top": 516.5,
+              "bottom": 551.5,
+              "obstacleLeft": null,
+              "conservativePaintedRight": 297.19590759277344,
+              "clearance": null
+            },
+            {
+              "y": 562.76,
+              "top": 553.26,
+              "bottom": 588.26,
+              "obstacleLeft": 396,
+              "conservativePaintedRight": 364.3838195800781,
+              "clearance": 31.616180419921875
+            },
+            {
+              "y": 590.52,
+              "top": 590.02,
+              "bottom": 607.02,
+              "obstacleLeft": 380,
+              "conservativePaintedRight": 158.907958984375,
+              "clearance": 221.092041015625
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 526,
+            "left": 108,
+            "right": 438,
+            "width": 330,
+            "painted": {
+              "top": 516.5,
+              "bottom": 551.5
+            },
+            "text": "[strength]: You get+2[attack].",
+            "icons": [
+              {
+                "key": "strength",
+                "height": 28,
+                "top": 520,
+                "bottom": 548
+              },
+              {
+                "key": "attack",
+                "height": 35,
+                "top": 516.5,
+                "bottom": 551.5
+              }
+            ]
+          },
+          {
+            "y": 562.76,
+            "left": 108,
+            "right": 393,
+            "width": 285,
+            "painted": {
+              "top": 553.26,
+              "bottom": 588.26
+            },
+            "text": "You get+1[recruit]. Then draw a",
+            "icons": [
+              {
+                "key": "recruit",
+                "height": 35,
+                "top": 553.26,
+                "bottom": 588.26
+              }
+            ]
+          },
+          {
+            "y": 590.52,
+            "left": 108,
+            "right": 377,
+            "width": 269,
+            "painted": {
+              "top": 590.02,
+              "bottom": 607.02
+            },
+            "text": " card.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 18,
+        "effective": 13.64,
+        "lineH": 18,
+        "logicalBottom": 652.765625,
+        "painted": {
+          "left": 108,
+          "top": 634,
+          "right": 226.1981964111328,
+          "bottom": 648
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "contourResolved": true,
+        "contourPasses": 2,
+        "clearance": {
+          "minimum": 149.8018035888672,
+          "bands": [
+            {
+              "y": 634.765625,
+              "top": 634,
+              "bottom": 648,
+              "obstacleLeft": 376,
+              "conservativePaintedRight": 226.1981964111328,
+              "clearance": 149.8018035888672
+            }
+          ]
+        },
+        "lines": [
+          {
+            "y": 634.765625,
+            "left": 108,
+            "right": 373,
+            "width": 265,
+            "painted": {
+              "top": 634,
+              "bottom": 648
+            },
+            "text": "Heroes never give up.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 634.765625,
+      "gap": 26.980000000000018,
+      "clipped": 0,
+      "fullyClipped": false,
+      "placement": {
+        "targetBottom": 648,
+        "minPaintedGap": 6,
+        "targetConverged": true,
+        "targetIterations": 2,
+        "gapFallback": false,
+        "gapPasses": 0,
+        "targetReached": true,
+        "clipEdge": 666,
+        "paintedBottomBeyondClip": 0,
+        "fullyClipped": false
+      },
+      "fitting": {
+        "flavorY": 648,
+        "overflow": 0,
+        "flavorSize": 13.64
+      },
+      "overflow": 0,
+      "baseConfig": {
+        "x": 108,
+        "y": 526,
+        "w": 360,
+        "maxBottom": 668,
+        "clipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 16
+      }
+    }
+  ]
+}

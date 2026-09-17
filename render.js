@@ -2747,7 +2747,8 @@ function drawText(ctx) {
   const abRuns = parseRTE(document.getElementById('f-ability'));
   const flSz = +document.getElementById('fl-sz').value || 11;
   const flRuns = parseRTE(document.getElementById('f-flavor'));
-  const rareHeroContour = st.layout === 'single' && isRare ? getHeroCostContour() : null;
+  const useCalibratedRareText = isRare && (st.layout === 'single' || st.layout === 'multicolor');
+  const rareHeroContour = useCalibratedRareText ? getHeroCostContour() : null;
   drawAdaptiveTextBlock(ctx, {
     abRuns,
     flRuns,
@@ -2757,7 +2758,7 @@ function drawText(ctx) {
     abSz,
     flSz,
     avoidZones,
-    // Only single-color rare Heroes use either calibrated layout.
+    // Single-color and multicolor rare Heroes share the same cost composition.
     abilityLayout: rareHeroContour ? {
       width: 330,
       avoidZones: [],
