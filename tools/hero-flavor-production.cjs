@@ -1,3 +1,4 @@
+// Historical Scheme A geometry retained for this milestone oracle; current production is covered by scheme-a-production.cjs.
 // Permanent comparison to committed rules milestone. No temporary baseline dependency.
 const {app,BrowserWindow,session,nativeImage}=require('electron');
 const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict');
@@ -17,8 +18,8 @@ async function run(current){
  }).join('\n');
  // Historical geometry/flavor oracle uses its original icon basis; actual 1.60
  // shared-path coverage lives in inline-stat-production.cjs.
- const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;' + require('./historical-rare-multicolor-basis.cjs');
- console.log('Historical oracle: 1.72 icons and legacy rare-multicolor routing; actual route covered by rare-multicolor-production.cjs.');
+ const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;' + require('./historical-rare-multicolor-basis.cjs') + require('./historical-scheme-a-basis.cjs');
+ console.log('Historical oracle: 1.72 icons and legacy rare-multicolor routing; legacy Scheme A geometry; actual routes covered by rare-multicolor-production.cjs and scheme-a-production.cjs.');
  const r=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+iconBasis+'\n'+corpus+'\n'+probe+'\nconst full=await phase26BrowserProbes("current",false);const focused=await heroFlavorChecks('+JSON.stringify(fixtures)+','+current+');return {full,focused};})()',true);
  win.destroy();return r;
 }

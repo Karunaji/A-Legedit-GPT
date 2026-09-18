@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a-short",
+    "layout": "a",
+    "name": "Short Scheme control",
+    "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+    "size": 22,
+    "flavor": "",
+    "reference": null
+  },
+  {
+    "id": "cube",
+    "layout": "a",
+    "name": "Unleash the Power of the Cosmic Cube",
+    "html": "<b>Setup:</b> 8 Twists.<br><b>Twists 1-3:</b> Each player discards a card.<br><b>Twist 4:</b> Each player discards two cards.<br><b>Twists 5-6:</b> Each player gains a Wound.<br><b>Twist 7:</b> Each player gains two Wounds.<br><b>Twist 8:</b> Evil Wins!",
+    "size": 20,
+    "flavor": "",
+    "reference": "2eSchemeUnleashThePowerOfTheCosmicCube"
+  },
+  {
+    "id": "virus",
+    "layout": "a",
+    "name": "The Legacy Virus",
+    "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a \u201cVirus Mutation.\u201d Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+    "size": 20,
+    "flavor": "",
+    "reference": "2eSchemeTheLegacyVirus"
+  },
+  {
+    "id": "a-flavor",
+    "layout": "a",
+    "name": "Custom flavor and blank-line control",
+    "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> You get +1 <img data-icon=\"recruit\">. Then discard a card.",
+    "size": 20,
+    "flavor": "Even the smallest choice can change tomorrow.",
+    "reference": null
+  },
+  {
+    "id": "b-short",
+    "layout": "b",
+    "name": "Tall short control",
+    "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+    "size": 22,
+    "flavor": "",
+    "reference": null
+  },
+  {
+    "id": "killbots",
+    "layout": "b",
+    "name": "Replace Earth\u2019s Leaders with Killbots",
+    "html": "<b>Setup:</b> 10 Twists. Stack 1 additional Twist next to this Scheme as a \u201cKillgorithm.\u201d<br><b>Special Rules:</b> Bystanders in the Villain Deck are \u201cKillbot\u201d Villains with <img data-icon=\"attack\"> equal to the number of Killgorithms. They have: \u201c<b>Fight:</b> Rescue this as a Bystander.\u201d<br><b>Twists 1-9:</b> Add this Twist to the Killgorithms. Two Killbots enter the city from the Bystander Deck.<br><b>Twist 10:</b> All Killbots in the city escape.<br><b>Evil Wins:</b> When there are 6 Bystander cards in the Escape Pile.",
+    "size": 20,
+    "flavor": "",
+    "reference": "2eSchemeReplaceEarthsLeadersWithKillbots"
+  },
+  {
+    "id": "skrulls",
+    "layout": "b",
+    "name": "Secret Invasion of the Skrull Shapeshifters",
+    "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are \u201cSkrull Infiltrator\u201d Villains with <img data-icon=\"attack\"> equal to that Hero\u2019s cost +3. They have \u201c<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.\u201d<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+    "size": 20,
+    "flavor": "",
+    "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+  },
+  {
+    "id": "b-flavor",
+    "layout": "b",
+    "name": "Custom tall flavor control",
+    "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> Each player reveals a Hero. Then discard a card.<br>You get +2 <img data-icon=\"attack\"> and +1 <img data-icon=\"recruit\">.<br><b>Evil Wins:</b> After the eighth Twist.",
+    "size": 20,
+    "flavor": "The city waits for someone to answer the call.",
+    "reference": null
+  }
+]

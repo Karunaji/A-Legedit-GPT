@@ -1,3 +1,4 @@
+// Historical Scheme A geometry retained for this milestone oracle; current production is covered by scheme-a-production.cjs.
 // Compare current production against the preserved uncommitted Phase 2.6 state.
 const {app,BrowserWindow,session,nativeImage}=require('electron');
 const fs=require('fs'),path=require('path'),os=require('os'),assert=require('assert/strict'),crypto=require('crypto');
@@ -18,8 +19,8 @@ async function run(before){
  const code=scripts.map(f=>fs.readFileSync(path.join(before?baseline:root,f),'utf8')).join('\n;\n');
  // Historical geometry/flavor oracle uses its original icon basis; actual 1.60
  // shared-path coverage lives in inline-stat-production.cjs.
- const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;' + require('./historical-rare-multicolor-basis.cjs');
- console.log('Historical oracle: 1.72 icons and legacy rare-multicolor routing; actual route covered by rare-multicolor-production.cjs.');
+ const iconBasis='TEXTBOX_ICONS.abilityStatScale = 1.72;' + require('./historical-rare-multicolor-basis.cjs') + require('./historical-scheme-a-basis.cjs');
+ console.log('Historical oracle: 1.72 icons and legacy rare-multicolor routing; legacy Scheme A geometry; actual routes covered by rare-multicolor-production.cjs and scheme-a-production.cjs.');
  const result=await win.webContents.executeJavaScript('(async()=>{'+code+'\n'+iconBasis+'\n'+probe+'\nreturn await phase26BrowserProbes("current",false);})()',true);
  win.destroy();assert.deepEqual(errors,[]);return result;
 }

@@ -250,3 +250,11 @@ Rare single-color and rare multicolor now share the accepted rules/flavor contou
 Production matches all six saved Candidate B images/measurement records. Sixteen excluded-route before/after comparisons remain identical. See tools/RARE-MULTICOLOR-PRODUCTION-VALIDATION.md and tools/review-artifacts/rare-multicolor-hero-production/ for reproduction, validation and persistent PDF/HTML review. The original engineering/reference studies remain intact.
 
 Official sign-off used Beast / Multi-Variate Smackulus, Black Panther / King of Wakanda, and King Black Panther / Unite the Tribes of Wakanda. The dense2022 card still overflows at requested22 and fits at16; no card-specific fitting exception was introduced. The current changes are intentionally unstaged/uncommitted for manual review.
+
+## Scheme A production calibration (uncommitted)
+
+Scheme A now uses x22/y525/width460/bottom670 and lineAdvanceRatio1.1; the unchanged clip mechanism gives actual flavor bottom668. A/B still share the existing Scheme renderer and fitting engine. Scheme B remains x22/y370/width432/bottom650 (actual flavor clip648), with its existing 0.82 spacing. B is deliberately deferred pending a template-height decision; the diagnostic Y422 candidate is not approved.
+
+Flavor remains custom-editor flow-relative behavior (preferred logical gap 16, minimum 6), with existing font selection and clipping. There are no font-floor, icon, protected-block, explicit-break, persistence, contour or non-Scheme changes. Dense Legacy Virus at requested 22 intentionally retains 39 units of logical overflow; requested 14 fits. Do not special-case that fixture.
+
+See tools/SCHEME-A-PRODUCTION-VALIDATION.md, the permanent saved candidate fixtures under tools/test-fixtures/scheme-a/, and tools/review-artifacts/scheme-a-production/ for PDF/HTML review and measurements. All four saved A candidate images and measurements match actual production; Scheme B and non-Scheme comparison renders remain unchanged. Work is unstaged/uncommitted for review.

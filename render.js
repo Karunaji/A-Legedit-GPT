@@ -1272,8 +1272,8 @@ function renderSchemeToCanvas(cv, scale = 1) {
   });
 
   const layoutCfg = schemeLayout === 'b'
-    ? { x: 22, y: 370, w: 432, flavorGap: 16 }
-    : { x: 22, y: 525, w: 432, flavorGap: 16 };
+    ? { x: 22, y: 370, w: 432, bottom: 650, flavorGap: 16, options: {} }
+    : { x: 22, y: 525, w: 460, bottom: 670, flavorGap: 16, options: { lineAdvanceRatio: 1.1 } };
   ctx.textAlign = 'left';
   ctx.textBaseline = 'top';
   const abRuns = parseRTE(document.getElementById('f-ability'));
@@ -1288,16 +1288,17 @@ function renderSchemeToCanvas(cv, scale = 1) {
     flSz,
     options: {
       lineHeightScale: 0.82,
-      blankLineScale: 0.26
+      blankLineScale: 0.26,
+      ...layoutCfg.options
     },
     preferredFlavorGap: layoutCfg.flavorGap,
     minFlavorGap: 6,
-    maxBottom: schemeLayout === 'b' ? 650 : 646,
+    maxBottom: layoutCfg.bottom,
     minAbilitySize: Math.max(14, abSz - 1),
     abilityAbsoluteMinimum: 14,
     minFlavorSize: Math.max(9, abSz * 0.55),
     flavorSizeRatio: 0.62,
-    clipBottom: schemeLayout === 'b' ? 650 : 646
+    clipBottom: layoutCfg.bottom
   });
   ctx.restore();
 }

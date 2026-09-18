@@ -1,0 +1,4488 @@
+{
+  "results": [
+    {
+      "fixture": {
+        "id": "a-short",
+        "layout": "a",
+        "name": "Short Scheme control",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 22,
+        "flavor": "",
+        "reference": null
+      },
+      "mode": "current",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 615,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 30,
+        "bottomY": 615,
+        "painted": {
+          "left": 21,
+          "top": 524.5,
+          "right": 324.96173095703125,
+          "bottom": 605.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 139.2158966064453,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 302.96173095703125,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 282.0397491455078,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 524.5,
+              "bottom": 546.5
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 555,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 554.5,
+              "bottom": 575.5
+            },
+            "text": "Twist: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 585,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 584.5,
+              "bottom": 605.5
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "a-short",
+        "layout": "a",
+        "name": "Short Scheme control",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 22,
+        "flavor": "",
+        "reference": null
+      },
+      "mode": "candidate",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 597,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 24,
+        "bottomY": 597,
+        "painted": {
+          "left": 21,
+          "top": 524.5,
+          "right": 324.96173095703125,
+          "bottom": 593.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 139.2158966064453,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 302.96173095703125,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 282.0397491455078,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 524.5,
+              "bottom": 546.5
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 549,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 548.5,
+              "bottom": 569.5
+            },
+            "text": "Twist: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 573,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 572.5,
+              "bottom": 593.5
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "cube",
+        "layout": "a",
+        "name": "Unleash the Power of the Cosmic Cube",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twists 1-3:</b> Each player discards a card.<br><b>Twist 4:</b> Each player discards two cards.<br><b>Twists 5-6:</b> Each player gains a Wound.<br><b>Twist 7:</b> Each player gains two Wounds.<br><b>Twist 8:</b> Evil Wins!",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeUnleashThePowerOfTheCosmicCube"
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 681,
+        "overflow": {
+          "vertical": 35,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 19,
+        "lineH": 25,
+        "bottomY": 675,
+        "painted": {
+          "left": 21,
+          "top": 524.25,
+          "right": 325.0117950439453,
+          "bottom": 664.25
+        },
+        "overflow": {
+          "vertical": 29,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 120.23191833496094,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 299.83880615234375,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 303.0117950439453,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 294.63282775878906,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 297.8058166503906,
+            "availableWidth": 432
+          },
+          {
+            "index": 5,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 135.92588806152344,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 524.25,
+              "bottom": 543.25
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 550,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 549.25,
+              "bottom": 568.25
+            },
+            "text": "Twists 1-3: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 575,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 574.25,
+              "bottom": 593.25
+            },
+            "text": "Twist 4: Each player discards two cards.",
+            "icons": []
+          },
+          {
+            "y": 600,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 599.25,
+              "bottom": 618.25
+            },
+            "text": "Twists 5-6: Each player gains a Wound.",
+            "icons": []
+          },
+          {
+            "y": 625,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 624.25,
+              "bottom": 643.25
+            },
+            "text": "Twist 7: Each player gains two Wounds.",
+            "icons": []
+          },
+          {
+            "y": 650,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 649.25,
+              "bottom": 664.25
+            },
+            "text": "Twist 8: Evil Wins!",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "cube",
+        "layout": "a",
+        "name": "Unleash the Power of the Cosmic Cube",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twists 1-3:</b> Each player discards a card.<br><b>Twist 4:</b> Each player discards two cards.<br><b>Twists 5-6:</b> Each player gains a Wound.<br><b>Twist 7:</b> Each player gains two Wounds.<br><b>Twist 8:</b> Evil Wins!",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeUnleashThePowerOfTheCosmicCube"
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 657,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 20,
+        "lineH": 22,
+        "bottomY": 657,
+        "painted": {
+          "left": 21,
+          "top": 525,
+          "right": 340.9597625732422,
+          "bottom": 650
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 126.55992126464844,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 315.61976623535156,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 318.9597625732422,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 310.13978576660156,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 313.4797821044922,
+            "availableWidth": 460
+          },
+          {
+            "index": 5,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 143.07986450195312,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 525,
+              "bottom": 545
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 547,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 547,
+              "bottom": 567
+            },
+            "text": "Twists 1-3: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 569,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 569,
+              "bottom": 589
+            },
+            "text": "Twist 4: Each player discards two cards.",
+            "icons": []
+          },
+          {
+            "y": 591,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 591,
+              "bottom": 611
+            },
+            "text": "Twists 5-6: Each player gains a Wound.",
+            "icons": []
+          },
+          {
+            "y": 613,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 613,
+              "bottom": 633
+            },
+            "text": "Twist 7: Each player gains two Wounds.",
+            "icons": []
+          },
+          {
+            "y": 635,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 635,
+              "bottom": 650
+            },
+            "text": "Twist 8: Evil Wins!",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 733,
+        "overflow": {
+          "vertical": 87,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 17.5,
+        "lineH": 23,
+        "bottomY": 663,
+        "painted": {
+          "left": 21,
+          "top": 525.125,
+          "right": 448.6845397949219,
+          "bottom": 653.125
+        },
+        "overflow": {
+          "vertical": 17,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 396.98712158203125,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1215.2863006591797,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 426.6845397949219,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 525.125,
+              "bottom": 542.125
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per player.",
+            "icons": []
+          },
+          {
+            "y": 548,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 548.125,
+              "bottom": 561.125
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a “Virus",
+            "icons": []
+          },
+          {
+            "y": 571,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 571.125,
+              "bottom": 588.125
+            },
+            "text": " Mutation.” Then each player reveals a Hero whose cost is",
+            "icons": []
+          },
+          {
+            "y": 594,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 594.125,
+              "bottom": 611.125
+            },
+            "text": " greater than the number of Virus Mutations or gains a",
+            "icons": []
+          },
+          {
+            "y": 617,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 617.125,
+              "bottom": 630.125
+            },
+            "text": " Wound.",
+            "icons": []
+          },
+          {
+            "y": 640,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 640.125,
+              "bottom": 653.125
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 679,
+        "overflow": {
+          "vertical": 9,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 18.5,
+        "lineH": 20,
+        "bottomY": 645,
+        "painted": {
+          "left": 21,
+          "top": 524.875,
+          "right": 473.06651306152344,
+          "bottom": 638.875
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 419.6721496582031,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1284.7310638427734,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 451.06651306152344,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 524.875,
+              "bottom": 542.875
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per player.",
+            "icons": []
+          },
+          {
+            "y": 545,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 544.875,
+              "bottom": 558.875
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a “Virus",
+            "icons": []
+          },
+          {
+            "y": 565,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 564.875,
+              "bottom": 582.875
+            },
+            "text": " Mutation.” Then each player reveals a Hero whose cost is",
+            "icons": []
+          },
+          {
+            "y": 585,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 584.875,
+              "bottom": 602.875
+            },
+            "text": " greater than the number of Virus Mutations or gains a",
+            "icons": []
+          },
+          {
+            "y": 605,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 604.875,
+              "bottom": 618.875
+            },
+            "text": " Wound.",
+            "icons": []
+          },
+          {
+            "y": 625,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 624.875,
+              "bottom": 638.875
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "a-flavor",
+        "layout": "a",
+        "name": "Custom flavor and blank-line control",
+        "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> You get +1 <img data-icon=\"recruit\">. Then discard a card.",
+        "size": 20,
+        "flavor": "Even the smallest choice can change tomorrow.",
+        "reference": null
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 603,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 20,
+        "lineH": 26,
+        "bottomY": 603,
+        "painted": {
+          "left": 21,
+          "top": 525,
+          "right": 371.9597930908203,
+          "bottom": 600.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 126.55992126464844,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "empty",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 0,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 349.9597930908203,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 525,
+              "bottom": 545
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 551,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": null,
+            "text": "",
+            "icons": []
+          },
+          {
+            "y": 577,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 568.5,
+              "bottom": 600.5
+            },
+            "text": "Twist: You get+1[recruit]. Then discard a card.",
+            "icons": [
+              {
+                "key": "recruit",
+                "y": 568.5,
+                "height": 32
+              }
+            ]
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 11,
+        "effective": 11,
+        "lineH": 14,
+        "bottomY": 633,
+        "painted": {
+          "left": 21,
+          "top": 618.25,
+          "right": 230.13758850097656,
+          "bottom": 629.25
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "lines": [
+          {
+            "y": 619,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 618.25,
+              "bottom": 629.25
+            },
+            "text": "Even the smallest choice can change tomorrow.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 619,
+      "paintedGap": 17.75,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "a-flavor",
+        "layout": "a",
+        "name": "Custom flavor and blank-line control",
+        "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> You get +1 <img data-icon=\"recruit\">. Then discard a card.",
+        "size": 20,
+        "flavor": "Even the smallest choice can change tomorrow.",
+        "reference": null
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 591,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 20,
+        "lineH": 22,
+        "bottomY": 591,
+        "painted": {
+          "left": 21,
+          "top": 525,
+          "right": 371.9597930908203,
+          "bottom": 592.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 126.55992126464844,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "empty",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 0,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 349.9597930908203,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 525,
+              "bottom": 545
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 547,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": null,
+            "text": "",
+            "icons": []
+          },
+          {
+            "y": 569,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 560.5,
+              "bottom": 592.5
+            },
+            "text": "Twist: You get+1[recruit]. Then discard a card.",
+            "icons": [
+              {
+                "key": "recruit",
+                "y": 560.5,
+                "height": 32
+              }
+            ]
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 11,
+        "effective": 11,
+        "lineH": 12,
+        "bottomY": 619,
+        "painted": {
+          "left": 21,
+          "top": 606.25,
+          "right": 230.13758850097656,
+          "bottom": 617.25
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "lines": [
+          {
+            "y": 607,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 606.25,
+              "bottom": 617.25
+            },
+            "text": "Even the smallest choice can change tomorrow.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 607,
+      "paintedGap": 13.75,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "b-short",
+        "layout": "b",
+        "name": "Tall short control",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 22,
+        "flavor": "",
+        "reference": null
+      },
+      "mode": "current",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 460,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 30,
+        "bottomY": 460,
+        "painted": {
+          "left": 21,
+          "top": 369.5,
+          "right": 324.96173095703125,
+          "bottom": 450.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 139.2158966064453,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 302.96173095703125,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 282.0397491455078,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 369.5,
+              "bottom": 391.5
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 400,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 399.5,
+              "bottom": 420.5
+            },
+            "text": "Twist: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 430,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 429.5,
+              "bottom": 450.5
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "b-short",
+        "layout": "b",
+        "name": "Tall short control",
+        "html": "<b>Setup:</b> 8 Twists.<br><b>Twist:</b> Each player discards a card.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 22,
+        "flavor": "",
+        "reference": null
+      },
+      "mode": "candidate",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 494,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 22,
+        "lineH": 24,
+        "bottomY": 494,
+        "painted": {
+          "left": 21,
+          "top": 421.5,
+          "right": 324.96173095703125,
+          "bottom": 490.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 139.2158966064453,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 302.96173095703125,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 282.0397491455078,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 421.5,
+              "bottom": 443.5
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 446,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 445.5,
+              "bottom": 466.5
+            },
+            "text": "Twist: Each player discards a card.",
+            "icons": []
+          },
+          {
+            "y": 470,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 469.5,
+              "bottom": 490.5
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "killbots",
+        "layout": "b",
+        "name": "Replace Earth’s Leaders with Killbots",
+        "html": "<b>Setup:</b> 10 Twists. Stack 1 additional Twist next to this Scheme as a “Killgorithm.”<br><b>Special Rules:</b> Bystanders in the Villain Deck are “Killbot” Villains with <img data-icon=\"attack\"> equal to the number of Killgorithms. They have: “<b>Fight:</b> Rescue this as a Bystander.”<br><b>Twists 1-9:</b> Add this Twist to the Killgorithms. Two Killbots enter the city from the Bystander Deck.<br><b>Twist 10:</b> All Killbots in the city escape.<br><b>Evil Wins:</b> When there are 6 Bystander cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeReplaceEarthsLeadersWithKillbots"
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 660.1,
+        "overflow": {
+          "vertical": 10.100000000000023,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 19,
+        "lineH": 25,
+        "bottomY": 623.02,
+        "painted": {
+          "left": 21,
+          "top": 369.25,
+          "right": 445.8856964111328,
+          "bottom": 616.27
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 607.5435791015625,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1188.261215209961,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 738.6624755859375,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 292.8657684326172,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 483.2267303466797,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 369.25,
+              "bottom": 388.25
+            },
+            "text": "Setup: 10 Twists. Stack 1 additional Twist next to this",
+            "icons": []
+          },
+          {
+            "y": 395,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 394.25,
+              "bottom": 413.25
+            },
+            "text": " Scheme as a “Killgorithm.”",
+            "icons": []
+          },
+          {
+            "y": 420,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 419.25,
+              "bottom": 438.25
+            },
+            "text": "Special Rules: Bystanders in the Villain Deck are “Killbot”",
+            "icons": []
+          },
+          {
+            "y": 448.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 439.77,
+              "bottom": 469.77
+            },
+            "text": " Villains with[attack] equal to the number of Killgorithms.",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 439.77,
+                "height": 30
+              }
+            ]
+          },
+          {
+            "y": 473.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 472.27,
+              "bottom": 491.27
+            },
+            "text": " They have: “Fight: Rescue this as a Bystander.”",
+            "icons": []
+          },
+          {
+            "y": 498.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 497.27,
+              "bottom": 516.27
+            },
+            "text": "Twists 1-9: Add this Twist to the Killgorithms. Two",
+            "icons": []
+          },
+          {
+            "y": 523.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 522.27,
+              "bottom": 541.27
+            },
+            "text": " Killbots enter the city from the Bystander Deck.",
+            "icons": []
+          },
+          {
+            "y": 548.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 547.27,
+              "bottom": 566.27
+            },
+            "text": "Twist 10: All Killbots in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 573.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 572.27,
+              "bottom": 591.27
+            },
+            "text": "Evil Wins: When there are 6 Bystander cards in the",
+            "icons": []
+          },
+          {
+            "y": 598.02,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 597.27,
+              "bottom": 616.27
+            },
+            "text": " Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "killbots",
+        "layout": "b",
+        "name": "Replace Earth’s Leaders with Killbots",
+        "html": "<b>Setup:</b> 10 Twists. Stack 1 additional Twist next to this Scheme as a “Killgorithm.”<br><b>Special Rules:</b> Bystanders in the Villain Deck are “Killbot” Villains with <img data-icon=\"attack\"> equal to the number of Killgorithms. They have: “<b>Fight:</b> Rescue this as a Bystander.”<br><b>Twists 1-9:</b> Add this Twist to the Killgorithms. Two Killbots enter the city from the Bystander Deck.<br><b>Twist 10:</b> All Killbots in the city escape.<br><b>Evil Wins:</b> When there are 6 Bystander cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeReplaceEarthsLeadersWithKillbots"
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 653.2,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 18,
+        "lineH": 20,
+        "bottomY": 611.88,
+        "painted": {
+          "left": 21,
+          "top": 421.5,
+          "right": 479.79371643066406,
+          "bottom": 609.38
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 575.567626953125,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1125.563247680664,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 699.7854614257812,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 277.4518127441406,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 457.79371643066406,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 421.5,
+              "bottom": 439.5
+            },
+            "text": "Setup: 10 Twists. Stack 1 additional Twist next to this Scheme",
+            "icons": []
+          },
+          {
+            "y": 442,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 441.5,
+              "bottom": 459.5
+            },
+            "text": " as a “Killgorithm.”",
+            "icons": []
+          },
+          {
+            "y": 462,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 461.5,
+              "bottom": 479.5
+            },
+            "text": "Special Rules: Bystanders in the Villain Deck are “Killbot” Villains",
+            "icons": []
+          },
+          {
+            "y": 488.94,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 480.94,
+              "bottom": 509.94
+            },
+            "text": " with[attack] equal to the number of Killgorithms. They have:",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 480.94,
+                "height": 29
+              }
+            ]
+          },
+          {
+            "y": 511.88,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 511.38,
+              "bottom": 529.38
+            },
+            "text": " “Fight: Rescue this as a Bystander.”",
+            "icons": []
+          },
+          {
+            "y": 531.88,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 531.38,
+              "bottom": 549.38
+            },
+            "text": "Twists 1-9: Add this Twist to the Killgorithms. Two Killbots enter",
+            "icons": []
+          },
+          {
+            "y": 551.88,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 551.38,
+              "bottom": 569.38
+            },
+            "text": " the city from the Bystander Deck.",
+            "icons": []
+          },
+          {
+            "y": 571.88,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 571.38,
+              "bottom": 589.38
+            },
+            "text": "Twist 10: All Killbots in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 591.88,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 591.38,
+              "bottom": 609.38
+            },
+            "text": "Evil Wins: When there are 6 Bystander cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 712.1,
+        "overflow": {
+          "vertical": 62.10000000000002,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 18.5,
+        "lineH": 25,
+        "bottomY": 647.48,
+        "painted": {
+          "left": 21,
+          "top": 369.875,
+          "right": 453.8080139160156,
+          "bottom": 640.355
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1156.2856903076172,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1457.5928192138672,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 610.2033233642578,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 271.0801544189453,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 431.8080139160156,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 369.875,
+              "bottom": 387.875
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain Group.",
+            "icons": []
+          },
+          {
+            "y": 395,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 394.875,
+              "bottom": 408.875
+            },
+            "text": " Add an extra Hero to the Hero Deck. Shuffle 4 random",
+            "icons": []
+          },
+          {
+            "y": 420,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 419.875,
+              "bottom": 433.875
+            },
+            "text": " cards from the Hero Deck into the Villain Deck.",
+            "icons": []
+          },
+          {
+            "y": 445,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 444.875,
+              "bottom": 462.875
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and city are",
+            "icons": []
+          },
+          {
+            "y": 472.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 464.355,
+              "bottom": 494.355
+            },
+            "text": " “Skrull Infiltrator” Villains with[attack] equal to that Hero’s",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 464.355,
+                "height": 30
+              }
+            ]
+          },
+          {
+            "y": 497.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 497.355,
+              "bottom": 515.355
+            },
+            "text": " cost+3. They have “Fight: Either KO this card or choose a",
+            "icons": []
+          },
+          {
+            "y": 522.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 522.355,
+              "bottom": 540.355
+            },
+            "text": " player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 547.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 547.355,
+              "bottom": 561.355
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters the",
+            "icons": []
+          },
+          {
+            "y": 572.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 572.355,
+              "bottom": 586.355
+            },
+            "text": " Sewers as a Skrull Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 597.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 597.355,
+              "bottom": 615.355
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 622.48,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 622.355,
+              "bottom": 640.355
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 697.2,
+        "overflow": {
+          "vertical": 27.200000000000045,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 19.5,
+        "lineH": 21,
+        "bottomY": 664.1199999999999,
+        "painted": {
+          "left": 21,
+          "top": 421.625,
+          "right": 477.1490020751953,
+          "bottom": 661.7449999999999
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1218.7876281738281,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1535.4898071289062,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 643.1873321533203,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 285.7332000732422,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 455.1490020751953,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 421.625,
+              "bottom": 440.625
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain Group.",
+            "icons": []
+          },
+          {
+            "y": 443,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 442.625,
+              "bottom": 457.625
+            },
+            "text": " Add an extra Hero to the Hero Deck. Shuffle 4 random",
+            "icons": []
+          },
+          {
+            "y": 464,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 463.625,
+              "bottom": 478.625
+            },
+            "text": " cards from the Hero Deck into the Villain Deck.",
+            "icons": []
+          },
+          {
+            "y": 485,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 484.625,
+              "bottom": 503.625
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and city are",
+            "icons": []
+          },
+          {
+            "y": 513.56,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 505.18499999999995,
+              "bottom": 536.185
+            },
+            "text": " “Skrull Infiltrator” Villains with[attack] equal to that Hero’s",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 505.18499999999995,
+                "height": 31
+              }
+            ]
+          },
+          {
+            "y": 538.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 537.7449999999999,
+              "bottom": 556.7449999999999
+            },
+            "text": " cost+3. They have “Fight: Either KO this card or choose a",
+            "icons": []
+          },
+          {
+            "y": 559.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 558.7449999999999,
+              "bottom": 577.7449999999999
+            },
+            "text": " player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 580.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 579.7449999999999,
+              "bottom": 594.7449999999999
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters the",
+            "icons": []
+          },
+          {
+            "y": 601.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 600.7449999999999,
+              "bottom": 615.7449999999999
+            },
+            "text": " Sewers as a Skrull Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 622.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 621.7449999999999,
+              "bottom": 640.7449999999999
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 643.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 642.7449999999999,
+              "bottom": 661.7449999999999
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "b-flavor",
+        "layout": "b",
+        "name": "Custom tall flavor control",
+        "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> Each player reveals a Hero. Then discard a card.<br>You get +2 <img data-icon=\"attack\"> and +1 <img data-icon=\"recruit\">.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 20,
+        "flavor": "The city waits for someone to answer the call.",
+        "reference": null
+      },
+      "mode": "current",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 526,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 20,
+        "lineH": 26,
+        "bottomY": 526,
+        "painted": {
+          "left": 21,
+          "top": 370,
+          "right": 410.79969787597656,
+          "bottom": 520
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 126.55992126464844,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "empty",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 0,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 435.0796661376953,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 235.0599365234375,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 256.39979553222656,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 370,
+              "bottom": 390
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 396,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": null,
+            "text": "",
+            "icons": []
+          },
+          {
+            "y": 422,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 422,
+              "bottom": 442
+            },
+            "text": "Twist: Each player reveals a Hero. Then discard a",
+            "icons": []
+          },
+          {
+            "y": 448,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 448,
+              "bottom": 463
+            },
+            "text": " card.",
+            "icons": []
+          },
+          {
+            "y": 474,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 465.5,
+              "bottom": 497.5
+            },
+            "text": "You get+2[attack] and+1[recruit].",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 465.5,
+                "height": 32
+              },
+              {
+                "key": "recruit",
+                "y": 465.5,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "y": 500,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 500,
+              "bottom": 520
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 11,
+        "effective": 11,
+        "lineH": 14,
+        "bottomY": 556,
+        "painted": {
+          "left": 23,
+          "top": 541.25,
+          "right": 223.4276123046875,
+          "bottom": 552.25
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "lines": [
+          {
+            "y": 542,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 541.25,
+              "bottom": 552.25
+            },
+            "text": "The city waits for someone to answer the call.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 542,
+      "paintedGap": 21.25,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "b-flavor",
+        "layout": "b",
+        "name": "Custom tall flavor control",
+        "html": "<b>Setup:</b> 8 Twists.<br><br><b>Twist:</b> Each player reveals a Hero. Then discard a card.<br>You get +2 <img data-icon=\"attack\"> and +1 <img data-icon=\"recruit\">.<br><b>Evil Wins:</b> After the eighth Twist.",
+        "size": 20,
+        "flavor": "The city waits for someone to answer the call.",
+        "reference": null
+      },
+      "mode": "candidate",
+      "requestedSize": 20,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 19,
+        "minFlavorSize": 11,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 543.2,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 20,
+        "effective": 20,
+        "lineH": 22,
+        "bottomY": 543.2,
+        "painted": {
+          "left": 21,
+          "top": 422,
+          "right": 457.0796661376953,
+          "bottom": 541.2
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 126.55992126464844,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "empty",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 0,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 435.0796661376953,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 235.0599365234375,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 256.39979553222656,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 422,
+              "bottom": 442
+            },
+            "text": "Setup: 8 Twists.",
+            "icons": []
+          },
+          {
+            "y": 444,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": null,
+            "text": "",
+            "icons": []
+          },
+          {
+            "y": 466,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 466,
+              "bottom": 486
+            },
+            "text": "Twist: Each player reveals a Hero. Then discard a card.",
+            "icons": []
+          },
+          {
+            "y": 496.1,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 487.6,
+              "bottom": 519.6
+            },
+            "text": "You get+2[attack] and+1[recruit].",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 487.6,
+                "height": 32
+              },
+              {
+                "key": "recruit",
+                "y": 487.6,
+                "height": 32
+              }
+            ]
+          },
+          {
+            "y": 521.2,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 521.2,
+              "bottom": 541.2
+            },
+            "text": "Evil Wins: After the eighth Twist.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": {
+        "requested": 11,
+        "effective": 11,
+        "lineH": 12,
+        "bottomY": 571.2,
+        "painted": {
+          "left": 23,
+          "top": 558.45,
+          "right": 223.4276123046875,
+          "bottom": 569.45
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 0,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [],
+        "lines": [
+          {
+            "y": 559.2,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 558.45,
+              "bottom": 569.45
+            },
+            "text": "The city waits for someone to answer the call.",
+            "icons": []
+          }
+        ]
+      },
+      "flavorY": 559.2,
+      "paintedGap": 17.25,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    }
+  ],
+  "dense": [
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "current",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 765,
+        "overflow": {
+          "vertical": 119,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 28,
+        "bottomY": 749,
+        "painted": {
+          "left": 21,
+          "top": 524.75,
+          "right": 454.93968200683594,
+          "bottom": 736.75
+        },
+        "overflow": {
+          "vertical": 103,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 476.38465881347656,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1458.3438720703125,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 512.0216064453125,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 524.75,
+              "bottom": 545.75
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per",
+            "icons": []
+          },
+          {
+            "y": 553,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 552.75,
+              "bottom": 572.75
+            },
+            "text": " player.",
+            "icons": []
+          },
+          {
+            "y": 581,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 580.75,
+              "bottom": 596.75
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a",
+            "icons": []
+          },
+          {
+            "y": 609,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 608.75,
+              "bottom": 628.75
+            },
+            "text": " “Virus Mutation.” Then each player reveals a Hero",
+            "icons": []
+          },
+          {
+            "y": 637,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 636.75,
+              "bottom": 656.75
+            },
+            "text": " whose cost is greater than the number of Virus",
+            "icons": []
+          },
+          {
+            "y": 665,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 664.75,
+              "bottom": 684.75
+            },
+            "text": " Mutations or gains a Wound.",
+            "icons": []
+          },
+          {
+            "y": 693,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 692.75,
+              "bottom": 708.75
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck",
+            "icons": []
+          },
+          {
+            "y": 721,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 722.75,
+              "bottom": 736.75
+            },
+            "text": " runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 36.75
+    },
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "current",
+      "requestedSize": 14,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 432,
+        "maxBottom": 646,
+        "actualFlavorClipBottom": 644,
+        "minAbilitySize": 14,
+        "minFlavorSize": 9,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 615,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 14,
+        "effective": 14,
+        "lineH": 18,
+        "bottomY": 615,
+        "painted": {
+          "left": 21,
+          "top": 524.5,
+          "right": 441.36952209472656,
+          "bottom": 607.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 317.5896453857422,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 972.2288818359375,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 341.3475799560547,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 524.5,
+              "bottom": 538.5
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per player.",
+            "icons": []
+          },
+          {
+            "y": 543,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 542.5,
+              "bottom": 553.5
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a “Virus Mutation.” Then each",
+            "icons": []
+          },
+          {
+            "y": 561,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 560.5,
+              "bottom": 574.5
+            },
+            "text": " player reveals a Hero whose cost is greater than the number of Virus",
+            "icons": []
+          },
+          {
+            "y": 579,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 578.5,
+              "bottom": 592.5
+            },
+            "text": " Mutations or gains a Wound.",
+            "icons": []
+          },
+          {
+            "y": 597,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 596.5,
+              "bottom": 607.5
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "candidate",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 717,
+        "overflow": {
+          "vertical": 47,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 23,
+        "bottomY": 709,
+        "painted": {
+          "left": 21,
+          "top": 524.75,
+          "right": 478.2576599121094,
+          "bottom": 701.75
+        },
+        "overflow": {
+          "vertical": 39,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 476.38465881347656,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1458.3438720703125,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 512.0216064453125,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 524.75,
+              "bottom": 545.75
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per",
+            "icons": []
+          },
+          {
+            "y": 548,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 547.75,
+              "bottom": 567.75
+            },
+            "text": " player.",
+            "icons": []
+          },
+          {
+            "y": 571,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 570.75,
+              "bottom": 586.75
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a “Virus",
+            "icons": []
+          },
+          {
+            "y": 594,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 593.75,
+              "bottom": 613.75
+            },
+            "text": " Mutation.” Then each player reveals a Hero whose",
+            "icons": []
+          },
+          {
+            "y": 617,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 616.75,
+              "bottom": 636.75
+            },
+            "text": " cost is greater than the number of Virus Mutations or",
+            "icons": []
+          },
+          {
+            "y": 640,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 639.75,
+              "bottom": 659.75
+            },
+            "text": " gains a Wound.",
+            "icons": []
+          },
+          {
+            "y": 663,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 662.75,
+              "bottom": 678.75
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck",
+            "icons": []
+          },
+          {
+            "y": 686,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 687.75,
+              "bottom": 701.75
+            },
+            "text": " runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 1.75
+    },
+    {
+      "fixture": {
+        "id": "virus",
+        "layout": "a",
+        "name": "The Legacy Virus",
+        "html": "<b>Setup:</b> 9 Twists. Wound Deck holds 6 Wounds per player.<br><b>Twist:</b> Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player reveals a Hero whose cost is greater than the number of Virus Mutations or gains a Wound.<br><b>Evil Wins:</b> When the Wound Deck or the Villain Deck runs out.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeTheLegacyVirus"
+      },
+      "mode": "candidate",
+      "requestedSize": 14,
+      "config": {
+        "x": 22,
+        "y": 525,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 14,
+        "minFlavorSize": 9,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 600,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 14,
+        "effective": 14,
+        "lineH": 15,
+        "bottomY": 600,
+        "painted": {
+          "left": 21,
+          "top": 524.5,
+          "right": 481.74546813964844,
+          "bottom": 595.5
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 317.5896453857422,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 972.2288818359375,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 341.3475799560547,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 525,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 524.5,
+              "bottom": 538.5
+            },
+            "text": "Setup: 9 Twists. Wound Deck holds 6 Wounds per player.",
+            "icons": []
+          },
+          {
+            "y": 540,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 539.5,
+              "bottom": 553.5
+            },
+            "text": "Twist: Stack this Twist next to the Scheme as a “Virus Mutation.” Then each player",
+            "icons": []
+          },
+          {
+            "y": 555,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 554.5,
+              "bottom": 568.5
+            },
+            "text": " reveals a Hero whose cost is greater than the number of Virus Mutations or gains",
+            "icons": []
+          },
+          {
+            "y": 570,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 569.5,
+              "bottom": 580.5
+            },
+            "text": " a Wound.",
+            "icons": []
+          },
+          {
+            "y": 585,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 584.5,
+              "bottom": 595.5
+            },
+            "text": "Evil Wins: When the Wound Deck or the Villain Deck runs out.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "current",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 792.76,
+        "overflow": {
+          "vertical": 142.76,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 21,
+        "lineH": 28,
+        "bottomY": 737.6800000000001,
+        "painted": {
+          "left": 21,
+          "top": 369.75,
+          "right": 447.9776611328125,
+          "bottom": 729.4300000000001
+        },
+        "overflow": {
+          "vertical": 87.68000000000006,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1312.541015625,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1653.8356628417969,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 692.6634979248047,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 307.7127685546875,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 490.16062927246094,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 369.75,
+              "bottom": 390.75
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain",
+            "icons": []
+          },
+          {
+            "y": 398,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 397.75,
+              "bottom": 417.75
+            },
+            "text": " Group. Add an extra Hero to the Hero Deck.",
+            "icons": []
+          },
+          {
+            "y": 426,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 425.75,
+              "bottom": 441.75
+            },
+            "text": " Shuffle 4 random cards from the Hero Deck into",
+            "icons": []
+          },
+          {
+            "y": 454,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 453.75,
+              "bottom": 469.75
+            },
+            "text": " the Villain Deck.",
+            "icons": []
+          },
+          {
+            "y": 482,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 481.75,
+              "bottom": 502.75
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and",
+            "icons": []
+          },
+          {
+            "y": 513.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 504.43000000000006,
+              "bottom": 538.4300000000001
+            },
+            "text": " city are “Skrull Infiltrator” Villains with[attack] equal",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 504.43000000000006,
+                "height": 34
+              }
+            ]
+          },
+          {
+            "y": 541.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 541.4300000000001,
+              "bottom": 562.4300000000001
+            },
+            "text": " to that Hero’s cost+3. They have “Fight: Either KO",
+            "icons": []
+          },
+          {
+            "y": 569.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 569.4300000000001,
+              "bottom": 589.4300000000001
+            },
+            "text": " this card or choose a player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 597.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 597.4300000000001,
+              "bottom": 613.4300000000001
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters",
+            "icons": []
+          },
+          {
+            "y": 625.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 625.4300000000001,
+              "bottom": 641.4300000000001
+            },
+            "text": " the Sewers as a Skrull Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 653.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 653.4300000000001,
+              "bottom": 673.4300000000001
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 681.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 681.4300000000001,
+              "bottom": 697.4300000000001
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the",
+            "icons": []
+          },
+          {
+            "y": 709.6800000000001,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 709.4300000000001,
+              "bottom": 729.4300000000001
+            },
+            "text": " Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 29.430000000000064
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "current",
+      "requestedSize": 14,
+      "config": {
+        "x": 22,
+        "y": 370,
+        "w": 432,
+        "maxBottom": 650,
+        "actualFlavorClipBottom": 648,
+        "minAbilitySize": 14,
+        "minFlavorSize": 9,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 552.62,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 14,
+        "effective": 14,
+        "lineH": 18,
+        "bottomY": 552.62,
+        "painted": {
+          "left": 21,
+          "top": 369.5,
+          "right": 448.21546936035156,
+          "bottom": 548.12
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 875.0269317626953,
+            "availableWidth": 432
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1102.5565490722656,
+            "availableWidth": 432
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 461.77545166015625,
+            "availableWidth": 432
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 205.14173889160156,
+            "availableWidth": 432
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 326.77362060546875,
+            "availableWidth": 432
+          }
+        ],
+        "lines": [
+          {
+            "y": 370,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 369.5,
+              "bottom": 383.5
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to",
+            "icons": []
+          },
+          {
+            "y": 388,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 387.5,
+              "bottom": 398.5
+            },
+            "text": " the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain",
+            "icons": []
+          },
+          {
+            "y": 406,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 405.5,
+              "bottom": 416.5
+            },
+            "text": " Deck.",
+            "icons": []
+          },
+          {
+            "y": 424,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 423.5,
+              "bottom": 437.5
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and city are “Skrull Infiltrator”",
+            "icons": []
+          },
+          {
+            "y": 444.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 438.62,
+              "bottom": 460.62
+            },
+            "text": " Villains with[attack] equal to that Hero’s cost+3. They have “Fight: Either KO",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 438.62,
+                "height": 22
+              }
+            ]
+          },
+          {
+            "y": 462.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 462.12,
+              "bottom": 476.12
+            },
+            "text": " this card or choose a player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 480.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 480.12,
+              "bottom": 491.12
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters the Sewers as a Skrull",
+            "icons": []
+          },
+          {
+            "y": 498.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 498.12,
+              "bottom": 509.12
+            },
+            "text": " Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 516.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 516.12,
+              "bottom": 530.12
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 534.62,
+            "left": 22,
+            "right": 454,
+            "width": 432,
+            "painted": {
+              "top": 534.12,
+              "bottom": 548.12
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "candidate",
+      "requestedSize": 22,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 21,
+        "minFlavorSize": 12.100000000000001,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 746.52,
+        "overflow": {
+          "vertical": 76.51999999999998,
+          "horizontal": 1,
+          "belowRegion": true,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 22,
+        "effective": 19.5,
+        "lineH": 21,
+        "bottomY": 664.1199999999999,
+        "painted": {
+          "left": 21,
+          "top": 421.625,
+          "right": 477.1490020751953,
+          "bottom": 661.7449999999999
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1218.7876281738281,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1535.4898071289062,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 643.1873321533203,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 285.7332000732422,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 455.1490020751953,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 421.625,
+              "bottom": 440.625
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain Group.",
+            "icons": []
+          },
+          {
+            "y": 443,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 442.625,
+              "bottom": 457.625
+            },
+            "text": " Add an extra Hero to the Hero Deck. Shuffle 4 random",
+            "icons": []
+          },
+          {
+            "y": 464,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 463.625,
+              "bottom": 478.625
+            },
+            "text": " cards from the Hero Deck into the Villain Deck.",
+            "icons": []
+          },
+          {
+            "y": 485,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 484.625,
+              "bottom": 503.625
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and city are",
+            "icons": []
+          },
+          {
+            "y": 513.56,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 505.18499999999995,
+              "bottom": 536.185
+            },
+            "text": " “Skrull Infiltrator” Villains with[attack] equal to that Hero’s",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 505.18499999999995,
+                "height": 31
+              }
+            ]
+          },
+          {
+            "y": 538.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 537.7449999999999,
+              "bottom": 556.7449999999999
+            },
+            "text": " cost+3. They have “Fight: Either KO this card or choose a",
+            "icons": []
+          },
+          {
+            "y": 559.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 558.7449999999999,
+              "bottom": 577.7449999999999
+            },
+            "text": " player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 580.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 579.7449999999999,
+              "bottom": 594.7449999999999
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters the",
+            "icons": []
+          },
+          {
+            "y": 601.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 600.7449999999999,
+              "bottom": 615.7449999999999
+            },
+            "text": " Sewers as a Skrull Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 622.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 621.7449999999999,
+              "bottom": 640.7449999999999
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 643.1199999999999,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 642.7449999999999,
+              "bottom": 661.7449999999999
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    },
+    {
+      "fixture": {
+        "id": "skrulls",
+        "layout": "b",
+        "name": "Secret Invasion of the Skrull Shapeshifters",
+        "html": "<b>Setup:</b> 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.<br><b>Special Rules:</b> Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains with <img data-icon=\"attack\"> equal to that Hero’s cost +3. They have “<b>Fight:</b> Either KO this card or choose a player to gain it as a Hero.”<br><b>Twists 1-5:</b> The leftmost Hero from the HQ enters the Sewers as a Skrull Infiltrator.<br><b>Twist 6:</b> All Skrulls in the city escape.<br><b>Evil Wins:</b> When there are 6 Hero cards in the Escape Pile.",
+        "size": 20,
+        "flavor": "",
+        "reference": "2eSchemeSecretInvasionOfTheSkrullShapeshifters"
+      },
+      "mode": "candidate",
+      "requestedSize": 14,
+      "config": {
+        "x": 22,
+        "y": 422,
+        "w": 460,
+        "maxBottom": 670,
+        "actualFlavorClipBottom": 668,
+        "minAbilitySize": 14,
+        "minFlavorSize": 9,
+        "abilityAbsoluteMinimum": 14,
+        "preferredFlavorGap": 16
+      },
+      "initialAtRequested": {
+        "bottom": 565.24,
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        }
+      },
+      "rules": {
+        "requested": 14,
+        "effective": 14,
+        "lineH": 15,
+        "bottomY": 565.24,
+        "painted": {
+          "left": 21,
+          "top": 421.5,
+          "right": 475.09535217285156,
+          "bottom": 563.74
+        },
+        "overflow": {
+          "vertical": 0,
+          "horizontal": 1,
+          "belowRegion": false,
+          "missingIcons": []
+        },
+        "blocks": [
+          {
+            "index": 0,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 875.0269317626953,
+            "availableWidth": 460
+          },
+          {
+            "index": 1,
+            "eligible": false,
+            "reason": "multiple",
+            "protected": false,
+            "fallback": false,
+            "measuredWidth": 1102.5565490722656,
+            "availableWidth": 460
+          },
+          {
+            "index": 2,
+            "eligible": true,
+            "reason": "single",
+            "protected": false,
+            "fallback": true,
+            "measuredWidth": 461.77545166015625,
+            "availableWidth": 460
+          },
+          {
+            "index": 3,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 205.14173889160156,
+            "availableWidth": 460
+          },
+          {
+            "index": 4,
+            "eligible": true,
+            "reason": "single",
+            "protected": true,
+            "fallback": false,
+            "measuredWidth": 326.77362060546875,
+            "availableWidth": 460
+          }
+        ],
+        "lines": [
+          {
+            "y": 422,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 421.5,
+              "bottom": 435.5
+            },
+            "text": "Setup: 6 Twists. Always include the Skrull Villain Group. Add an extra Hero to the",
+            "icons": []
+          },
+          {
+            "y": 437,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 436.5,
+              "bottom": 447.5
+            },
+            "text": " Hero Deck. Shuffle 4 random cards from the Hero Deck into the Villain Deck.",
+            "icons": []
+          },
+          {
+            "y": 452,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 451.5,
+              "bottom": 465.5
+            },
+            "text": "Special Rules: Hero cards in the Villain Deck and city are “Skrull Infiltrator” Villains",
+            "icons": []
+          },
+          {
+            "y": 472.62,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 466.62,
+              "bottom": 488.62
+            },
+            "text": " with[attack] equal to that Hero’s cost+3. They have “Fight: Either KO this card or",
+            "icons": [
+              {
+                "key": "attack",
+                "y": 466.62,
+                "height": 22
+              }
+            ]
+          },
+          {
+            "y": 490.24,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 489.74,
+              "bottom": 503.74
+            },
+            "text": " choose a player to gain it as a Hero.”",
+            "icons": []
+          },
+          {
+            "y": 505.24,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 504.74,
+              "bottom": 515.74
+            },
+            "text": "Twists 1-5: The leftmost Hero from the HQ enters the Sewers as a Skrull",
+            "icons": []
+          },
+          {
+            "y": 520.24,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 519.74,
+              "bottom": 530.74
+            },
+            "text": " Infiltrator.",
+            "icons": []
+          },
+          {
+            "y": 535.24,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 534.74,
+              "bottom": 548.74
+            },
+            "text": "Twist 6: All Skrulls in the city escape.",
+            "icons": []
+          },
+          {
+            "y": 550.24,
+            "left": 22,
+            "right": 482,
+            "width": 460,
+            "painted": {
+              "top": 549.74,
+              "bottom": 563.74
+            },
+            "text": "Evil Wins: When there are 6 Hero cards in the Escape Pile.",
+            "icons": []
+          }
+        ]
+      },
+      "flavor": null,
+      "flavorY": null,
+      "paintedGap": null,
+      "flavorClipped": 0,
+      "rulesBeyondCanvas": 0
+    }
+  ],
+  "checks": [
+    "current/a full explicit blank line",
+    "current/b full explicit blank line",
+    "candidate/a full explicit blank line",
+    "candidate/b full explicit blank line"
+  ]
+}

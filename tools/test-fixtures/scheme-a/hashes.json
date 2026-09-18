@@ -1,0 +1,13 @@
+{
+  "a-flavor-candidate.png": "fbfa4f30040ab3ee526fdcebcd6f1da14f3a8910ae1100868a8fa64b6f85a352",
+  "a-short-candidate.png": "a9ec2422afc9ea2d51a5f25f55e3bd16d020555e4500b69d3bb56c91a0c92f87",
+  "b-flavor-current.png": "cc791c150d56324cc7b54e88d962e30e0a368114751f269331f794b2793c6984",
+  "b-short-current.png": "c45bb74150578d149badc7f70583c134dbdce526a55d0188accd46c7206a6a22",
+  "cube-candidate.png": "8030fc24e5c101b6bf743257a0ee083a90892ad231ba6b931282e7ba2b9386bd",
+  "fixtures.json": "e77f34e847886c9c509610d97b1b980b2d3628ed421969c4e4729501559c588f",
+  "killbots-current.png": "0795480ca199c32853eeac6be325cf721af7bc06d9b1a462afbaa8c178533b7f",
+  "probe-results.json": "235996033971a31b8c37f88c6028c90f1d4ce3a2e1ab8a9a5dcddfbb12477f78",
+  "production-hashes.json": "c9fdae6414fff30a9245f064b044be9bb6f8e1a16dc934eca5f505ccb12a4729",
+  "skrulls-current.png": "99364479375b72ea5a4c25d1903484d115668a9c24193413b8216260b6972392",
+  "virus-candidate.png": "3b531ba4fec0173f84771cc308c623a833c7d3ae91d287d80adcb835298bbc21"
+}
