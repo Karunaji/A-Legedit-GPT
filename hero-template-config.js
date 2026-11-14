@@ -92,10 +92,10 @@ window.LEGENDARY_HERO_CONFIG = {
     blur: 10,
   },
   textboxIcons: {
-    classScale: 1.28,
+    classScale: 1.10,
     statScale: 1.72,
     // Ability placements only; retain statScale for ordinary line-height basis.
-    abilityStatScale: 1.60,
+    abilityStatScale: 1.40,
     classGap: 1,
     statGap: 2,
     classOffsetY: -6,

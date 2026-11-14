@@ -2,3 +2,5 @@
 *.png binary
 *.jpg binary
 *.jpeg binary
+# Preserve the exact hashed historical renderer, including its trailing blank line.
+tools/test-fixtures/soft-wrap-alignment/render-before.js -text whitespace=-blank-at-eof,cr-at-eol

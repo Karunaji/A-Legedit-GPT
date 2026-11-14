@@ -1,0 +1,782 @@
+{
+  "imageHashes": {
+    "phase1__hero-common-0-1": "2c09a79719332c3fd4cff927deb85dec3e72ed5c8cbd2453ff7492047927d4f8",
+    "phase1__hero-common-0-3": "5efb8619d1681ca25b2b5ade3d7875cc7e4508800968bd18fc10cf72f273334f",
+    "phase1__hero-common-1-1": "441b05161d19ad1d45a4a719f4588b8051fa9b8b5430cc82ffa7b8670a565459",
+    "phase1__hero-common-1-3": "a750f84ddaa8be1a84b0dd26e819b18f5286adbde8de48384c72bbb1418f34df",
+    "phase1__hero-common-2-1": "6167d74dea47b5e8581dc2b6599877ff179586e83b847c74f05ce815c05ee826",
+    "phase1__hero-common-2-3": "cd967b0ec24178bd23b700d1775b8f17ffba78a4fd1cecfa5b3aefce33669d8f",
+    "phase1__hero-uncommon-0-1": "ed52ef501d6f6423fb94ed44b0f6f15d4f76579bd92260e9d0f187b0dcfdc86a",
+    "phase1__hero-uncommon-0-3": "93a453926d4d367b64260a24f2133fb926ab9d93574c527e7f484d247d1a70f1",
+    "phase1__hero-uncommon-1-1": "30b242a08c9c76fbb2b2ec1c1f71db5b2c8950c750b9f5f25bbbd95fd30bf260",
+    "phase1__hero-uncommon-1-3": "9521d550da9cc0562a1f176c26d79c77e16ea4c967b23fbab24dc0cc6a2aa5c0",
+    "phase1__hero-uncommon-2-1": "1b03e369319214278b5f64fda41c5dda15919f0148bf9b060ca6aafb32c29eae",
+    "phase1__hero-uncommon-2-3": "e5dd991ce01a5622938fcb6001ef69c59f27ad157065203cf5a0ced6f2ffea42",
+    "phase1__hero-rare-0-1": "32ffde9a7ff508194d14b451489f359314136084de8dfa770a0c20c07906387d",
+    "phase1__hero-rare-0-3": "7adb7fb1a11d6a09846aa219b5d88e82415832e7f0cfc18e794a0ae2ba4f5ef5",
+    "phase1__hero-rare-1-1": "a5e3765ac727c5eb02bb82ad8871734c45311d61f06f8581bdde8858aee9a890",
+    "phase1__hero-rare-1-3": "c3c6f27c24ddb9e084e51f3e5218505fa72bc1b67d03bf44d251824f770c9fff",
+    "phase1__hero-rare-2-1": "caa3e25fae3dc94d406ec89b4f61088cbaa5a3b918f9034ca77e69cf3dd2cf74",
+    "phase1__hero-rare-2-3": "8b4bb255b5d7dd945c65a342e455abd8ff48a1a7e30a0e4fa2082ae1885342ce",
+    "phase1__multi-common-0-1": "771947749eb993fdc6fe65bb1b03e7cbcb3d55164f1b13a358e97309f5565614",
+    "phase1__multi-common-0-3": "093931a2ff28c8569ea49bfa6526edd98598789853b0f0c3e5fc7762bd86bb8a",
+    "phase1__multi-common-1-1": "0920cb81c76e0572ddf3b0f881cfb71226d8cff08a7753a6cc584fa38dadf2a2",
+    "phase1__multi-common-1-3": "c3712d834968cf8f374973336294ae2916be9c47353637e2bd3e749e9148c717",
+    "phase1__multi-common-2-1": "5042b93f083e17ac99040f748b4dd79bf3a5818caab92cedbe1a0dc488637c2d",
+    "phase1__multi-common-2-3": "920c0abfb4319285620aa71baedf3683dae50e3857665ec9f0197f6552f86a56",
+    "phase1__multi-uncommon-0-1": "12a4c5de1ccbc49d4895862fa943ad12da1e243d336e9e83f3be07dc2bdca09f",
+    "phase1__multi-uncommon-0-3": "19facd218d719f11a591f0199a40f70d6a38026ab5794906d7e8cc11705ef07d",
+    "phase1__multi-uncommon-1-1": "acf63dcdab8f0b992659f9674e65ea2e3970ec2a367f3cc1184b8d23900b80be",
+    "phase1__multi-uncommon-1-3": "3940931107a746853b17160fd271c61dc6ad06b074ddec1326dfb826bcfa823f",
+    "phase1__multi-uncommon-2-1": "c14c260687bfd186a07b6f9dd41dabfc241aa74d330093f043231298a03ede0d",
+    "phase1__multi-uncommon-2-3": "3e06ece081ab7b5646908a06f225954d4cb0932a834dbaad03255087c864b504",
+    "phase1__multi-rare-0-1": "0429e9b299916ddb9ec1caea5893f4303ead30b82e248f8377544f9a67affffa",
+    "phase1__multi-rare-0-3": "aa5b63ca59f0aaba6e6646afd4e81d5cbd75a252e8b66c36040b2ac15ca915c3",
+    "phase1__multi-rare-1-1": "db7f5e45a637e9844e1801f2f48b97573997bc5dc58c54a03f21cacdf614da46",
+    "phase1__multi-rare-1-3": "3c3210df9ac63163b60fc463521633e0e731266fc745912f481e140f58f6770d",
+    "phase1__multi-rare-2-1": "34881bc131fd0adf3623fda98aa84de0763d5471ef1140500f876a59e7b45b8e",
+    "phase1__multi-rare-2-3": "520efcb407882dbb2362386b374a15c66b834cb5f9ec504a5ed9f1e0dfbacbd9",
+    "phase1__split-common-0-1": "9f500f841c48416c9cbe80d37677527eeba27f3495f14fe9096e9f6e48e8f110",
+    "phase1__split-common-0-3": "e221aac1ead034972afc21b9f62243fd61a5a31bd5a242c6895b224319d23fda",
+    "phase1__split-common-1-1": "4d7231a008f545abf5fe5a3da89da1a77c0b557c0cd59c31383bc51eb507d621",
+    "phase1__split-common-1-3": "1845a8c65aab09b467e2bef53f16a8699401a0863722e176adceddd9ed0df42f",
+    "phase1__split-common-2-1": "a95bd98fca5ec9664c2d4d85ecfb892ffb23ced1ebaa296be2f3d42d77857a9b",
+    "phase1__split-common-2-3": "c323dad9befb13531da427d250806d2c790e9bfba918ed9a60b64c62dde4f4dd",
+    "phase1__split-rare-0-1": "a4065fa5cf76a7864c06fd128266f6b5dfcca6ccd898d35870da33fe3649f0a0",
+    "phase1__split-rare-0-3": "3ee6b7a48bf8747c2b785f69b836cb8c3a195f2bedd367a785e101201e5d2121",
+    "phase1__split-rare-1-1": "5e74358dfbbc4e9d1a4e15e483e7add1d2f535f5f88600f51b8fbfef40630963",
+    "phase1__split-rare-1-3": "ad4dce56261b798487d9656a9e96573027c7eb173585ae9817a081a48d8b6235",
+    "phase1__split-rare-2-1": "6d1db04b33e5eeb53c1af52298f729f116c496a3ccd364cb69f0dc6990887410",
+    "phase1__split-rare-2-3": "3050c7c78f58b7ffbe0df60abefc9982001a05e79ca3338af5d2971810c6e1ee",
+    "phase1__villain-0-1": "042e810e03075f63abae57263cd9f3b3ffeac6dda0331fe369dae13e38d98755",
+    "phase1__villain-0-3": "d927107b90c860bc07b17a1d920df8c66c93440615c05b064a094c6266889eea",
+    "phase1__villain-1-1": "d0d2ab2275a7c1ed9abb1ad4e44281b3fdd609be059acccf7355d5f5ed7a1d7a",
+    "phase1__villain-1-3": "f31a8dc45c113fb83e792cf401353431df02da33201809525d1bc39996772362",
+    "phase1__villain-2-1": "bd3bbded53fb68a4fec835bddbaff96de6e127d23d81b53a2c6b215e1f008acb",
+    "phase1__villain-2-3": "62232e84bccb2e01b5255c9b255fffa939a0c8026fff95e6c9543cdef83e5461",
+    "phase1__adversary-0-1": "3986451101e39822970629bd213e52fb512f092dbee70f7376a603b573c4b244",
+    "phase1__adversary-0-3": "464325a90668969ec0176cf7b9e8db97cf7abaa8c7c8ab92452096a628fada68",
+    "phase1__adversary-1-1": "18a3bb9f922e51fc6415e545331b4ef8567efe83321bebdf6b58661b591f4d9a",
+    "phase1__adversary-1-3": "47ecb6627cfa49b9e0353c1f25ba249ec9efb8428a1a9dab51673c7bfb60bb20",
+    "phase1__adversary-2-1": "395bf18cbeb3eb3c161818b23fa17a996a96e79b237a872230bb44fdfce431a0",
+    "phase1__adversary-2-3": "da6217eaee331c516b9d7b71001cb7d04652f4a74a23fc0d135917aa99ff22f6",
+    "phase1__location-0-1": "8d3cb6dacf4823bc948465b421d5de8f9116f2af096e975a9e0bae1320ef97a5",
+    "phase1__location-0-3": "17df79d8a8868b4c79b373e68f7f59396e6ab80f294159fd184a48f9b5f9f225",
+    "phase1__location-1-1": "fae9a5545c1850963ddda868ed82b53a983a9a2238e6beb786b5dcd31fa41ce4",
+    "phase1__location-1-3": "791a56e85c3c65f0be491f4fe54f763fbccd5ee591cff50f27f9e897b49e258c",
+    "phase1__location-2-1": "cf170e6581731e4118ca0674be6523c1cf5a324a0c8e9560da32814c6d52ae82",
+    "phase1__location-2-3": "b0316d32d0a6209ce1f85ff383f5d1d502bbc054f6f1187c82e857da915cc206",
+    "phase1__trap-0-1": "7c05fed5d1276133eb952a0d03733d599d9ed7f23ece2f51e1092741b1b20006",
+    "phase1__trap-0-3": "f8c4017803184b91cec2f30c5b50b0dc614eff82472ef4422b97ed798ff2a8a6",
+    "phase1__trap-1-1": "9c0eae70906128263d3d3bb94f26e0a18943d40448aad9523107fb5072c7bc1f",
+    "phase1__trap-1-3": "5fffe651bccfa68ddf8ef9f8fabe3fa6d200f8b5fba4636d6a29d75d7eff9341",
+    "phase1__trap-2-1": "15950de1854fd0dcc35d71ea6f42985a849b1c8c95a3a10aeb6b235fbe68a2f9",
+    "phase1__trap-2-3": "f6e78d2124220e23bc025b977a47427dca29e254ef8d43a497c7d8c6075bf4bf",
+    "phase1__henchman-0-1": "7554d56d5d94ea0799204daf6574daf20c27dda1daa2ba3deaa1998d70296bf5",
+    "phase1__henchman-0-3": "d0c94f16ebde8a7a92f4a6ba9fffb200e6d353698e80695ac4aa992dde75e68b",
+    "phase1__henchman-1-1": "a662367e46f80c2b0afdfbcb70602b2a9845dd8dc3b622b3194532426a06555f",
+    "phase1__henchman-1-3": "39914feff771d4fcb54807ca92071af195d540253fc70d68f2fc7e3f1ad2df85",
+    "phase1__henchman-2-1": "e05c9ca809b6d2ec32f45600d87972bc2b823ce9dafba6592455609ddbda88c2",
+    "phase1__henchman-2-3": "6819bd26142638295b4ee620216c92a8552942cbe5575b5780512ae5d57827c6",
+    "phase1__mastermind-0-1": "d6683bee21a75a892d27632902b1465944bcbf0aea0a15f27797b6aeb81e5a02",
+    "phase1__mastermind-0-3": "594d6d105539b9182d12c058569b1740d73c72585820c54ddd65b5d0764a0602",
+    "phase1__mastermind-1-1": "05ac7e19ed87b34c27d8bbc6c2fb662e7d87091f3bb528268ad3296ab72aa678",
+    "phase1__mastermind-1-3": "7180ebaf7a54c8cb68ebf44ab9451a917f4eb59b017558cd707f9de9d4011b33",
+    "phase1__mastermind-2-1": "c9d28467246844afd907de865ad6d7a3d933829de5d56b94921c42b67a156113",
+    "phase1__mastermind-2-3": "29f32cab29e827a457c92b6974a5dcbfff1928e337cba42f108721317c58f60a",
+    "phase1__tactic-0-1": "d6683bee21a75a892d27632902b1465944bcbf0aea0a15f27797b6aeb81e5a02",
+    "phase1__tactic-0-3": "594d6d105539b9182d12c058569b1740d73c72585820c54ddd65b5d0764a0602",
+    "phase1__tactic-1-1": "05ac7e19ed87b34c27d8bbc6c2fb662e7d87091f3bb528268ad3296ab72aa678",
+    "phase1__tactic-1-3": "7180ebaf7a54c8cb68ebf44ab9451a917f4eb59b017558cd707f9de9d4011b33",
+    "phase1__tactic-2-1": "c9d28467246844afd907de865ad6d7a3d933829de5d56b94921c42b67a156113",
+    "phase1__tactic-2-3": "29f32cab29e827a457c92b6974a5dcbfff1928e337cba42f108721317c58f60a",
+    "phase1__scheme-a-0-1": "b607f1f4c9146e8d5c363d3484b541df7a4b7c2012e9d2d548fd8ea60e0350ba",
+    "phase1__scheme-a-0-3": "7fe788c87d3b7776c8700e31dc7799fb0db9a60ce3fabaee06f8946ecce58497",
+    "phase1__scheme-a-1-1": "61be268b9c17a47c2d59d09c20e2234e6050dafc5d28857f2400e534136e8054",
+    "phase1__scheme-a-1-3": "bb79fbf01cf358562b2424775da743c0a4dd464e2ae0ec9ed9f2c074bcf21c48",
+    "phase1__scheme-a-2-1": "58f3663eeae7c1b3717e366ad82a3c8ec83c8e04c59b408ed03c8b465511d16d",
+    "phase1__scheme-a-2-3": "5d21a17322707e3df6c214b70106cce588f97b4067529fabcc47b677bdee9850",
+    "phase1__scheme-b-0-1": "f661d95a0789f792974ff04e18fde3cbb7bd44d597d13e4477603e0b7a598956",
+    "phase1__scheme-b-0-3": "91821b6a649ef63d5911e43378082750c22f2c0901bf9e6df06ba13c67e5d7f7",
+    "phase1__scheme-b-1-1": "fadbec01e02827c77ee0da21a94aee2dcc686b9b9ebc929184d204cee34efba2",
+    "phase1__scheme-b-1-3": "b5d9eb44844e57a34743bfd4dfe908352c9ed4ffc95d8f331e962b4941b5aac2",
+    "phase1__scheme-b-2-1": "167cd16b0539866b85e0088397f9aebdbf546325d725efb6326611cd84b230b9",
+    "phase1__scheme-b-2-3": "5ef711728d945e9d04f4c8d725c4224b8ba9921545a0f73e7ed97fd7d31e5c70",
+    "phase2__hero-common__normal": "4943831dc819477597002d7fd528ea6659ec80f77d6c95de78e00a27e34bf511",
+    "phase2__hero-common__single": "a89a1deffc57b6096aaf782c69aaa033f58af50f1133cc5fa40b5ac3208a0db9",
+    "phase2__hero-common__paragraphs": "a89a1deffc57b6096aaf782c69aaa033f58af50f1133cc5fa40b5ac3208a0db9",
+    "phase2__hero-common__blank": "6ea01c6bdf918bc7d2b967b5ec49a75e4d467a0515af00d9581c7bd8eb3a9dd6",
+    "phase2__hero-common__literal": "a89a1deffc57b6096aaf782c69aaa033f58af50f1133cc5fa40b5ac3208a0db9",
+    "phase2__hero-common__emptyBlock": "6ea01c6bdf918bc7d2b967b5ec49a75e4d467a0515af00d9581c7bd8eb3a9dd6",
+    "phase2__hero-common__blockThenText": "a89a1deffc57b6096aaf782c69aaa033f58af50f1133cc5fa40b5ac3208a0db9",
+    "phase2__hero-uncommon__normal": "e3a12ac6aec9a5244393a078de185672da51f4d5d5efb1ecaae325baf8f6315f",
+    "phase2__hero-uncommon__single": "e224c5d020ae640f3caefea3492d19486f036cff9c4e94e38b0d58a03cecda32",
+    "phase2__hero-uncommon__paragraphs": "e224c5d020ae640f3caefea3492d19486f036cff9c4e94e38b0d58a03cecda32",
+    "phase2__hero-uncommon__blank": "af2fb7735895a0a2e21c272d1c5153f45eb2186cf7f7e68f10dd0ee71f8ac24a",
+    "phase2__hero-uncommon__literal": "e224c5d020ae640f3caefea3492d19486f036cff9c4e94e38b0d58a03cecda32",
+    "phase2__hero-uncommon__emptyBlock": "af2fb7735895a0a2e21c272d1c5153f45eb2186cf7f7e68f10dd0ee71f8ac24a",
+    "phase2__hero-uncommon__blockThenText": "e224c5d020ae640f3caefea3492d19486f036cff9c4e94e38b0d58a03cecda32",
+    "phase2__hero-rare__normal": "cb7fba79a98feba658162b1f595c262da73cca1cbc6364d03b2d18400cffd359",
+    "phase2__hero-rare__single": "640a9e05541af3f62c41accf7c18aa9b05cef596abd60d6de2bea4206dede7a2",
+    "phase2__hero-rare__paragraphs": "640a9e05541af3f62c41accf7c18aa9b05cef596abd60d6de2bea4206dede7a2",
+    "phase2__hero-rare__blank": "78bf5f5be86e8c35373cba06d774ed708eca545514b3006173ce04f9cd139e14",
+    "phase2__hero-rare__literal": "640a9e05541af3f62c41accf7c18aa9b05cef596abd60d6de2bea4206dede7a2",
+    "phase2__hero-rare__emptyBlock": "78bf5f5be86e8c35373cba06d774ed708eca545514b3006173ce04f9cd139e14",
+    "phase2__hero-rare__blockThenText": "640a9e05541af3f62c41accf7c18aa9b05cef596abd60d6de2bea4206dede7a2",
+    "phase2__multi-common__normal": "0a9a8fc2d788a45cfcf7253e17573fbae39ffcc8b90b743a3c691df306e1e892",
+    "phase2__multi-common__single": "5b49ca2ce9a396fdb535c2e08120b8b566bf95a43f21b8b931625e321deb80fd",
+    "phase2__multi-common__paragraphs": "5b49ca2ce9a396fdb535c2e08120b8b566bf95a43f21b8b931625e321deb80fd",
+    "phase2__multi-common__blank": "0dce57d0fe815ce23e12b5f803ab98a16d1d39da9f4b4c032f92ecf33dc92742",
+    "phase2__multi-common__literal": "5b49ca2ce9a396fdb535c2e08120b8b566bf95a43f21b8b931625e321deb80fd",
+    "phase2__multi-common__emptyBlock": "0dce57d0fe815ce23e12b5f803ab98a16d1d39da9f4b4c032f92ecf33dc92742",
+    "phase2__multi-common__blockThenText": "5b49ca2ce9a396fdb535c2e08120b8b566bf95a43f21b8b931625e321deb80fd",
+    "phase2__multi-uncommon__normal": "7196155b67075353006436d39b8c692b8800db7ee0858a419efe0811246299f2",
+    "phase2__multi-uncommon__single": "024377eae3c79b0a4b4d12bd51b0136b3179d38f1a9b17d2c1ff04a583927cf7",
+    "phase2__multi-uncommon__paragraphs": "024377eae3c79b0a4b4d12bd51b0136b3179d38f1a9b17d2c1ff04a583927cf7",
+    "phase2__multi-uncommon__blank": "95102af2b5fa78d3b792048bcb4fb83e1d73331a6cfa53c86ae77a09ad0c9f1d",
+    "phase2__multi-uncommon__literal": "024377eae3c79b0a4b4d12bd51b0136b3179d38f1a9b17d2c1ff04a583927cf7",
+    "phase2__multi-uncommon__emptyBlock": "95102af2b5fa78d3b792048bcb4fb83e1d73331a6cfa53c86ae77a09ad0c9f1d",
+    "phase2__multi-uncommon__blockThenText": "024377eae3c79b0a4b4d12bd51b0136b3179d38f1a9b17d2c1ff04a583927cf7",
+    "phase2__multi-rare__normal": "4804a9451e47d5905fecc3f171b6aaff1478c44e29758aba143669c4eb08d4f9",
+    "phase2__multi-rare__single": "8d8ed04544bfb837ef0b508adfdbb7ff2d2781b7e6c39ba1279bfc61403a31f0",
+    "phase2__multi-rare__paragraphs": "8d8ed04544bfb837ef0b508adfdbb7ff2d2781b7e6c39ba1279bfc61403a31f0",
+    "phase2__multi-rare__blank": "6b8c6102309dd147ac80a1a1da823c2264c62fe5743d1e8b55d5947c739d0a14",
+    "phase2__multi-rare__literal": "8d8ed04544bfb837ef0b508adfdbb7ff2d2781b7e6c39ba1279bfc61403a31f0",
+    "phase2__multi-rare__emptyBlock": "6b8c6102309dd147ac80a1a1da823c2264c62fe5743d1e8b55d5947c739d0a14",
+    "phase2__multi-rare__blockThenText": "8d8ed04544bfb837ef0b508adfdbb7ff2d2781b7e6c39ba1279bfc61403a31f0",
+    "phase2__split-common__normal": "889c8bcbf154c69315c8bbd3f0b97dbf1bea8b3c31de215b04212e2f0dcadd83",
+    "phase2__split-common__single": "4a7af0975e8580da7837f787b8435285a5227e1647444981681993f689e315fc",
+    "phase2__split-common__paragraphs": "4a7af0975e8580da7837f787b8435285a5227e1647444981681993f689e315fc",
+    "phase2__split-common__blank": "8b274501403a86ab3924592da24b1007942620a33040db5149749e210d214c04",
+    "phase2__split-common__literal": "4a7af0975e8580da7837f787b8435285a5227e1647444981681993f689e315fc",
+    "phase2__split-common__emptyBlock": "8b274501403a86ab3924592da24b1007942620a33040db5149749e210d214c04",
+    "phase2__split-common__blockThenText": "4a7af0975e8580da7837f787b8435285a5227e1647444981681993f689e315fc",
+    "phase2__split-rare__normal": "e0e8f7358d1543db49c82cdabc55ba8dcaa7390472c90aca45d01c3cdfee00b2",
+    "phase2__split-rare__single": "404cac71d458ecc6c8fbc466f623c2a72633cba480a37740d2c1424fc25efd80",
+    "phase2__split-rare__paragraphs": "404cac71d458ecc6c8fbc466f623c2a72633cba480a37740d2c1424fc25efd80",
+    "phase2__split-rare__blank": "f634a8a090b3917dcc12a47233364be5ae225276e6cd944daf55d487cb6b8ddf",
+    "phase2__split-rare__literal": "404cac71d458ecc6c8fbc466f623c2a72633cba480a37740d2c1424fc25efd80",
+    "phase2__split-rare__emptyBlock": "f634a8a090b3917dcc12a47233364be5ae225276e6cd944daf55d487cb6b8ddf",
+    "phase2__split-rare__blockThenText": "404cac71d458ecc6c8fbc466f623c2a72633cba480a37740d2c1424fc25efd80",
+    "phase2__villain__normal": "f506779e6c8cf1ced62cebc31de8d3e2c19f0f4d816ed4ec34572c17f6d9c83c",
+    "phase2__villain__single": "675a7d6944eafa734a854c4bd5f9d506eb04fd94f9089cff0544370b7a7c44ac",
+    "phase2__villain__paragraphs": "675a7d6944eafa734a854c4bd5f9d506eb04fd94f9089cff0544370b7a7c44ac",
+    "phase2__villain__blank": "203d53c6d09e4d67d95784408f270947013f8ec5921f40a8d1ce96edcfe39286",
+    "phase2__villain__literal": "675a7d6944eafa734a854c4bd5f9d506eb04fd94f9089cff0544370b7a7c44ac",
+    "phase2__villain__emptyBlock": "203d53c6d09e4d67d95784408f270947013f8ec5921f40a8d1ce96edcfe39286",
+    "phase2__villain__blockThenText": "675a7d6944eafa734a854c4bd5f9d506eb04fd94f9089cff0544370b7a7c44ac",
+    "phase2__adversary__normal": "890295048c3530118f239c748b11c6358a49968020db1f8c1f22e69f29f2fb47",
+    "phase2__adversary__single": "280ff6223a5700f84b7a11251c3a2dd687fe46e72bc1365de154c732daa408f5",
+    "phase2__adversary__paragraphs": "280ff6223a5700f84b7a11251c3a2dd687fe46e72bc1365de154c732daa408f5",
+    "phase2__adversary__blank": "5e8f922ad81d4aeb3757554c03206fd28600065e36d156187dac04668dc08796",
+    "phase2__adversary__literal": "280ff6223a5700f84b7a11251c3a2dd687fe46e72bc1365de154c732daa408f5",
+    "phase2__adversary__emptyBlock": "5e8f922ad81d4aeb3757554c03206fd28600065e36d156187dac04668dc08796",
+    "phase2__adversary__blockThenText": "280ff6223a5700f84b7a11251c3a2dd687fe46e72bc1365de154c732daa408f5",
+    "phase2__location__normal": "b5b2edb63135bbf95b4e3f5241611e8357cc2f8cc5578c4ca09185148b58a0af",
+    "phase2__location__single": "1dd2e197ac34515b5b5a22de9d3d66cfadd428299a886fda9aed0030ae5b00be",
+    "phase2__location__paragraphs": "1dd2e197ac34515b5b5a22de9d3d66cfadd428299a886fda9aed0030ae5b00be",
+    "phase2__location__blank": "3df9bd6015fee7a9687366097d7ced7f7f3b79ec8a4d3031379accdc84f01337",
+    "phase2__location__literal": "1dd2e197ac34515b5b5a22de9d3d66cfadd428299a886fda9aed0030ae5b00be",
+    "phase2__location__emptyBlock": "3df9bd6015fee7a9687366097d7ced7f7f3b79ec8a4d3031379accdc84f01337",
+    "phase2__location__blockThenText": "1dd2e197ac34515b5b5a22de9d3d66cfadd428299a886fda9aed0030ae5b00be",
+    "phase2__trap__normal": "fde33bac8d8ea291085b39d51e8bde78f464e34be084850f3d93e839043d8561",
+    "phase2__trap__single": "1f59daa19719e4f824c0196412f057711bc850bd7b9a7c77abfde7d06193622e",
+    "phase2__trap__paragraphs": "1f59daa19719e4f824c0196412f057711bc850bd7b9a7c77abfde7d06193622e",
+    "phase2__trap__blank": "c0f07c2a20d6b3687b15d78dbadaaf99f7546cfdef7e9380932bc88910f01ed0",
+    "phase2__trap__literal": "1f59daa19719e4f824c0196412f057711bc850bd7b9a7c77abfde7d06193622e",
+    "phase2__trap__emptyBlock": "c0f07c2a20d6b3687b15d78dbadaaf99f7546cfdef7e9380932bc88910f01ed0",
+    "phase2__trap__blockThenText": "1f59daa19719e4f824c0196412f057711bc850bd7b9a7c77abfde7d06193622e",
+    "phase2__henchman__normal": "748ceeee719b5b48ce78db980b500769088b9fe7628079f9ed8e9e07998bcaaa",
+    "phase2__henchman__single": "d51fc1cb54f16e48c86da541e455f8d4f20b00e19cb6db23691f772b1440d358",
+    "phase2__henchman__paragraphs": "d51fc1cb54f16e48c86da541e455f8d4f20b00e19cb6db23691f772b1440d358",
+    "phase2__henchman__blank": "0c5cc00d44618c59317b37263023fb5a0b70d579b168569ffaa25b5fa11052ab",
+    "phase2__henchman__literal": "d51fc1cb54f16e48c86da541e455f8d4f20b00e19cb6db23691f772b1440d358",
+    "phase2__henchman__emptyBlock": "0c5cc00d44618c59317b37263023fb5a0b70d579b168569ffaa25b5fa11052ab",
+    "phase2__henchman__blockThenText": "d51fc1cb54f16e48c86da541e455f8d4f20b00e19cb6db23691f772b1440d358",
+    "phase2__mastermind__normal": "3558b9cbbcd305a0953e5b55140a4786b310fc13ca423a0bd86fe7d30b68305e",
+    "phase2__mastermind__single": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__mastermind__paragraphs": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__mastermind__blank": "03e427cad977999e45ba7cb395fd26f4c10b3c2b5c55b51b6b30e2e4515cfde7",
+    "phase2__mastermind__literal": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__mastermind__emptyBlock": "03e427cad977999e45ba7cb395fd26f4c10b3c2b5c55b51b6b30e2e4515cfde7",
+    "phase2__mastermind__blockThenText": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__tactic__normal": "3558b9cbbcd305a0953e5b55140a4786b310fc13ca423a0bd86fe7d30b68305e",
+    "phase2__tactic__single": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__tactic__paragraphs": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__tactic__blank": "03e427cad977999e45ba7cb395fd26f4c10b3c2b5c55b51b6b30e2e4515cfde7",
+    "phase2__tactic__literal": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__tactic__emptyBlock": "03e427cad977999e45ba7cb395fd26f4c10b3c2b5c55b51b6b30e2e4515cfde7",
+    "phase2__tactic__blockThenText": "046fc2b609e41fc5e560885d8e64095bbc5cee5401d7b0320062579391978cae",
+    "phase2__scheme-a__normal": "4b815d9591f85f17be260b4bfc0f20c10f3d2e62fa04a998d061128af9ffaf1d",
+    "phase2__scheme-a__single": "5f4b665433d5737cad060ccf6a9606d535030c5d4abf70409136e9632f7d2fb0",
+    "phase2__scheme-a__paragraphs": "5f4b665433d5737cad060ccf6a9606d535030c5d4abf70409136e9632f7d2fb0",
+    "phase2__scheme-a__blank": "a60fee4d9943cdb79750f67b773a0d1f932194cef1bd014457da806697976dac",
+    "phase2__scheme-a__literal": "5f4b665433d5737cad060ccf6a9606d535030c5d4abf70409136e9632f7d2fb0",
+    "phase2__scheme-a__emptyBlock": "a60fee4d9943cdb79750f67b773a0d1f932194cef1bd014457da806697976dac",
+    "phase2__scheme-a__blockThenText": "5f4b665433d5737cad060ccf6a9606d535030c5d4abf70409136e9632f7d2fb0",
+    "phase2__scheme-b__normal": "74ff8ae2f30f383642ab231b4f63b144cd3782d3c707ff72b360f12833d66c0b",
+    "phase2__scheme-b__single": "129743a2f43d85846698a46b28d99e05855713e22787cc089eabed0738228caa",
+    "phase2__scheme-b__paragraphs": "129743a2f43d85846698a46b28d99e05855713e22787cc089eabed0738228caa",
+    "phase2__scheme-b__blank": "bfb337f9df2511b276dd2b88cc27f4dcf09b5a332fe58c1c28c89fac09ca147f",
+    "phase2__scheme-b__literal": "129743a2f43d85846698a46b28d99e05855713e22787cc089eabed0738228caa",
+    "phase2__scheme-b__emptyBlock": "bfb337f9df2511b276dd2b88cc27f4dcf09b5a332fe58c1c28c89fac09ca147f",
+    "phase2__scheme-b__blockThenText": "129743a2f43d85846698a46b28d99e05855713e22787cc089eabed0738228caa",
+    "new__hero-common__attack": "657a6e48bdaf4d524283834ef7bba188ae430b7d7ed13894f45b08f584f27b0c",
+    "new__hero-common__recruit": "11b48179775d817d436aeabafb10ce4dc76ce54294c5d547f29e8e8604a83ff1",
+    "new__hero-common__header": "c44006332515261b76c89be5f3b0756612db0fe9a4b357fb9133d256f6582fac",
+    "new__hero-common__single": "8478ee55093ed8e57c605d45f03d010098637fbbcaab95f0358104e0318f3e82",
+    "new__hero-common__prose": "930db8fbc1a563b062843472d40f0e24c704a5d331e634de585a6a1d319b17c6",
+    "new__hero-common__long": "4f75f13ce707bf0b33d0c37c3120081b5a95a7f741c548f6649136d93f77f97b",
+    "new__hero-common__styled": "eabac8fd29c8ebc400eaf92beb698457e8a788e601ccfba02efae8ed355889e7",
+    "new__hero-common__suppressed": "9631dee8ee8840a22f12586f391de45b5eb18e832880cc905f22947531aa9cf8",
+    "new__hero-common__narrowed": "df06d28e2abd9bbb55474b551686482cc20074fe32dd0968d0ba27e02f8aa316",
+    "new__hero-common__mixed": "17787427de1aff0a226d6617c71884e3cf58fb474ae46d4fb73cbee7b791312d",
+    "new__hero-common__competing": "ed2a17f5edb38f3dad46b2162f9eb6e91fc73d9ee520cbc6d85d7c7f3ff61ea5",
+    "new__hero-uncommon__attack": "e9989c2b9fb67b435379018d8a32b215596ccb11f2245481905574bc9713061c",
+    "new__hero-uncommon__recruit": "be3f9af494f42828b2aef3b9dcd8e891278bb574fcd9dfed1c78a9169e5f14da",
+    "new__hero-uncommon__header": "fe8511c0f2d8cde9f8c56f35ed7ba7d50e0b44baf0d915a618746121166c0906",
+    "new__hero-uncommon__single": "3e9596695a4e2f0d46732b5aa6d02a6967599a9240b4b3f1f1f58bc8cd2d16d2",
+    "new__hero-uncommon__prose": "a3c50ddf5e0f82c79d6ce77e24c0f50dea8ebca0b3984fc7f947742aefed6c7a",
+    "new__hero-uncommon__long": "a50b6f2e381a46d20fa39892505fe0b626232966c0d611dd252a1f32f5171dfa",
+    "new__hero-uncommon__styled": "02aa1ad896bf366beebe535db9ab5e7a03a7d8244dee772a9703944cee657472",
+    "new__hero-uncommon__suppressed": "090037b9777b08da0cbb004b08c02d84556ef5aaf86cd07c8a8877694db4a7b6",
+    "new__hero-uncommon__narrowed": "bf4984239efa89bdbe2112845fd6e16eaf909e122beecc4cc8d4a355f0207a20",
+    "new__hero-uncommon__mixed": "59c6294fda25154d3aa4ea3ba48835e47712f3f5f1ac195446e2b776177f56c2",
+    "new__hero-uncommon__competing": "36c5ed1ad09ceb5cfe2eb42a48ef4cc618d3626ae034eaa454f0b79ce87c7fc1",
+    "new__hero-rare__attack": "64e33428389f6b60181910a2a7a12c177bd3ba9e7aed846a9f33f863231ca448",
+    "new__hero-rare__recruit": "42687bbb84ebf3aa38503b803edc23deee7ebd43a299cd5552be6f2b70b03b81",
+    "new__hero-rare__header": "c6b43f85f8747f65f95438285a2324021dcdd053c5ec6ce7b753441e084911b9",
+    "new__hero-rare__single": "8208baf6b9c6dfbf08d329e48560065368f9f8e0a788888c725157844820a313",
+    "new__hero-rare__prose": "321f3662f4e52df5ea60b911ded0b513937884b7eb07714b2afd50266a938ecc",
+    "new__hero-rare__long": "093bd70bb9577cc6f65bc112f0dea5ec106d426e75d922ba2b91155f170d7572",
+    "new__hero-rare__styled": "4ea82815a6cdc2c2b82dc4a2e361000b3bd2f59df5df6b07f7c64f3d67f71d1e",
+    "new__hero-rare__suppressed": "bec46c042a6f81407703eae03c6a6697737d8fe37a8963c4934ed579538eb10b",
+    "new__hero-rare__narrowed": "d486a763de216cdcec673ea0785c6623b58f5026ede09875ec2dd2159c98e8e3",
+    "new__hero-rare__mixed": "ff15027ce04e8cdcbafb5dc6abef93a3a6eaf189eaf8508c56b4cea69ed80a04",
+    "new__hero-rare__competing": "6020af20ae7f33ebdbd18da0784758f9c1603638c6a731247e61f93b3ca09efc",
+    "new__multi-common__attack": "1e3932da3fec452cc0a84db00fe6f4e43511464abe8769c85e9d78e734ebc195",
+    "new__multi-common__recruit": "78d5a76bb6c780e1e84a14938fe15964001278dfb6b2f3cea97332e93ebf659a",
+    "new__multi-common__header": "57434ae26f9b1e52d5c3f85161d5c6444f0381ee8f6c26c8842dfbb4621ddb64",
+    "new__multi-common__single": "7de278829da347897d10d41d7c46f0fc8039984ed9a1e5214cf9780227aa96ad",
+    "new__multi-common__prose": "99dedb128899e41ab74e15b2ff9357fdac560796fde54c388d01b68f16ac81c3",
+    "new__multi-common__long": "e5b9be52e7eddf77f657ec62fc0958e351b705380a4f1a4133110fd3fe096a49",
+    "new__multi-common__styled": "bf433ded0f564fedb35d67ff370f140ae1163a1e835db78382a2391117b927c5",
+    "new__multi-common__suppressed": "36005e156f12def63904cfe6ef78d7b3bf46fff66b443fb2844947adba890453",
+    "new__multi-common__narrowed": "e57477f8d454a9e9bbb928c4951ce62ffa6c85292d3774a9f5792cffe58376eb",
+    "new__multi-common__mixed": "70b3e33d2af7cc7ec9bd858f40256fc0b16e3ea5f2eea8d0388913fd520e7ca0",
+    "new__multi-common__competing": "db992ab94826a96a23045f5af2519f6db5dc2b267808d59323c9dec8b822aa3d",
+    "new__multi-uncommon__attack": "b130da2ec3af5d19712201812cc97e232ada62e7f4100260f1756c969863dd0b",
+    "new__multi-uncommon__recruit": "ccb1afb42dcfb5cb0bc453f6cc044ae055170c3a29fb6fe33b340a962d561713",
+    "new__multi-uncommon__header": "faa6b0250c44f49129b9286fe618fc7f027f563ce754111f135c459cf51c4daa",
+    "new__multi-uncommon__single": "856b324de3530fa25e5dc8d54a5850c74378b4cc036a33c15f4ec645889dcbad",
+    "new__multi-uncommon__prose": "0f8544cc4179033810e62040cb45b4d6f1b38b05eeb5b350b8f49997900bc06b",
+    "new__multi-uncommon__long": "963348770739f2b0c63a2bc6e62b95371d95c89cd816eefc2f0d88a14f5c8de0",
+    "new__multi-uncommon__styled": "9a3c70b4a5775bf3db6dffd6812bdcfea88154af842b5f1b5205a20d97e07e0d",
+    "new__multi-uncommon__suppressed": "f887aee1697f33c21f7e748ff38b13380fe8d1f5cabe31f528deef9070e663fe",
+    "new__multi-uncommon__narrowed": "6442bf4ee1920a7dbafe417b6843911e3505c1088c48faad87a8ea197fabf1cb",
+    "new__multi-uncommon__mixed": "1144edfa84300352b9fc71e8fe56068434f85b2b3b9c63ef10c5a6e4e45e01d8",
+    "new__multi-uncommon__competing": "40297231629d1e7026cbb112909efa9e18e121f131ae6a5ce63f351c9b38a9e0",
+    "new__multi-rare__attack": "1fd23199b5d13dd455d6828e98bcad52d0f5837a347bf97a3e764b532ee5b42d",
+    "new__multi-rare__recruit": "8475ac43dc5419ef24b948bdf2b9940b68ee9012109491f5fbc300ae127bc3eb",
+    "new__multi-rare__header": "8556a594695ed17c1e31bffa930989a2a7c2c05462e92698f24c6411abf204cb",
+    "new__multi-rare__single": "ff7b1adc809602664d943b1cb6abb2322c379fb3240d9b9dadefd30bda128e40",
+    "new__multi-rare__prose": "fe701698c383958d0319a6da6f5636a94e96f69239c6e1912c012403a6d1c293",
+    "new__multi-rare__long": "d7e4db5de095bb2bd11d8bcc64104a97483acda38d10eeb2aa6925390c92622d",
+    "new__multi-rare__styled": "b4dc2f3275faef4f4211272506fbad8a00cd7549b140ecd07071e1999e69e81b",
+    "new__multi-rare__suppressed": "a080bb70604101d923e56f30d6bceaaa30383d15bc84ca47889595c491686265",
+    "new__multi-rare__narrowed": "a42cbf482d5ee18d4716813c01dde452b08c4793045380c4a5d9ef14a86798bf",
+    "new__multi-rare__mixed": "00e554cb7fbab531b3c1e220c5b609b5574c72f2ca4f1718d41dfa7e44888184",
+    "new__multi-rare__competing": "74227afe2fe4557fe05ca12a897ce7cf2d28429e6681e120e9f69caab34f8bea",
+    "new__split-common__attack": "5f4d9178cb2447a6f573a47e86bea9b6981d9d8b58bc044a7712d847c69ac7ca",
+    "new__split-common__recruit": "c49fd3342501a982d0cd9d0cbc269a4a7e6f5e2bebcd3ab9f2f74a7c34fce891",
+    "new__split-common__header": "253977a1fadb4a70f1db6c1f1a83e39e875929d5841abae3d77bf34f4caad7e8",
+    "new__split-common__single": "d5c5ad706e26bec6ffb31b352ca7f9aa4d19d86fc3ad8624a617cb80335080e4",
+    "new__split-common__prose": "d0ca1b10d59085a6ce91210c600c82c06f92570a4bebb30202d7e9cc6fcf15ac",
+    "new__split-common__long": "b362cf71340cb8c9c2c765ea6a708c62f62690ad2f25b2477b8aa44e8add5e39",
+    "new__split-common__styled": "b1388e608a3bff0d245cac1307e44a59237f83bc35f4115b7fc8c22cde403742",
+    "new__split-common__suppressed": "55e436d21a6474d771f55688187bc4287a4ca08f22134d4a99889946add90bfe",
+    "new__split-common__narrowed": "065476f51bc96a0ceca2d733dcfb426a4501bb9e89ea27ecdba689aa770ceda1",
+    "new__split-common__mixed": "37dd0afdec9f11bbdb8653ddcefacf85bfd428944e0609e16d86778322e7a88c",
+    "new__split-common__competing": "23860d16718510d108aecb151680610cd7c945be738019e25157b403e84d8d40",
+    "new__split-rare__attack": "28719b94f394ab3b1d3dfc3c57663711bc6119307107b57bd178136fb40bd5a5",
+    "new__split-rare__recruit": "452904230884e802379bf75c20dd0037286009e64ed30100421eee120640fe0b",
+    "new__split-rare__header": "58d2295d524a44e92b65d774c359abb461721fddee55d3be6bfece8e05ed6e52",
+    "new__split-rare__single": "3af286e64dca7f47d40baec487f385038c2a49d3547fb4b976c772eb5b74ee1a",
+    "new__split-rare__prose": "4bea54dc12ae8f00a4354c887eea2b9548012ee83ea648df253368953371421b",
+    "new__split-rare__long": "7a28203af08f26a071122cb3d02807a3a8536ca997fba8261a34cf51cdce3f71",
+    "new__split-rare__styled": "bdec692427435deaabfcbc4d86ce84847f173004dc3cf3e7180b3dafede94302",
+    "new__split-rare__suppressed": "c8b165114793d23093c276c78a1e2b4f7673886e2ac1d4de258b69f8567e96f4",
+    "new__split-rare__narrowed": "f2971f5a63c3e77dba8a22e4c832907133db26a591d188ab2135ce401cebe4d7",
+    "new__split-rare__mixed": "7b84a1a19912b1670f64efa8d61efdb2c09d7d9232d7601df4390411cbcc40bd",
+    "new__split-rare__competing": "58e7878205a47d221fb75805dda77f215f357bc4c57e90ed5967555bece8d703",
+    "new__villain__attack": "a24d4394d59ac2ab37be4c6d800d00dfbafdf126e9dcb41a3ec5adc4d0fd9b50",
+    "new__villain__recruit": "3bb0bbfc2c121e9cde793f37cb749d696b06b788955c1b41e3875f5abb0e148d",
+    "new__villain__header": "d5187db4d3f6d57a832b3c04fd2ce8051e6e7b2dac27bd3a3013b834452bb93c",
+    "new__villain__single": "c251cfe0a56ff36a0dea8bce42a07aba74726bcc93004e3130276a5926f6759a",
+    "new__villain__prose": "81bcf0d65d3765ff0ad5ceffbf3b45e562f013b22598e14c784cb8cb603ea3a7",
+    "new__villain__long": "f068a7bf0fe0e216ea8d2a74978e36a5d750d01cdcefea91f92ddecf26b78c89",
+    "new__villain__styled": "995b7a547a290f4e890c1dcb8ad009809d6622d541b57ab9e7fa81dfd93a9b71",
+    "new__villain__suppressed": "b44cf06c54fd8edcdcfebc7c2b383f4c86b28afd7f87143c69f3769f5a97b283",
+    "new__villain__narrowed": "f4677543087e2e2f6e15c592590277a7e9ce6984b950866f3dcd77729d45bbc1",
+    "new__villain__mixed": "e0e5b7d35319532306b907f417fc8e0f3bcd025b9c29fe2b6087ec6a16025033",
+    "new__villain__competing": "0d1a1650e7f9d11a7faa536abc09f81843035336f656267e20fe7b98006d3c2b",
+    "new__adversary__attack": "9090ba8785ad250d4fa1ec01de3148987ae46a5b17a8865a959a9bbf95d44244",
+    "new__adversary__recruit": "a04fc9eaa40027ac476435d7a65578b5ed7ecea1cb770b3dd2b33e7049fe5122",
+    "new__adversary__header": "d974d8d67340decc0f0519d1ec93bed5ad35a3e332eb95209489677955885f1a",
+    "new__adversary__single": "0b7b5ca9a16af946beab8ed59a21ab197fa6e76095cd9d1004940de2f94d994a",
+    "new__adversary__prose": "a1cc159603ba699743b59bafe4790c2ed6190fc4ab41a18fc04e288bb399d1be",
+    "new__adversary__long": "ff7cea66aa107b3f5c587ac5fcc6bf40786de06382465e9a9a1530b4cd5cee8b",
+    "new__adversary__styled": "48d358e9cb4559372f4874cc3a52dcc77e4e32f947eb708c6bb91d920dc67be7",
+    "new__adversary__suppressed": "33e6bfd59d14918f0d4b2808c2e83af946d497aac7b9f05e1a02d3b15ac61fae",
+    "new__adversary__narrowed": "e866f285e37505e71c57074e30f28efdb6b870a62657b97812e19762fd260aab",
+    "new__adversary__mixed": "445561b97b544bf072c49890fa1c8019bf46e3ea6e42d1af152a3b7d6cbdda9b",
+    "new__adversary__competing": "b749e3ceb3a2ce9d8cbc1e8ab8ba9f2bcc853a354cf6c66c480891fa1ba6d653",
+    "new__location__attack": "16dedf9cadcc53e70fc43db475302adfeaa07f21c615efa3797efbc9dd987d9b",
+    "new__location__recruit": "9a1b31fb62c5550238585df4c07638e2ab634d83ddce45911d0aa1a8c0692480",
+    "new__location__header": "4614ba889cb8ed6b02f1af4ebc3262ea3edf4d541516a050ca32361ed7aec70f",
+    "new__location__single": "eb3b259425b4aa52423a317e85aa8ecef0bb8f375751c502313def8e93892083",
+    "new__location__prose": "3e4800bab393bc4e87122c0321e780c0ce0cc9ab69aec4eba1c61f2dbb8894e8",
+    "new__location__long": "530259be2c5b96ea732c0c0c657fa925994dd7f6fd1df6fa7c3b77cbc4ed4756",
+    "new__location__styled": "e017269cf4577ce4254c10af80b6e520ffb885a707ad2a1140d1b26cb97406be",
+    "new__location__suppressed": "e336d3bbecfef392b34afba2afd821f21641466a2f89e812b11bc3e5634df7f0",
+    "new__location__narrowed": "6cfa7015d06ee95413ce1f88231dfc234efc9548c40d24c57c637ceeff00c576",
+    "new__location__mixed": "257df2a86cbb0d21c8a960cd2005d8f832bb408797255e63e689668747ee899e",
+    "new__location__competing": "c34ae7a4584ac5f3a6e53328ed5c125b42a9c71ee63a7cbc16514586a3020fb7",
+    "new__trap__attack": "4fe01f28901488351b370aac1628da7ee7e1a33ccdeb60fba88c907f100e032c",
+    "new__trap__recruit": "2d524f8ef11a8e88963297cb3f3eaf66b29debf828d797810043c14f14fe69c5",
+    "new__trap__header": "596a1ef2c00c1c1ec85fc59aec328faf6a7af74dff92f0ff29bdc06248febc6a",
+    "new__trap__single": "db0f7c90cdbafdec21986dcf21f921727584518df971f32343083ee4cc04e67a",
+    "new__trap__prose": "5591c29001e53db504c400cefefcc26069d8e8c234b43f36d9ae47f2718802ac",
+    "new__trap__long": "a2a3a6f88c16c18842fa63fef0169fcb3c161862359d32fd3f8e85b8a93f9b02",
+    "new__trap__styled": "58a0afd4e225c3a571a7bbdccc294c86f11588c2522292220ed22c455a84c5d5",
+    "new__trap__suppressed": "26902f94cda28a90902d589070c9178774d6ee9f4e4eeae5daa0463216f77235",
+    "new__trap__narrowed": "65c18cbc6628eaa8cbc93b911e5e6412891c0e832b7a8b1da8e3e2c2c029acc9",
+    "new__trap__mixed": "c7f1a4c579374b9d035bfe8d8dab452df3115b8b892bcc56cb619df52525cae0",
+    "new__trap__competing": "a8d8926e7996acabe00e39d63e673163345796559b150908454b873fd0fe38b9",
+    "new__henchman__attack": "702de074116aec6bf5d81a76a65d2b636e8b04ccd8ac9964ada99a5175712078",
+    "new__henchman__recruit": "5cbe51b7f3a26f9f92172c6c202d103bb42e01598c283d039e54b8b4603b7243",
+    "new__henchman__header": "ac5ba0b0298b300c68c761eb7d3c68b3e8bb28d32b8cfc3f169587428d72f535",
+    "new__henchman__single": "fa5c54d3dab75aeaf0be75d7b39a5d624ba1a574bbad29293e5b9a95357507e3",
+    "new__henchman__prose": "84d229649f32ce3af1c4ac7123535cdd6abfe46e0fccfea7883d969d9175fa15",
+    "new__henchman__long": "99b2a6c476601181134fe32c8b2d6faa057070853727896373617c743e72a473",
+    "new__henchman__styled": "5c0b7f761b8dc487ffc5aa7502a88d88b1562bcc35c08fef355d574e269fd949",
+    "new__henchman__suppressed": "b0bb272da96487682e7a3ba12d51b0f7a79476b4aba5c2fa6a73e72ab5675901",
+    "new__henchman__narrowed": "7870cc68a599830950417b95860e7da03a4ebaa76ed4152b7771a164bb63aace",
+    "new__henchman__mixed": "25f7488a8088251a11d12c2e927df28d2e48ef7e15d26593bf0d9c9f598f6b0b",
+    "new__henchman__competing": "3160b73e932f6a16548797f536d35bd2bfd1b814efbd6ca0788b8d0d4c62e786",
+    "new__mastermind__attack": "19132d889a119d42ac99b1e73dd4ab40ccabd2397d712a27f317680b9a513772",
+    "new__mastermind__recruit": "06d9a8d90f07933a4fc48d033301e3eb5cd033808869b019f0aaf05e416a8e3d",
+    "new__mastermind__header": "765f1336200f19e0fd143f3498bc28c357dd2d0125ca1c7f972010289e727d13",
+    "new__mastermind__single": "52988ee628c95900d0195886306fab1383a3cf3b0eeaaafdd033af29b4439d63",
+    "new__mastermind__prose": "eb8152999f6e0a8669959c9ef672df96a84e4ea4f15883a12e04dd370cbd1eea",
+    "new__mastermind__long": "40e2e9f377e23a3d97fb417fc18a7933cf71e01ca942b500f84721b27839a343",
+    "new__mastermind__styled": "32db6a8b95a9af3746760fa7e050cea355b6ed5285a7800fabc28ac831a1ee52",
+    "new__mastermind__suppressed": "245177bfb940367782d97296453ef62f2981cda953cc6b2ca01360f35ab5462c",
+    "new__mastermind__narrowed": "cd3d47da41114c3cf1c8502eb6fcecbe549c109946bd758dc26422fdf5c12f43",
+    "new__mastermind__mixed": "fc294f5734375b46eacdf600fd4081afe663b9f55b5fbf00d4e3e7e4e1d35ae5",
+    "new__mastermind__competing": "f7fcc0455ab78df751fdfa60b3562a08773f0cac04cb18e0472212f1f98be545",
+    "new__tactic__attack": "19132d889a119d42ac99b1e73dd4ab40ccabd2397d712a27f317680b9a513772",
+    "new__tactic__recruit": "06d9a8d90f07933a4fc48d033301e3eb5cd033808869b019f0aaf05e416a8e3d",
+    "new__tactic__header": "765f1336200f19e0fd143f3498bc28c357dd2d0125ca1c7f972010289e727d13",
+    "new__tactic__single": "52988ee628c95900d0195886306fab1383a3cf3b0eeaaafdd033af29b4439d63",
+    "new__tactic__prose": "eb8152999f6e0a8669959c9ef672df96a84e4ea4f15883a12e04dd370cbd1eea",
+    "new__tactic__long": "40e2e9f377e23a3d97fb417fc18a7933cf71e01ca942b500f84721b27839a343",
+    "new__tactic__styled": "32db6a8b95a9af3746760fa7e050cea355b6ed5285a7800fabc28ac831a1ee52",
+    "new__tactic__suppressed": "245177bfb940367782d97296453ef62f2981cda953cc6b2ca01360f35ab5462c",
+    "new__tactic__narrowed": "cd3d47da41114c3cf1c8502eb6fcecbe549c109946bd758dc26422fdf5c12f43",
+    "new__tactic__mixed": "fc294f5734375b46eacdf600fd4081afe663b9f55b5fbf00d4e3e7e4e1d35ae5",
+    "new__tactic__competing": "f7fcc0455ab78df751fdfa60b3562a08773f0cac04cb18e0472212f1f98be545",
+    "new__scheme-a__attack": "229003b46dc0f4e7a445321f85c65db271b097febfa2d765f1f305b365b02c44",
+    "new__scheme-a__recruit": "bece0af125686f4fe7097f84f159672d4d9f56631cc525773131837b46d57cda",
+    "new__scheme-a__header": "787719870f0189314a8f8d4c182c9fe7252d08ada925676c275675be651598df",
+    "new__scheme-a__single": "51f978f015a5b8748e936388567e51025bfaeff10c61df78c2fe71a8c39f3586",
+    "new__scheme-a__prose": "5e7ddcc0f973ad95a399052393d7f06aa762f1c994234c0b545c8c120892c539",
+    "new__scheme-a__long": "dde2866b20e66516f333fb53d52781c6345792bbf83613fac8ba49840460bf2c",
+    "new__scheme-a__styled": "1b1d5eb94a69cc6625ee7c846bfc041f5d5155b05f0d98ee28791b2cae48d10b",
+    "new__scheme-a__suppressed": "f0c10099cec4956fba51dd0b34d150bb67953305eb286b1dabb0c54b04aa1c37",
+    "new__scheme-a__narrowed": "a435e38c4f744004a0b3eb00c27523b0908dd1b0cbe5a3ac316d3ea380ea02bf",
+    "new__scheme-a__mixed": "5d047e8dd6877c766e013c0d0c77ce1c8e35c24784400f3709d38ff95fa7f320",
+    "new__scheme-a__competing": "58a0c6565cbfc066f6416bb2d95b1cfe82011aa73df798ba4bb6289db50ac4c1",
+    "new__scheme-b__attack": "8f8131aaf290ee53ac2234ba8e4dfcb59abb555ddfb520b1082c9a18bccdaa5f",
+    "new__scheme-b__recruit": "417f2a52e1c90c4b0a5a6e3c2b2e14ef4dd32ac16215f97425699bf30279a445",
+    "new__scheme-b__header": "eae648016448a6603d247dc91cbaf6f57de3e135a2ab1cd2fe32e430f89326ee",
+    "new__scheme-b__single": "9aed5c5cb17321275dbbd4ed128312fa6618d65e1127891af68b1bc65c0060d9",
+    "new__scheme-b__prose": "4d9e4b54121a821bb4c880a57dc1f2d413da6d181e0bec3b0b64f1ade1466df0",
+    "new__scheme-b__long": "6959b1c08e306903812aafa9be26868b33631bec4ebf18ed235c59c30861bba5",
+    "new__scheme-b__styled": "f0bab58376fa6859dc57addd546c367e7ea21e08257fa204a8e3e8d5acdff93a",
+    "new__scheme-b__suppressed": "d72a43037487df95a079da4464090a007bc6dc8b927c4b23722fd2aa0b714695",
+    "new__scheme-b__narrowed": "45836f98bd7fff59fbef293fcb8af28ab03594ed5e69cac48b4f98b001c87fd3",
+    "new__scheme-b__mixed": "12170b30ba6d30befff95eddc2f5958a836ee43f26ba78b8836e52d2ad07f3c2",
+    "new__scheme-b__competing": "6db94348d20f951a029349d502ab00784d89c5756662982ff994e6d8b8a3c91e",
+    "spacing__hero__textOnly": "51bd8b07d4a2e7040a099c758842ca8be880b638b07904be37a47d8d0ec5478d",
+    "spacing__hero__statLines": "0953fd09d42c07e3154dfbc7b14a94aea7479192a85fa366b9ad8984500146f6",
+    "spacing__hero__classLines": "5379a1dfc27f47b3d938eed8f0888135ce5666690f558e1bb5af0fc90c3606f7",
+    "spacing__hero__mixed": "12e8e8c8f25ba5d5e3413cc0aba1f75303e0dccb53e686d47d82bbddd163fa92",
+    "spacing__hero__blank": "9e2c29a592ca296cadb599c3d726f97cfc8ec9b9834d67c866b54ec95d84f116",
+    "spacing__hero__styled": "94094e9a93fc25a8aea9d8b8c0ac4184959b451ad9050d6741a927424ad14da2",
+    "spacing__hero__comparison": "bb799547013c888b051e02c47a09226c2180a16caf493dc6929b9b8258dc981c",
+    "spacing__villain__textOnly": "5a959a295f2dacded155d9d41c3d62f2f05e6f12ac66ebb5fcb1cc274c020ea1",
+    "spacing__villain__statLines": "a595ef176f8fdb6716011ce674afaf601cec4a1eafc9b6ac93887313d872d9d5",
+    "spacing__villain__classLines": "d11bfa398c1cca72cd4682dcde4c851a9dea085d0e5cf578c091ec2ae576e37f",
+    "spacing__villain__mixed": "def4cabecf0ac9f2b18042c2817a4070e9ae10ddefb693d64fc8fc73939b3e74",
+    "spacing__villain__blank": "dd01a56eb660e58711e1d55d4982304b1bc17fe509d881d85521f8268c09522d",
+    "spacing__villain__styled": "5cddac3cf31b7d1ce46e10faa91e7749cd9977c7d6716a2c4c79b276e8228395",
+    "spacing__villain__comparison": "49d443b7bb49919cb86d89d2fa3026ee6f26a42e8fb2bffd51e1a1452e014730",
+    "spacing__mastermind__textOnly": "26fbeb01ec633252ad76dadd5141dafe8509bd237eabe506dc44d940d40e2ad5",
+    "spacing__mastermind__statLines": "e18443f0f70deeba2e1a13d21f9e3060a9db471821171f747c70bbc85b9fbc7f",
+    "spacing__mastermind__classLines": "ae26436e06a862dd5da93f704b2dd494537e028e6c3df75812e13fcd98632a9a",
+    "spacing__mastermind__mixed": "6864450ea1be160f9516e3159330097577b3034eb5d080268d2a49898f7a9af1",
+    "spacing__mastermind__blank": "d9989d6bb1540fe2e754c5cd345b450fa483b09c39faa4adb222a918ade7c767",
+    "spacing__mastermind__styled": "6a7e2a4688cd3cc60ae84133faa9eb51ba58c604e549fc4b0b9c8cc28bf5cdc1",
+    "spacing__mastermind__comparison": "a71c1441a6976f4bac6eb22c03823b5782bb86f22527d58b227ee476ca55dc2f",
+    "spacing__location__textOnly": "035123b7cb425dbf4e6d33ed45881d851e3459e83f27a4c266965294a859f434",
+    "spacing__location__statLines": "57a75f3135e4380b0aea392fa386f9aae31635ac0aa3d21b7924085f212a8bc9",
+    "spacing__location__classLines": "00b537d34462d18fdd9ab059e54d57e811f9a4d61e7595c5b32c479ac91ea813",
+    "spacing__location__mixed": "2dfc0b4474704ad7106ffc095b309beb22f25a3a4636d01e86612d51470a33fe",
+    "spacing__location__blank": "71caf4a6aa3506e1f35f9bfc177fe7bf330dd4be5ec70c85550b9a8bc3df2351",
+    "spacing__location__styled": "6799b40222496045201456b2226ee3a7cc3a557c1a8d9bc262e66d47e02fefa9",
+    "spacing__location__comparison": "d2c91cba6135f5528ec9b10a18df1f8a841c5cfbb4e7ec0f1771e93176f258a4",
+    "spacing__henchman__textOnly": "3cbb49ac3f4af7c8c48fe06a5445406077d62c5b1109af514f7a3e9b093a53e6",
+    "spacing__henchman__statLines": "9781ec5154f13fef0748f0dd4d27fe8af803087dd2664aa4a04866e585d0ca95",
+    "spacing__henchman__classLines": "ad593c940ebbf1590a03c32f89c217af590fdfab5dee710e2f44e2a1dc95b95d",
+    "spacing__henchman__mixed": "49daf6166830b28d8a23e53e96325ba9c36be78188a9919eb98e0ed448739b22",
+    "spacing__henchman__blank": "1f75dace19465621eb090e6541aa3f31285b0fb065ba1f9a463b0e173f2164e3",
+    "spacing__henchman__styled": "ee66725c39d330f55cfe2997d84a735109fbf806013cee23612a0afdcd946648",
+    "spacing__henchman__comparison": "3aa1b0b2d7b932130dbf7ba5ec4ed6820dafd58e6114c7266e99f1da5d61a518",
+    "spacing__trap__textOnly": "1f5701379366b8ea8df21d6ef5bef3814be66be0622e122ab84597d21a7ff238",
+    "spacing__trap__statLines": "518ccda69bc6efeccfed102c68cfc819019aae140a8ba41e6f6a64a0f77fe4fb",
+    "spacing__trap__classLines": "21514f88095c20180330e5d876c232ff3931cf8dd8c3ca8ee0a71717adaf2e40",
+    "spacing__trap__mixed": "18793dcd0c97e900196761b5105ea9f0fc1b99ded7175c98539c9f90998ee241",
+    "spacing__trap__blank": "8ac2b0d954d18d20058c25be00a4d6deb609a09e034bfd83830d64aef155caf0",
+    "spacing__trap__styled": "9e4ab3ffe592a10e6d2586ebc2e0eb930e694882482295ff8ee5bdf3abbeee31",
+    "spacing__trap__comparison": "261cac7600481f2408d3ed179c89333fe4105305cd75b640b2e77769e0683947",
+    "spacing__scheme__textOnly": "4c3d9f41a95416da5ee5bb3f41d3945a11e6b48c18bdfe3745ca462db47de0a5",
+    "spacing__scheme__statLines": "3bae0f18ccf1f390b3be20ac318ed1538af7d9c827ee9ed48edc4aec54085dae",
+    "spacing__scheme__classLines": "a1dd1b7a13e13cdd7415ace4eb68994d8151a003b97c6990f773fa60f69eee65",
+    "spacing__scheme__mixed": "e5b2934c7220d191995adc619d374642e36b4e9aa4c2e244dcb5522690901fe0",
+    "spacing__scheme__blank": "1edddc6a2d57af4dac00da61e57a325522892809e5b3c7b9d138199fea357a81",
+    "spacing__scheme__styled": "9e840cad8f955bc339349d93bf08a51fd81f360872404534ce91dfaf92c62f4f",
+    "spacing__scheme__comparison": "433fbe58605ce14737937ff7bca8883652314f6808435cc11a06d459f2276db1",
+    "spacing__split__textOnly": "0b073f5c1b3cac296eabf950dc94ea6026dd59a1aed33287e8daa8779f143ceb",
+    "spacing__split__statLines": "f454466d796430513f9004591deb895cfbd8fc65bfff7006a95c539c52101023",
+    "spacing__split__classLines": "935ec3e866634a5e195c21de878c59a2f102dc13b7e026d301bd0ab1028094a7",
+    "spacing__split__mixed": "b24d976eba9b8122f0238d5d909bdf3f12dd839a962d24ab4a1056ccac5818fd",
+    "spacing__split__blank": "ca2366b04a414e5879285f26f528a29be9f10eea3b96240202b1650ceec2a2cd",
+    "spacing__split__styled": "df82b8aab51d3aee2a3093435aa45ffc8d1598f866d37bfb9177e538bfff6143",
+    "spacing__split__comparison": "cfd082828ecaa9d847173d765e1c5f4c94ba0130e33212ff80e648064b449c64"
+  },
+  "heroes": [
+    {
+      "id": "widow",
+      "imageHash": "36fad17b9e0217514c0e83ab338fa6850e352da7e5e5b0acf7d21102ec18a4a2"
+    },
+    {
+      "id": "captain",
+      "imageHash": "f470c57448bd399545f3128c259a41ba03feace900ac230cb303863d67f54a44"
+    },
+    {
+      "id": "emma",
+      "imageHash": "003b247887b0acc4abfcb23d6363a910270f4b873a95ea364e693d5c433b5167"
+    },
+    {
+      "id": "rogue",
+      "imageHash": "d64bc3308d1d3ef30a7079d6add4b49894e6806520f243f1b8681d6490101b7b"
+    },
+    {
+      "id": "determination",
+      "imageHash": "a4a1a83637474bf2a4c27556d7d9c07b7d5a62affbb54b040a4103a4b83ec668"
+    },
+    {
+      "id": "optic",
+      "imageHash": "47b74ca175bdec5b7553e437d71cf32f4d71e1eb280f2a02e077bc74adba515c"
+    },
+    {
+      "id": "venom",
+      "imageHash": "925f43c4d16d384331df1e65b14d9a028eab89dea5e31248912a64326363f384"
+    },
+    {
+      "id": "web",
+      "imageHash": "45d084057cbe1cd0e9bd9d9d3dadffe761514becac6e3a2c7e0557a4511c7625"
+    },
+    {
+      "id": "thor",
+      "imageHash": "23f7d2fe4fdd338058607e31c43f3fcf05277259ad6cfac324f6eaa44b67e96f"
+    },
+    {
+      "id": "storm",
+      "imageHash": "0663bec33fbc7de85d0ed7d375025c7007c5e8dc17845676b2c609838d31cca7"
+    },
+    {
+      "id": "ironman",
+      "imageHash": "f998e9b6613237a027da33362d753791443256b549a9c3db37ca991f600e603f"
+    },
+    {
+      "id": "fury",
+      "imageHash": "ecb9673420e5dae8db412acbb37fc0e30fbdf55b8747cfd7f2b91c4ec9c38e44"
+    },
+    {
+      "id": "gambit",
+      "imageHash": "0fe8333ba59dd26ab0b9eef5f083ce2cf194148b65e8f2f1b533966afd4c66ac"
+    },
+    {
+      "id": "spider",
+      "imageHash": "ded7014d96f18f791891db94e62e333c8941fa137221face6dd3433028a0b229"
+    },
+    {
+      "id": "earlier-widow",
+      "imageHash": "ea3f8eba044c3c7117170e7d0ef00531eb5d40461d8e0e5248499d262a7e2bd3"
+    },
+    {
+      "id": "earlier-captain",
+      "imageHash": "3232a3bfba6215a641e823960268c62c1741f5c80ef57b79504eed83b9dba037"
+    },
+    {
+      "id": "earlier-hulk",
+      "imageHash": "d90dd98cd93d43e715f80710167c64d95068b035524fd97fe7c05c723a35cc52"
+    },
+    {
+      "id": "earlier-hawkeye",
+      "imageHash": "8c345c5bd8678a066a72023fe9f0ec0b69d2c4c89b5c73a52c3a713e5c7040dd"
+    },
+    {
+      "id": "synthetic-mixed-common",
+      "imageHash": "fcb52024999d2b483c7872642ca06ea0200e9c90f3279410dd7a229f9db6f5a2"
+    },
+    {
+      "id": "synthetic-icons-common",
+      "imageHash": "4b4b8207ec3d78d0c865e2516ad8200793d1507aa34941444d9508b55227207b"
+    },
+    {
+      "id": "synthetic-breaks-common",
+      "imageHash": "f805ebcbd83303e5e64c3049534256da8ee9cfabde6e20200f011e7bd8622f2b"
+    },
+    {
+      "id": "synthetic-styles-common",
+      "imageHash": "978f45892f44c54aa1bdfaa0a73a86e3d84c4938a0466d3806253bf68cc251f9"
+    },
+    {
+      "id": "synthetic-crowded-common",
+      "imageHash": "63770833e1a7d006586e3c32758405122093944cb5c838a5b12ec8a9462022b7"
+    },
+    {
+      "id": "synthetic-long-word-common",
+      "imageHash": "ee665beb6788085dd7971abb075e734205894be627d5e6333d585641bf48b30c"
+    },
+    {
+      "id": "synthetic-headers-common",
+      "imageHash": "6b7e2140ac86b0e9860db840c40f1f5c1a038392a5adbef0f2350cbca35463b8"
+    },
+    {
+      "id": "synthetic-mixed-uncommon",
+      "imageHash": "7cf5541606d00d685a0a1fbdf91b1538bf2a3bf0ae308dd43b8f124042dd381e"
+    },
+    {
+      "id": "synthetic-icons-uncommon",
+      "imageHash": "1dc8364e8b3de407cee3ad3f37eb5ac3c1b40b0ad768e7f3db9435bf76b687b6"
+    },
+    {
+      "id": "synthetic-breaks-uncommon",
+      "imageHash": "1ab6234a694eb252e267eabb14de34cf96da866f6b6b9a34423bb5f9ff409822"
+    },
+    {
+      "id": "synthetic-styles-uncommon",
+      "imageHash": "99123787a93dfe96c26303dd299fdc993405e8121d6473cd257f67c7172285e3"
+    },
+    {
+      "id": "synthetic-crowded-uncommon",
+      "imageHash": "eb183c4a0d4dacdd70069ad54fc462683ddd7994c05b7fd83d484ae1cdc1e6f8"
+    },
+    {
+      "id": "synthetic-long-word-uncommon",
+      "imageHash": "93691857e7876a4cad683652e38c0312c9e0319215455ac7f944653e70bddeb6"
+    },
+    {
+      "id": "synthetic-headers-uncommon",
+      "imageHash": "6258f9670ff15b2039d1e9c2918aa7d48ac111648e35405d0fa9ed1cc86c7964"
+    },
+    {
+      "id": "badge-common-strength-0-False",
+      "imageHash": "21a30dfa00d37395788833c2a31afe0e350a0dafbb9e9eb90c7ef6b421c3558b"
+    },
+    {
+      "id": "badge-common-strength-0-True",
+      "imageHash": "f066f59240ab2a13eb2b98544b12b02a25b8aa0f1b7cb8f5b2ea805a10a44ce0"
+    },
+    {
+      "id": "badge-common-strength-12-False",
+      "imageHash": "fb66e01fa4e4b1db1cba8d2f01b90bbc62431136a331b1c7c723568ffa12e0b6"
+    },
+    {
+      "id": "badge-common-strength-12-True",
+      "imageHash": "c5a1d3586afa9f2bb142820445d4192078d6bee5fc49b7277ac196c5fcf5539b"
+    },
+    {
+      "id": "badge-common-instinct-0-False",
+      "imageHash": "1f49f619b0389def444e103c87a3a95477a348da56889a8fa5fc1002a4bfbeab"
+    },
+    {
+      "id": "badge-common-instinct-0-True",
+      "imageHash": "083cdeb745f471a2bee308498d65c46d3d907b7d45ef40b137b4712980c5bcbe"
+    },
+    {
+      "id": "badge-common-instinct-12-False",
+      "imageHash": "e774a219b4e3a6407afa1362b9a04cb22e519ef9a706f9e5775142822341171f"
+    },
+    {
+      "id": "badge-common-instinct-12-True",
+      "imageHash": "6501280375ff60b8b3fcfc9cbfa57b62e6317dddd0cd106cda4cb30faf3e4011"
+    },
+    {
+      "id": "badge-common-covert-0-False",
+      "imageHash": "a02853c2be8684a5ab20e9a06a3ed42de1ede375a58e3618b787b65cc223f256"
+    },
+    {
+      "id": "badge-common-covert-0-True",
+      "imageHash": "1a7e895680157709a408aeb8f41a4f1ddfaedcb179dc30fd863ce89cae343c2a"
+    },
+    {
+      "id": "badge-common-covert-12-False",
+      "imageHash": "fad542a6d42c391ca744835367d94da5c323250c62c65f583978206292ab9ee9"
+    },
+    {
+      "id": "badge-common-covert-12-True",
+      "imageHash": "4852aa04030e357bc8702b6f933cb58c91819456ddff0eea587d4fa18d684b50"
+    },
+    {
+      "id": "badge-common-tech-0-False",
+      "imageHash": "8c888cbf2a15e82b40059858446cdb5ac2dc228d967c905a94aa9f49662290cc"
+    },
+    {
+      "id": "badge-common-tech-0-True",
+      "imageHash": "ba1127143ca538c0610e9dcbf5d6268e43933099087747935559a9c8ea40b297"
+    },
+    {
+      "id": "badge-common-tech-12-False",
+      "imageHash": "e778222ec4f56e2fc002e4fa95060cad084b6c98eebed4eee2b16d2be2b95a95"
+    },
+    {
+      "id": "badge-common-tech-12-True",
+      "imageHash": "17cdd48c51d37f73d4c076304abed94e47ac265d8643bafbda9b6aba14669844"
+    },
+    {
+      "id": "badge-common-range-0-False",
+      "imageHash": "502ac35e539fe76dfc38c952df751c839280006c2b42ea48b0c589653c4c071d"
+    },
+    {
+      "id": "badge-common-range-0-True",
+      "imageHash": "690ca43d99e7cd25110b32208b243e532abf1a7331fe0ad1006488f62633506e"
+    },
+    {
+      "id": "badge-common-range-12-False",
+      "imageHash": "86dde8172d562acddda42863d1bf101cf04dc21d3b527c845070e09638d875e2"
+    },
+    {
+      "id": "badge-common-range-12-True",
+      "imageHash": "f1a724c3c84df6f2d680d121b95f0df9cf16e68635d59279f2455039c6fce47a"
+    },
+    {
+      "id": "font-common-16",
+      "imageHash": "76f4e28e75ba87f9daad2a65e6c4df93b3546d787303946d50953e48c11f2948"
+    },
+    {
+      "id": "font-common-19.5",
+      "imageHash": "e017367770d892f6cf60ae976325e38497ebe2ade18ea4d3946a16d3490eca63"
+    },
+    {
+      "id": "font-common-28",
+      "imageHash": "6e4773f41f7c90861bcfd750b1fc204d93796260e75b4ba2f9cc75d64ac9251f"
+    },
+    {
+      "id": "badge-uncommon-strength-0-False",
+      "imageHash": "9d29e9533ae819785789fa099b913a47863d3c4647824ff75c9c486bc33ebc37"
+    },
+    {
+      "id": "badge-uncommon-strength-0-True",
+      "imageHash": "d2285e66403ac18e443b992c407375cec470d0280d33910267f6881147c2e5fb"
+    },
+    {
+      "id": "badge-uncommon-strength-12-False",
+      "imageHash": "e40f49f55bbb77c1cf70fd0bdda70c70b0d9afa830b447902380e19cac885af9"
+    },
+    {
+      "id": "badge-uncommon-strength-12-True",
+      "imageHash": "ffa3c8465c56d389f3a04cf5d9cb66e3276d22f9de75bc4270e7ae00b07240de"
+    },
+    {
+      "id": "badge-uncommon-instinct-0-False",
+      "imageHash": "1b4b689272559516a979971df24a168fe41e183783a78104948b80056e9e2045"
+    },
+    {
+      "id": "badge-uncommon-instinct-0-True",
+      "imageHash": "5d051b2a729cef7cde2fe76c957501a62666168815a4933131a12782b240a125"
+    },
+    {
+      "id": "badge-uncommon-instinct-12-False",
+      "imageHash": "38f24a974b047d18a6673fb41ae754a0c524d56ae27f73097c3ea2b592827e17"
+    },
+    {
+      "id": "badge-uncommon-instinct-12-True",
+      "imageHash": "16b1568b8d56b5043e31448f66136841fe323421c95a342e749a72b682eb668e"
+    },
+    {
+      "id": "badge-uncommon-covert-0-False",
+      "imageHash": "29ee0b75114cb583d302ab51cd4ff72792e67b7ea7950b70160c86f1e508199f"
+    },
+    {
+      "id": "badge-uncommon-covert-0-True",
+      "imageHash": "7a5ea1ad479932426e728ca6b91a6a823e46494b864b0322a65105017d04d17c"
+    },
+    {
+      "id": "badge-uncommon-covert-12-False",
+      "imageHash": "71e252dbb04fb7b5d716479cded6f362cb214d8c297c1b77bbc36b4e64771297"
+    },
+    {
+      "id": "badge-uncommon-covert-12-True",
+      "imageHash": "014c343bb2baf9f285e751e0821516d01fcba1c8eb05d415ecc7ee0bbf369146"
+    },
+    {
+      "id": "badge-uncommon-tech-0-False",
+      "imageHash": "8228bee52f93502640cf20c2b5dbe3630e41d3502545213e9fc84e188404b2f3"
+    },
+    {
+      "id": "badge-uncommon-tech-0-True",
+      "imageHash": "787d2a7574270ce6c40a744363c5045af0479074a02115f07db70a058dd01d19"
+    },
+    {
+      "id": "badge-uncommon-tech-12-False",
+      "imageHash": "5e671b05abab71e08ebb664d8597cf9dfc9b0507121b82252f29ae8cfd57faba"
+    },
+    {
+      "id": "badge-uncommon-tech-12-True",
+      "imageHash": "0ca948e92cdb1b7ab616e595c921d7b730e57487927ba5423cbcd724899c6391"
+    },
+    {
+      "id": "badge-uncommon-range-0-False",
+      "imageHash": "f876ede72faa014b758d579f2daa0cda6eb461622c5080364bbeceaaa2fa17d3"
+    },
+    {
+      "id": "badge-uncommon-range-0-True",
+      "imageHash": "a3603e47e3d58b133cd05061eacaca5ff40b02cb88bf1c92823e8309a7bc8110"
+    },
+    {
+      "id": "badge-uncommon-range-12-False",
+      "imageHash": "9581429b3797af92de16523795b8bad0d76d6732de62d99f30f53a58d3e07f64"
+    },
+    {
+      "id": "badge-uncommon-range-12-True",
+      "imageHash": "eb079425cb33bb53c9f6015d072f24b1d4d06f628a39d46159176190c997a16b"
+    },
+    {
+      "id": "font-uncommon-16",
+      "imageHash": "273ae971f5901e499df23ec14d5b2dc0e499eaa4a5a045b6c9c1de6e54a00ba9"
+    },
+    {
+      "id": "font-uncommon-19.5",
+      "imageHash": "a798816de916816c8ab8745d5c8cfddbd8631372b100c577bd58f03eea04ecca"
+    },
+    {
+      "id": "font-uncommon-28",
+      "imageHash": "570c3cc724f9c26aa214a73ca83fe575640712d8ff16d43696c565143d90ada7"
+    }
+  ]
+}

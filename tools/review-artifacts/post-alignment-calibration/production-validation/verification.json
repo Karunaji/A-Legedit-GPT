@@ -1,0 +1,11 @@
+{
+  "productionUnchanged": true,
+  "hashes": {
+    "hero-template-config.js": "3bf93fa063ee03052d578fe9de92feb165df8d880f1990710ba1f1bbc19c0d5f",
+    "assets.js": "c412f581d17934a919935c562b6b64e62ff9a4dec80173662d2336f6e47a3e6f",
+    "keywords.js": "123e35bbe23d749661af3c9c8102ab3ab7c3a23dee0995c38faf6315e1dac001",
+    "state.js": "2159e32121a60d69b80a4844ed76319abcf8f9ec30946383a36ab29c65a57717",
+    "render.js": "979a18b3702d731c055113558994740659baef4108069df0bb61db273236015e",
+    "ui.js": "e082a95a8c218faeb6483cb8af055381e3a998fb66493edd87205c086ea3b3fd"
+  }
+}

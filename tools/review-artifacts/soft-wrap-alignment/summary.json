@@ -1,0 +1,923 @@
+{
+  "focusedChecks": 28,
+  "existingChecksBefore": 2529,
+  "existingChecksAfter": 2530,
+  "crossFamilyRecovered": [],
+  "crossFamilyWorsened": [],
+  "horizontalWorsened": [
+    {
+      "case": "phase1__hero-common-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__hero-common-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__hero-uncommon-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__hero-uncommon-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__hero-rare-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__hero-rare-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-common-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-common-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-uncommon-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-uncommon-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-rare-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__multi-rare-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-common-2-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-common-2-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-common-2-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-common-2-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-2-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-2-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-2-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__split-rare-2-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__villain-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__villain-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__adversary-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__adversary-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__location-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__location-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__trap-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__trap-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__henchman-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__henchman-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__mastermind-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__mastermind-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__tactic-0-1",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "phase1__tactic-0-3",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__hero-common__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__hero-common__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__hero-uncommon__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__hero-uncommon__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__hero-rare__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__multi-common__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__multi-rare__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__split-common__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__split-common__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__split-common__long",
+      "before": 0.69970703125,
+      "after": 1
+    },
+    {
+      "case": "new__split-common__long",
+      "before": 0.69970703125,
+      "after": 1
+    },
+    {
+      "case": "new__split-rare__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__split-rare__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__villain__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__villain__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__adversary__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__adversary__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__location__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__location__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__trap__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__henchman__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__henchman__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__mastermind__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__mastermind__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__tactic__prose",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__tactic__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__scheme-a__long",
+      "before": 0,
+      "after": 1
+    },
+    {
+      "case": "new__scheme-b__long",
+      "before": 0,
+      "after": 1
+    }
+  ],
+  "official": [
+    {
+      "id": "doomblast-22",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        3,
+        3
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        0
+      ],
+      "lineTexts": {
+        "before": [
+          "Cyber-Mod[range]: You get+1[attack].",
+          "Cyber-Mod[range][range][range]:",
+          " Instead you get+3[attack]."
+        ],
+        "after": [
+          "Cyber-Mod[range]: You get+1[attack].",
+          "Cyber-Mod[range][range][range]:",
+          "Instead you get+3[attack]."
+        ]
+      }
+    },
+    {
+      "id": "chainsaw-22",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        5,
+        5
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "You may send a card from the HQ",
+          "Undercover.",
+          "Cyber-Mod[tech]:Fated Future and",
+          " you get+1[attack] for each[tech]",
+          " card in your Victory Pile."
+        ],
+        "after": [
+          "You may send a card from the HQ",
+          "Undercover.",
+          "Cyber-Mod[tech]:Fated Future and",
+          "you get+1[attack] for each[tech]",
+          "card in your Victory Pile."
+        ]
+      }
+    },
+    {
+      "id": "captain",
+      "font": [
+        21,
+        21.5
+      ],
+      "lines": [
+        4,
+        4
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Once per turn, when a player gains a",
+          " Wound, you may reveal this card to",
+          " return that Wound to the",
+          " Wound Deck and draw a card."
+        ],
+        "after": [
+          "Once per turn, when a player gains a",
+          "Wound, you may reveal this card to",
+          "return that Wound to the",
+          "Wound Deck and draw a card."
+        ]
+      }
+    },
+    {
+      "id": "emma",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        3,
+        3
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        0
+      ],
+      "lineTexts": {
+        "before": [
+          "Each player may reveal another[team:x-men]",
+          " Hero. Each player who does draws a",
+          " card."
+        ],
+        "after": [
+          "Each player may reveal another[team:x-men]",
+          "Hero. Each player who does draws a",
+          "card."
+        ]
+      }
+    },
+    {
+      "id": "thor",
+      "font": [
+        21,
+        21.5
+      ],
+      "lines": [
+        4,
+        4
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Once this turn, if you made at least 8",
+          "[recruit] this turn, you may KO a card",
+          " from your hand or discard pile.",
+          " If you do, you get+3[attack]."
+        ],
+        "after": [
+          "Once this turn, if you made at least 8",
+          "[recruit] this turn, you may KO a card",
+          "from your hand or discard pile.",
+          "If you do, you get+3[attack]."
+        ]
+      }
+    },
+    {
+      "id": "storm",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        3,
+        3
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "You may move a Villain to another city",
+          " space. If another Villain is already",
+          " there, swap them."
+        ],
+        "after": [
+          "You may move a Villain to another city",
+          "space. If another Villain is already",
+          "there, swap them."
+        ]
+      }
+    },
+    {
+      "id": "ironman",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        2,
+        2
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        0
+      ],
+      "lineTexts": {
+        "before": [
+          "[tech]: You get+1[attack] for each other[tech]",
+          " Hero you played this turn."
+        ],
+        "after": [
+          "[tech]: You get+1[attack] for each other[tech]",
+          "Hero you played this turn."
+        ]
+      }
+    },
+    {
+      "id": "avengers",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        2,
+        2
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "You get+1[recruit] for each Hero Class",
+          " you have."
+        ],
+        "after": [
+          "You get+1[recruit] for each Hero Class",
+          "you have."
+        ]
+      }
+    },
+    {
+      "id": "weaponh",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        6,
+        6
+      ],
+      "vertical": [
+        16.17999999999995,
+        16.17999999999995
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Weapon X Sequence",
+          "[strength]: Using the Wound Deck,Berserk,",
+          "Berserk,Berserk,Berserk,",
+          "Berserk,Berserk, putting those",
+          " discarded Wounds on the",
+          " bottom of the Wound Deck."
+        ],
+        "after": [
+          "Weapon X Sequence",
+          "[strength]: Using the Wound Deck,Berserk,",
+          "Berserk,Berserk,Berserk,",
+          "Berserk,Berserk, putting those",
+          "discarded Wounds on the",
+          "bottom of the Wound Deck."
+        ]
+      }
+    },
+    {
+      "id": "king",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        7,
+        7
+      ],
+      "vertical": [
+        56.89999999999975,
+        56.89999999999975
+      ],
+      "horizontal": [
+        0,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "[team:wakanda]Ambush: You get+1[attack] for each",
+          " Hero Class you have",
+          "[team:wakanda]: Gain theThrone\u2019s Favor. If",
+          " you already had it, you may",
+          " spend it to get+1[recruit] and+1",
+          "[attack] for each Hero Class you",
+          " have."
+        ],
+        "after": [
+          "[team:wakanda]Ambush: You get+1[attack] for each",
+          "Hero Class you have",
+          "[team:wakanda]: Gain theThrone\u2019s Favor. If",
+          "you already had it, you may",
+          "spend it to get+1[recruit] and+1",
+          "[attack] for each Hero Class you",
+          "have."
+        ]
+      }
+    },
+    {
+      "id": "doom",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        10,
+        10
+      ],
+      "vertical": [
+        161.3599999999999,
+        161.3599999999999
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "If there is at least one Omen of Doom, all",
+          " Doombot Legions get+1[attack]. If there are at",
+          " least four Omens, then instead Doctor",
+          " Doom and all Doombot Legions get+2",
+          "[attack].",
+          "Always Leads: Doombot Legions",
+          "Master Strike: Stack this Strike next to Doctor",
+          " Doom as an \u201cOmen of Doom.\u201d Then each player",
+          " discards cards equal to the number of Omens",
+          " or gains a Wound."
+        ],
+        "after": [
+          "If there is at least one Omen of Doom, all",
+          "Doombot Legions get+1[attack]. If there are at",
+          "least four Omens, then instead Doctor",
+          "Doom and all Doombot Legions get+2",
+          "[attack].",
+          "Always Leads: Doombot Legions",
+          "Master Strike: Stack this Strike next to Doctor",
+          "Doom as an \u201cOmen of Doom.\u201d Then each player",
+          "discards cards equal to the number of Omens or",
+          "gains a Wound."
+        ]
+      }
+    },
+    {
+      "id": "darktech",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        2,
+        2
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Fight: You may recruit a[tech] or[range] Hero",
+          " from the HQ for free."
+        ],
+        "after": [
+          "Fight: You may recruit a[tech] or[range] Hero",
+          "from the HQ for free."
+        ]
+      }
+    },
+    {
+      "id": "ninjas",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        4,
+        4
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        0
+      ],
+      "lineTexts": {
+        "before": [
+          "Fight: If you fight Hand Ninjas in the Sewers",
+          " or Rooftops, KO one of your Heroes.",
+          " Otherwise, you get+1[recruit]",
+          "."
+        ],
+        "after": [
+          "Fight: If you fight Hand Ninjas in the Sewers",
+          "or Rooftops, KO one of your Heroes.",
+          "Otherwise, you get+1[recruit]",
+          "."
+        ]
+      }
+    },
+    {
+      "id": "skrull",
+      "font": [
+        22,
+        22
+      ],
+      "lines": [
+        3,
+        3
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        0,
+        0
+      ],
+      "lineTexts": {
+        "before": [
+          "Super-Skrull gets+1[attack] for each Hero",
+          " Class among Heroes in the HQ.",
+          "Fight: KO one of your Heroes."
+        ],
+        "after": [
+          "Super-Skrull gets+1[attack] for each Hero",
+          "Class among Heroes in the HQ.",
+          "Fight: KO one of your Heroes."
+        ]
+      }
+    },
+    {
+      "id": "raft",
+      "font": [
+        21,
+        21
+      ],
+      "lines": [
+        4,
+        4
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Whenever you fight a Villain here, each",
+          " other player puts a Villain from their",
+          " Victory Pile into the",
+          " Escape Pile or gains a Wound."
+        ],
+        "after": [
+          "Whenever you fight a Villain here, each",
+          "other player puts a Villain from their",
+          "Victory Pile into the",
+          "Escape Pile or gains a Wound."
+        ]
+      }
+    },
+    {
+      "id": "cube",
+      "font": [
+        20,
+        20
+      ],
+      "lines": [
+        6,
+        6
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Setup: 8 Twists.",
+          "Twists 1-3: Each player discards a card.",
+          "Twist 4: Each player discards two cards.",
+          "Twists 5-6: Each player gains a Wound.",
+          "Twist 7: Each player gains two Wounds.",
+          "Twist 8: Evil Wins!"
+        ],
+        "after": [
+          "Setup: 8 Twists.",
+          "Twists 1-3: Each player discards a card.",
+          "Twist 4: Each player discards two cards.",
+          "Twists 5-6: Each player gains a Wound.",
+          "Twist 7: Each player gains two Wounds.",
+          "Twist 8: Evil Wins!"
+        ]
+      }
+    },
+    {
+      "id": "killbots",
+      "font": [
+        19,
+        19
+      ],
+      "lines": [
+        10,
+        10
+      ],
+      "vertical": [
+        0,
+        0
+      ],
+      "horizontal": [
+        1,
+        1
+      ],
+      "lineTexts": {
+        "before": [
+          "Setup: 10 Twists. Stack 1 additional Twist next to this",
+          " Scheme as a \u201cKillgorithm.\u201d",
+          "Special Rules: Bystanders in the Villain Deck are \u201cKillbot\u201d",
+          " Villains with[attack] equal to the number of Killgorithms.",
+          " They have: \u201cFight: Rescue this as a Bystander.\u201d",
+          "Twists 1-9: Add this Twist to the Killgorithms. Two",
+          " Killbots enter the city from the Bystander Deck.",
+          "Twist 10: All Killbots in the city escape.",
+          "Evil Wins: When there are 6 Bystander cards in the",
+          " Escape Pile."
+        ],
+        "after": [
+          "Setup: 10 Twists. Stack 1 additional Twist next to this",
+          "Scheme as a \u201cKillgorithm.\u201d",
+          "Special Rules: Bystanders in the Villain Deck are \u201cKillbot\u201d",
+          "Villains with[attack] equal to the number of Killgorithms.",
+          "They have: \u201cFight: Rescue this as a Bystander.\u201d",
+          "Twists 1-9: Add this Twist to the Killgorithms. Two",
+          "Killbots enter the city from the Bystander Deck.",
+          "Twist 10: All Killbots in the city escape.",
+          "Evil Wins: When there are 6 Bystander cards in the",
+          "Escape Pile."
+        ]
+      }
+    }
+  ],
+  "remainingLeadingSpaces": []
+}

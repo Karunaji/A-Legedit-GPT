@@ -1,0 +1,3917 @@
+{
+  "widow": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 604,
+      "painted": {
+        "left": 108,
+        "top": 520,
+        "right": 445.80775451660156,
+        "bottom": 598.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 737.9653778076172,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 520,
+            "bottom": 548
+          },
+          "paintedRight": 445.80775451660156,
+          "text": "[tech]: You may KO a card from your hand"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 572.5
+          },
+          "paintedRight": 410.3677215576172,
+          "text": " or discard pile. If you do, rescue a"
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 376.33,
+          "painted": {
+            "top": 577.5,
+            "bottom": 598.5
+          },
+          "paintedRight": 205.78990173339844,
+          "text": " Bystander."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 170.54009826660155,
+    "pngHash": "5d4b2dd2b3f932899dac88a99817f11997cf32bb0933d895b9a8c0b37e774641"
+  },
+  "captain": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 626,
+      "painted": {
+        "left": 108,
+        "top": 525.75,
+        "right": 413.5957794189453,
+        "bottom": 616.75
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 1077.803207397461,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 545.75
+          },
+          "paintedRight": 413.5957794189453,
+          "text": "Once per turn, when a player gains a"
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 550.75,
+            "bottom": 570.75
+          },
+          "paintedRight": 408.5977783203125,
+          "text": " Wound, you may reveal this card to"
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 379.7989910888672,
+          "painted": {
+            "top": 575.75,
+            "bottom": 591.75
+          },
+          "paintedRight": 324.13584899902344,
+          "text": " return that Wound to the"
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 600.75,
+            "bottom": 616.75
+          },
+          "paintedRight": 364.28382873535156,
+          "text": " Wound Deck and draw a card."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 4.626171264648406,
+    "pngHash": "d4670fa232d540ca5b2e5cb263223c1612860a00560dd32a017b86c1d1887fb9"
+  },
+  "emma": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 604,
+      "painted": {
+        "left": 108,
+        "top": 520,
+        "right": 430.76171875,
+        "bottom": 594.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 680.1774291992188,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 520,
+            "bottom": 548
+          },
+          "paintedRight": 413.50775146484375,
+          "text": "Each player may reveal another[team:x-men]"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 572.5
+          },
+          "paintedRight": 430.76171875,
+          "text": " Hero. Each player who does draws a"
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 379.51,
+          "painted": {
+            "top": 577.5,
+            "bottom": 594.5
+          },
+          "paintedRight": 158.907958984375,
+          "text": " card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 655.765625,
+      "painted": {
+        "left": 108,
+        "top": 619,
+        "right": 344.3375244140625,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 619.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 619,
+            "bottom": 633
+          },
+          "paintedRight": 344.3375244140625,
+          "text": "Emma\u2019s telepathy gives the X-Men uncanny"
+        },
+        {
+          "y": 637.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 637,
+            "bottom": 648
+          },
+          "paintedRight": 182.4956817626953,
+          "text": " coordination."
+        }
+      ]
+    },
+    "flavorY": 619.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 24.5,
+    "flavorClipped": 0,
+    "contourSlack": 23.512475585937523,
+    "pngHash": "249d3ccaee2cca25173786ce42dd020f1f6c8ba88b9609b07b7f9fa2135f940e"
+  },
+  "rogue": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 578,
+      "painted": {
+        "left": 108,
+        "top": 525.5,
+        "right": 439.03570556640625,
+        "bottom": 572.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 621.9614105224609,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 439.03570556640625,
+          "text": "Play this card as a copy of one of your"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 572.5
+          },
+          "paintedRight": 399.78570556640625,
+          "text": " Heroes that you played this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 655.765625,
+      "painted": {
+        "left": 108,
+        "top": 619,
+        "right": 360.5239562988281,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 619.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 619,
+            "bottom": 633
+          },
+          "paintedRight": 360.5239562988281,
+          "text": "Most X-Men get a superpower. Rogue can get"
+        },
+        {
+          "y": 637.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 637,
+            "bottom": 648
+          },
+          "paintedRight": 157.7391357421875,
+          "text": " a dozen."
+        }
+      ]
+    },
+    "flavorY": 619.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 46.5,
+    "flavorClipped": 0,
+    "contourSlack": 7.326043701171898,
+    "pngHash": "6a82f526492f2c91f327df521f78fa7c459d750ce75fcd70f7eab8379801a2d4"
+  },
+  "determination": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 107,
+        "top": 525.5,
+        "right": 433.9516906738281,
+        "bottom": 546.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 325.9516906738281,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 433.9516906738281,
+          "text": "To play this, you must discard a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 361.4113311767578,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 365.1653076171875,
+          "painted": {
+            "top": 616,
+            "bottom": 629
+          },
+          "paintedRight": 353.9154815673828,
+          "text": "He\u2019ll do whatever it takes, no matter what \u2014"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 361.4113311767578,
+          "text": " or whom \u2014 he has tosacrifice along the way."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 2,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 69.5,
+    "flavorClipped": 0,
+    "contourSlack": 6.43866882324221,
+    "pngHash": "6199e467e22201a58910d900f8159fbfd4886990cf0aa2b634dc90c482842268"
+  },
+  "optic": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 107,
+        "top": 525.5,
+        "right": 433.9516906738281,
+        "bottom": 546.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 325.9516906738281,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 433.9516906738281,
+          "text": "To play this, you must discard a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 634,
+        "right": 352.2588195800781,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 352.2588195800781,
+          "text": "Some villains disappear in the blink of an eye."
+        }
+      ]
+    },
+    "flavorY": 634.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 2,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 87.5,
+    "flavorClipped": 0,
+    "contourSlack": 15.591180419921898,
+    "pngHash": "24ee938ead59a9d674e48f553ab288d261af9cb657f63bbf07b792c351e463fc"
+  },
+  "venom": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 108,
+        "top": 516.5,
+        "right": 297.19590759277344,
+        "bottom": 551.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 189.19590759277344,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 297.19590759277344,
+          "text": "[strength]: You get+2[attack]."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 655.765625,
+      "painted": {
+        "left": 108,
+        "top": 619,
+        "right": 366.611572265625,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 619.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 619,
+            "bottom": 633
+          },
+          "paintedRight": 366.611572265625,
+          "text": "Miles\u2019 powers turned out a little differently than"
+        },
+        {
+          "y": 637.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 637,
+            "bottom": 648
+          },
+          "paintedRight": 193.58502197265625,
+          "text": " Peter Parker\u2019s."
+        }
+      ]
+    },
+    "flavorY": 619.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 67.5,
+    "flavorClipped": 0,
+    "contourSlack": 1.2384277343750227,
+    "pngHash": "6d0ff85a12f07e4a0cfcf03e628400a5199849f028722b313561eedfac08fc74"
+  },
+  "web": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 578,
+      "painted": {
+        "left": 108,
+        "top": 520,
+        "right": 424.34373474121094,
+        "bottom": 570.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 541.6235504150391,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 520,
+            "bottom": 548
+          },
+          "paintedRight": 424.34373474121094,
+          "text": "[instinct]: When you draw a new hand this"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 570.5
+          },
+          "paintedRight": 333.2798156738281,
+          "text": " turn, draw an extra card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 110,
+        "top": 634,
+        "right": 356.9646911621094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 356.9646911621094,
+          "text": "With great preparation comes great success."
+        }
+      ]
+    },
+    "flavorY": 634.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 2,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 63.5,
+    "flavorClipped": 0,
+    "contourSlack": 10.885308837890648,
+    "pngHash": "178c84b74cc9e5bb1a0a1d89cff2ed7c9a0d8a52c9f74ac555112786fb0f96b3"
+  },
+  "thor": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 639.0399999999998,
+      "painted": {
+        "left": 108,
+        "top": 525.75,
+        "right": 419.102783203125,
+        "bottom": 638.7899999999998
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1084.5952453613281,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 545.75
+          },
+          "paintedRight": 419.102783203125,
+          "text": "Once this turn, if you made at least 8"
+        },
+        {
+          "y": 556.68,
+          "left": 108,
+          "right": 395.32799926757815,
+          "painted": {
+            "top": 547.43,
+            "bottom": 581.43
+          },
+          "paintedRight": 387.89381408691406,
+          "text": "[recruit] this turn, you may KO a card"
+        },
+        {
+          "y": 583.3599999999999,
+          "left": 108,
+          "right": 372.87299194335935,
+          "painted": {
+            "top": 583.1099999999999,
+            "bottom": 603.1099999999999
+          },
+          "paintedRight": 369.3657989501953,
+          "text": " from your hand or discard pile."
+        },
+        {
+          "y": 614.0399999999998,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 604.7899999999998,
+            "bottom": 638.7899999999998
+          },
+          "paintedRight": 334.71885681152344,
+          "text": " If you do, you get+3[attack]."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 3.7842010498046648,
+    "pngHash": "56e402482eb92f47825cfec58ab5fda0a191334ef0dcb3964798be79a12e3fac"
+  },
+  "storm": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 604,
+      "painted": {
+        "left": 107,
+        "top": 525.5,
+        "right": 437.3856964111328,
+        "bottom": 598.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 793.0552368164062,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 437.3856964111328,
+          "text": "You may move a Villain to another city"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 572.5
+          },
+          "paintedRight": 406.71771240234375,
+          "text": " space. If another Villain is already"
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 376.33,
+          "painted": {
+            "top": 577.5,
+            "bottom": 598.5
+          },
+          "paintedRight": 273.79185485839844,
+          "text": " there, swap them."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 102.53814514160155,
+    "pngHash": "5e379fe31624420153e9086e5fa519029fb97411ffa6906c5cde842d1c64e2b5"
+  },
+  "ironman": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 579.76,
+      "painted": {
+        "left": 108,
+        "top": 516.5,
+        "right": 442.96180725097656,
+        "bottom": 574.26
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 566.2355804443359,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 442.96180725097656,
+          "text": "[tech]: You get+1[attack] for each other[tech]"
+        },
+        {
+          "y": 553.76,
+          "left": 108,
+          "right": 412.37,
+          "painted": {
+            "top": 553.26,
+            "bottom": 574.26
+          },
+          "paintedRight": 338.2737731933594,
+          "text": " Hero you played this turn."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 110,
+        "top": 616,
+        "right": 357.56402587890625,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 363.88742980957034,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 357.56402587890625,
+          "text": "\u201cYeah magic is cool, but have you heard about"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 165.26760864257812,
+          "text": " physics?\u201d"
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 41.74000000000001,
+    "flavorClipped": 0,
+    "contourSlack": 10.285974121093773,
+    "pngHash": "463e001d8d3effe3fcccaa737be9de2bce8780f75c088da2c1667d47d222f032"
+  },
+  "fury": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 701,
+      "painted": {
+        "left": 108,
+        "top": 520.25,
+        "right": 452.1517333984375,
+        "bottom": 691.75
+      },
+      "overflow": {
+        "vertical": 33,
+        "horizontal": 0.1517333984375,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1677.8367767333984,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 520.25,
+            "bottom": 547.25
+          },
+          "paintedRight": 427.65380859375,
+          "text": "[covert]: You may KO a[team:shield] Hero from your"
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 550.75,
+            "bottom": 570.75
+          },
+          "paintedRight": 452.1517333984375,
+          "text": " hand or discard pile. If you do, reveal the"
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 379.23299194335937,
+          "painted": {
+            "top": 575.75,
+            "bottom": 595.75
+          },
+          "paintedRight": 358.49981689453125,
+          "text": " top three cards of the Officer"
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 366.84299621582034,
+          "painted": {
+            "top": 600.75,
+            "bottom": 620.75
+          },
+          "paintedRight": 331.3418426513672,
+          "text": " Deck. You may gain one of"
+        },
+        {
+          "y": 626,
+          "left": 108,
+          "right": 366.84299621582034,
+          "painted": {
+            "top": 625.75,
+            "bottom": 645.75
+          },
+          "paintedRight": 337.3658447265625,
+          "text": " them to your hand. Put the"
+        },
+        {
+          "y": 651,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 650.75,
+            "bottom": 666.75
+          },
+          "paintedRight": 336.69683837890625,
+          "text": " rest back on the bottom of"
+        },
+        {
+          "y": 676,
+          "left": 108,
+          "right": 383.75,
+          "painted": {
+            "top": 675.75,
+            "bottom": 691.75
+          },
+          "paintedRight": 196.262939453125,
+          "text": " that deck."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 21.01018310546874,
+    "pngHash": "d0814b8f8f64a98f03c97341648203b8158913aa5ac2afffe6a9c7f19f765aa0"
+  },
+  "gambit": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 578,
+      "painted": {
+        "left": 108,
+        "top": 525.5,
+        "right": 441.9317321777344,
+        "bottom": 572.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 601.4134979248047,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 441.9317321777344,
+          "text": "Draw two cards. Then put a card from"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 572.5
+          },
+          "paintedRight": 375.80577087402344,
+          "text": " your hand on top of your deck."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 110,
+        "top": 616,
+        "right": 357.80096435546875,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 363.88742980957034,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 357.80096435546875,
+          "text": "\u201cI wouldn\u2019t call it cheatin\u2019 \u2014 I just make sure I"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 180.70803833007812,
+          "text": " always win.\u201d"
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 43.5,
+    "flavorClipped": 0,
+    "contourSlack": 10.049035644531273,
+    "pngHash": "c8ff5cc9b02e31f776606fbcc37c82bcf68014ac3c3237c4e4f0248a900e54e4"
+  },
+  "spider": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 607.76,
+      "painted": {
+        "left": 108,
+        "top": 525.5,
+        "right": 430.38970947265625,
+        "bottom": 607.26
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 537.5255126953125,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 183.19590759277344,
+          "availableWidth": 264.09
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 546.5
+          },
+          "paintedRight": 430.38970947265625,
+          "text": "Reveal the top card of your deck. If it"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 570.5
+          },
+          "paintedRight": 324.809814453125,
+          "text": " costs 2 or less, draw it."
+        },
+        {
+          "y": 581.76,
+          "left": 108,
+          "right": 372.09,
+          "painted": {
+            "top": 572.26,
+            "bottom": 607.26
+          },
+          "paintedRight": 291.19590759277344,
+          "text": "[tech]: You get+1[attack]."
+        }
+      ]
+    },
+    "flavor": null,
+    "flavorY": null,
+    "flavorPlacement": null,
+    "paintedGap": null,
+    "flavorClipped": 0,
+    "contourSlack": 80.89409240722654,
+    "pngHash": "6adf208a89f44775e4b51950d015629f9a23542cb494a014f76c50d0a4dbc4d4"
+  },
+  "earlier-widow": {
+    "rules": {
+      "font": 21.5,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 581.72,
+      "painted": {
+        "left": 109,
+        "top": 526.125,
+        "right": 450.8087921142578,
+        "bottom": 581.845
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 597.6340789794922,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 526.125,
+            "bottom": 546.125
+          },
+          "paintedRight": 450.8087921142578,
+          "text": "If you have at least 4 Bystanders in your"
+        },
+        {
+          "y": 556.72,
+          "left": 108,
+          "right": 395.41,
+          "painted": {
+            "top": 547.845,
+            "bottom": 581.845
+          },
+          "paintedRight": 363.87030029296875,
+          "text": " Victory Pile, you get+2[attack]."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 110,
+        "top": 616,
+        "right": 362.98338317871094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 362.98338317871094,
+          "text": "The right support team can turn a mission into"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 193.80323791503906,
+          "text": " a masterpiece."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 34.15499999999997,
+    "flavorClipped": 0,
+    "contourSlack": 4.866616821289085,
+    "pngHash": "e885c37334cd0b54fa2195944b7e7250f5896726f14379d52e34722b6fb7c4d4"
+  },
+  "earlier-captain": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 579.76,
+      "painted": {
+        "left": 107,
+        "top": 516.5,
+        "right": 424.3337707519531,
+        "bottom": 574.26
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 402.79368591308594,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 424.3337707519531,
+          "text": "You get+1[recruit] for each Hero Class"
+        },
+        {
+          "y": 553.76,
+          "left": 108,
+          "right": 412.37,
+          "painted": {
+            "top": 553.26,
+            "bottom": 574.26
+          },
+          "paintedRight": 194.4599151611328,
+          "text": " you have."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 655.765625,
+      "painted": {
+        "left": 110,
+        "top": 601,
+        "right": 361.5647735595703,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 601.765625,
+          "left": 108,
+          "right": 367.70191589355466,
+          "painted": {
+            "top": 601,
+            "bottom": 615
+          },
+          "paintedRight": 361.5647735595703,
+          "text": "What kind of Villain would dare to face Captain"
+        },
+        {
+          "y": 619.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 619,
+            "bottom": 632
+          },
+          "paintedRight": 359.98260498046875,
+          "text": " America, Iron Man, and Thor...all at the same"
+        },
+        {
+          "y": 637.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 637,
+            "bottom": 648
+          },
+          "paintedRight": 145.77099609375,
+          "text": " time?"
+        }
+      ]
+    },
+    "flavorY": 601.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 26.74000000000001,
+    "flavorClipped": 0,
+    "contourSlack": 7.345226440429656,
+    "pngHash": "b6795feafec8097ef187dbe165a6b79d4d0042aa9595e52538a2670659189c18"
+  },
+  "earlier-hulk": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 108,
+        "top": 516.5,
+        "right": 297.19590759277344,
+        "bottom": 551.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 189.19590759277344,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 297.19590759277344,
+          "text": "[strength]: You get+1[attack]."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 655.765625,
+      "painted": {
+        "left": 108,
+        "top": 601,
+        "right": 344.9060821533203,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 601.765625,
+          "left": 108,
+          "right": 365.45211425781247,
+          "painted": {
+            "top": 601,
+            "bottom": 615
+          },
+          "paintedRight": 342.3051300048828,
+          "text": "Instead of listing the things that make Hulk"
+        },
+        {
+          "y": 619.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 619,
+            "bottom": 633
+          },
+          "paintedRight": 344.9060821533203,
+          "text": " angry, it's easier to list the few things that"
+        },
+        {
+          "y": 637.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 637,
+            "bottom": 648
+          },
+          "paintedRight": 142.8306427001953,
+          "text": " don't."
+        }
+      ]
+    },
+    "flavorY": 601.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 49.5,
+    "flavorClipped": 0,
+    "contourSlack": 22.94391784667971,
+    "pngHash": "ea34ae12c2c547740dae68f251fd03e65f9067acfebc1718a87a222bb38ebf12"
+  },
+  "earlier-hawkeye": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 108,
+        "top": 520,
+        "right": 392.92979431152344,
+        "bottom": 548
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 284.92979431152344,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 520,
+            "bottom": 548
+          },
+          "paintedRight": 392.92979431152344,
+          "text": "[range]: Each player draws a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 366.4300231933594,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 2.0191864013671648,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 364.4108367919922,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 366.4300231933594,
+          "text": "Nothing's more supportive than dozens of razor"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 289.3649444580078,
+          "text": " arrows flying directly behind you."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 2,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 68,
+    "flavorClipped": 0,
+    "contourSlack": 1.4199768066406477,
+    "pngHash": "efa746908a3e743e85121bf87411777a710b14805bee06583921dae827fb20e8"
+  },
+  "synthetic-mixed-common": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 605.76,
+      "painted": {
+        "left": 108,
+        "top": 516.5,
+        "right": 436.7237091064453,
+        "bottom": 600.26
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 187.19590759277344,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 585.4634704589844,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 295.19590759277344,
+          "text": "[covert]: You get+2[attack]."
+        },
+        {
+          "y": 553.76,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 553.26,
+            "bottom": 570.26
+          },
+          "paintedRight": 436.7237091064453,
+          "text": "Draw two cards. Then discard a card."
+        },
+        {
+          "y": 579.76,
+          "left": 108,
+          "right": 375.27,
+          "painted": {
+            "top": 579.26,
+            "bottom": 600.26
+          },
+          "paintedRight": 364.73976135253906,
+          "text": " You may rescue a Bystander."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 15.740000000000009,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "c59f47161a02cbcb2cec0f851df0753dc974085128cbfa9819c2ac05713c79b2"
+  },
+  "synthetic-icons-common": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 622.02,
+      "painted": {
+        "left": 107,
+        "top": 516.5,
+        "right": 263.0699005126953,
+        "bottom": 618.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 146.9639129638672,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 143.9639129638672,
+          "availableWidth": 276.81
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 155.0699005126953,
+          "availableWidth": 259.85
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 254.9639129638672,
+          "text": "You get+2[attack]."
+        },
+        {
+          "y": 562.76,
+          "left": 108,
+          "right": 384.81,
+          "painted": {
+            "top": 553.26,
+            "bottom": 588.26
+          },
+          "paintedRight": 251.9639129638672,
+          "text": "You get+2[recruit]."
+        },
+        {
+          "y": 596.02,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 590.02,
+            "bottom": 618.02
+          },
+          "paintedRight": 263.0699005126953,
+          "text": "[strength]: Draw a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 660.785625,
+      "painted": {
+        "left": 108,
+        "top": 624.02,
+        "right": 358.59129333496094,
+        "bottom": 656.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 624.785625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 624.02,
+            "bottom": 638.02
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 642.785625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 642.02,
+            "bottom": 656.02
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 624.785625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 6,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "b5b6b06f591e0d94bdb15d8c9821d52e9bf06223adfc681e7fd44a399e8425d7"
+  },
+  "synthetic-breaks-common": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 676,
+      "painted": {
+        "left": 107,
+        "top": 525.75,
+        "right": 278.2678680419922,
+        "bottom": 670.75
+      },
+      "overflow": {
+        "vertical": 8,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 107.70892333984375,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 170.2678680419922,
+          "availableWidth": 273.63
+        },
+        {
+          "index": 3,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 4,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 5,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 169.57485961914062,
+          "availableWidth": 260.90999999999997
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 541.75
+          },
+          "paintedRight": 215.70892333984375,
+          "text": "Draw a card."
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 381.63,
+          "painted": {
+            "top": 575.75,
+            "bottom": 591.75
+          },
+          "paintedRight": 278.2678680419922,
+          "text": "Then discard a card."
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 626,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 651,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 650.75,
+            "bottom": 670.75
+          },
+          "paintedRight": 277.5748596191406,
+          "text": "Rescue a Bystander."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 11.64,
+      "requested": 18,
+      "lineH": 15,
+      "bottom": 707.015625,
+      "painted": {
+        "left": 107,
+        "top": 676.75,
+        "right": 361.9782409667969,
+        "bottom": 703.75
+      },
+      "overflow": {
+        "vertical": 39.015625,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 677.015625,
+          "left": 108,
+          "right": 384.0459161376953,
+          "painted": {
+            "top": 676.75,
+            "bottom": 688.75
+          },
+          "paintedRight": 361.9782409667969,
+          "text": "Every victory begins with a hero willing to take the first"
+        },
+        {
+          "y": 692.015625,
+          "left": 108,
+          "right": 468,
+          "painted": {
+            "top": 692.75,
+            "bottom": 703.75
+          },
+          "paintedRight": 135.48948669433594,
+          "text": " step."
+        }
+      ]
+    },
+    "flavorY": 677.015625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 37.75,
+      "fullyClipped": true
+    },
+    "paintedGap": 6,
+    "flavorClipped": 37.75,
+    "contourSlack": 22.831759033203127,
+    "pngHash": "76a49a4fae756538bf8e26e38599c31b22fa5fee8680317f5caf69db8e14d07b"
+  },
+  "synthetic-styles-common": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 604,
+      "painted": {
+        "left": 107,
+        "top": 525.5,
+        "right": 437.9776916503906,
+        "bottom": 598.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 783.1772766113281,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 542.5
+          },
+          "paintedRight": 381.8317413330078,
+          "text": "An unbreakable word withitalic"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 568.5
+          },
+          "paintedRight": 437.9776916503906,
+          "text": "underlined text. Then draw two cards."
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 376.33,
+          "painted": {
+            "top": 577.5,
+            "bottom": 598.5
+          },
+          "paintedRight": 284.4838562011719,
+          "text": " You may KO a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 17.5,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "a8d778a65b2f4028faaafc8c835015ab078f640de060a81ee4f42188e741bb31"
+  },
+  "synthetic-crowded-common": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 676,
+      "painted": {
+        "left": 108,
+        "top": 525.75,
+        "right": 444.4617462158203,
+        "bottom": 670.75
+      },
+      "overflow": {
+        "vertical": 8,
+        "horizontal": 0,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1550.8068084716797,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 545.75
+          },
+          "paintedRight": 440.57672119140625,
+          "text": "Reveal the top three cards of your deck."
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 550.75,
+            "bottom": 570.75
+          },
+          "paintedRight": 444.4617462158203,
+          "text": " Put one of them into your hand. Discard"
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 379.23299194335937,
+          "painted": {
+            "top": 575.75,
+            "bottom": 595.75
+          },
+          "paintedRight": 366.5137939453125,
+          "text": " the rest. Then you may rescue"
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 600.75,
+            "bottom": 620.75
+          },
+          "paintedRight": 318.8728485107422,
+          "text": " a Bystander. Each player"
+        },
+        {
+          "y": 626,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 625.75,
+            "bottom": 645.75
+          },
+          "paintedRight": 361.4268341064453,
+          "text": " draws a card. You may defeat"
+        },
+        {
+          "y": 651,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 650.75,
+            "bottom": 670.75
+          },
+          "paintedRight": 269.46888732910156,
+          "text": " a Villain in the city."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 11.64,
+      "requested": 18,
+      "lineH": 15,
+      "bottom": 707.015625,
+      "painted": {
+        "left": 107,
+        "top": 676.75,
+        "right": 361.9782409667969,
+        "bottom": 703.75
+      },
+      "overflow": {
+        "vertical": 39.015625,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 677.015625,
+          "left": 108,
+          "right": 384.0459161376953,
+          "painted": {
+            "top": 676.75,
+            "bottom": 688.75
+          },
+          "paintedRight": 361.9782409667969,
+          "text": "Every victory begins with a hero willing to take the first"
+        },
+        {
+          "y": 692.015625,
+          "left": 108,
+          "right": 468,
+          "painted": {
+            "top": 692.75,
+            "bottom": 703.75
+          },
+          "paintedRight": 135.48948669433594,
+          "text": " step."
+        }
+      ]
+    },
+    "flavorY": 677.015625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 37.75,
+      "fullyClipped": true
+    },
+    "paintedGap": 6,
+    "flavorClipped": 37.75,
+    "contourSlack": 6.42316589355471,
+    "pngHash": "5a3ac03dcad63b46afd2de49e618093853d115e8e240edbff1c71f488435503d"
+  },
+  "synthetic-long-word-common": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 108,
+        "top": 525.5,
+        "right": 1266.7410888671875,
+        "bottom": 542.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 814.7410888671875,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 1157.0670166015625,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 542.5
+          },
+          "paintedRight": 1266.7410888671875,
+          "text": "UnbreakableTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 73.5,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "38e75b9b912c26c9cbe651b963429a28cc346bd290204230886b23bd867af5d7"
+  },
+  "synthetic-headers-common": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 616.52,
+      "painted": {
+        "left": 107,
+        "top": 516.5,
+        "right": 355.9798583984375,
+        "bottom": 607.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 199.80787658691406,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 247.9798583984375,
+          "availableWidth": 276.81
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 147.33387756347656,
+          "availableWidth": 264.09
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 307.80787658691406,
+          "text": "Fight: You get+2[attack]."
+        },
+        {
+          "y": 562.76,
+          "left": 108,
+          "right": 384.81,
+          "painted": {
+            "top": 553.26,
+            "bottom": 588.26
+          },
+          "paintedRight": 355.9798583984375,
+          "text": "Versatile 2: You get+1[recruit]."
+        },
+        {
+          "y": 590.52,
+          "left": 108,
+          "right": 372.09,
+          "painted": {
+            "top": 590.02,
+            "bottom": 607.02
+          },
+          "paintedRight": 255.33387756347656,
+          "text": "KO: Draw a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 8.980000000000018,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "68e11ed029bf8093745871b20d43a69d94debb76f020e9ca4a6efac3a9f6b2a1"
+  },
+  "synthetic-mixed-uncommon": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 605.76,
+      "painted": {
+        "left": 108,
+        "top": 516.5,
+        "right": 436.7237091064453,
+        "bottom": 600.26
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 187.19590759277344,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 585.4634704589844,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 295.19590759277344,
+          "text": "[covert]: You get+2[attack]."
+        },
+        {
+          "y": 553.76,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 553.26,
+            "bottom": 570.26
+          },
+          "paintedRight": 436.7237091064453,
+          "text": "Draw two cards. Then discard a card."
+        },
+        {
+          "y": 579.76,
+          "left": 108,
+          "right": 375.27,
+          "painted": {
+            "top": 579.26,
+            "bottom": 600.26
+          },
+          "paintedRight": 364.73976135253906,
+          "text": " You may rescue a Bystander."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 15.740000000000009,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "f3c6f24d2d27ea67f50400826d1075526e3df4cc5ae3b21bc74f08d951089c8f"
+  },
+  "synthetic-icons-uncommon": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 622.02,
+      "painted": {
+        "left": 107,
+        "top": 516.5,
+        "right": 263.0699005126953,
+        "bottom": 618.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 146.9639129638672,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 143.9639129638672,
+          "availableWidth": 276.81
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 155.0699005126953,
+          "availableWidth": 259.85
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 254.9639129638672,
+          "text": "You get+2[attack]."
+        },
+        {
+          "y": 562.76,
+          "left": 108,
+          "right": 384.81,
+          "painted": {
+            "top": 553.26,
+            "bottom": 588.26
+          },
+          "paintedRight": 251.9639129638672,
+          "text": "You get+2[recruit]."
+        },
+        {
+          "y": 596.02,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 590.02,
+            "bottom": 618.02
+          },
+          "paintedRight": 263.0699005126953,
+          "text": "[strength]: Draw a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 660.785625,
+      "painted": {
+        "left": 108,
+        "top": 624.02,
+        "right": 358.59129333496094,
+        "bottom": 656.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 624.785625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 624.02,
+            "bottom": 638.02
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 642.785625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 642.02,
+            "bottom": 656.02
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 624.785625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 6,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "0560ad14cfc3d988627cb4440d057e93b75f6754adfc4f5c603a88930c5d6f38"
+  },
+  "synthetic-breaks-uncommon": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 676,
+      "painted": {
+        "left": 107,
+        "top": 525.75,
+        "right": 278.2678680419922,
+        "bottom": 670.75
+      },
+      "overflow": {
+        "vertical": 8,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 107.70892333984375,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 170.2678680419922,
+          "availableWidth": 273.63
+        },
+        {
+          "index": 3,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 4,
+          "eligible": false,
+          "reason": "empty",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 0,
+          "availableWidth": 344
+        },
+        {
+          "index": 5,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 169.57485961914062,
+          "availableWidth": 260.90999999999997
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 541.75
+          },
+          "paintedRight": 215.70892333984375,
+          "text": "Draw a card."
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 381.63,
+          "painted": {
+            "top": 575.75,
+            "bottom": 591.75
+          },
+          "paintedRight": 278.2678680419922,
+          "text": "Then discard a card."
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 626,
+          "left": 108,
+          "right": 452,
+          "painted": null,
+          "text": ""
+        },
+        {
+          "y": 651,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 650.75,
+            "bottom": 670.75
+          },
+          "paintedRight": 277.5748596191406,
+          "text": "Rescue a Bystander."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 11.64,
+      "requested": 18,
+      "lineH": 15,
+      "bottom": 707.015625,
+      "painted": {
+        "left": 107,
+        "top": 676.75,
+        "right": 361.9782409667969,
+        "bottom": 703.75
+      },
+      "overflow": {
+        "vertical": 39.015625,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 677.015625,
+          "left": 108,
+          "right": 384.0459161376953,
+          "painted": {
+            "top": 676.75,
+            "bottom": 688.75
+          },
+          "paintedRight": 361.9782409667969,
+          "text": "Every victory begins with a hero willing to take the first"
+        },
+        {
+          "y": 692.015625,
+          "left": 108,
+          "right": 468,
+          "painted": {
+            "top": 692.75,
+            "bottom": 703.75
+          },
+          "paintedRight": 135.48948669433594,
+          "text": " step."
+        }
+      ]
+    },
+    "flavorY": 677.015625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 37.75,
+      "fullyClipped": true
+    },
+    "paintedGap": 6,
+    "flavorClipped": 37.75,
+    "contourSlack": 22.831759033203127,
+    "pngHash": "8426f9593fcccc610b4eb1ef963d76e4594699294795fc0ba8b8bf2ce3ba02dd"
+  },
+  "synthetic-styles-uncommon": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 604,
+      "painted": {
+        "left": 107,
+        "top": 525.5,
+        "right": 437.9776916503906,
+        "bottom": 598.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 783.1772766113281,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 542.5
+          },
+          "paintedRight": 381.8317413330078,
+          "text": "An unbreakable word withitalic"
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 551.5,
+            "bottom": 568.5
+          },
+          "paintedRight": 437.9776916503906,
+          "text": "underlined text. Then draw two cards."
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 376.33,
+          "painted": {
+            "top": 577.5,
+            "bottom": 598.5
+          },
+          "paintedRight": 284.4838562011719,
+          "text": " You may KO a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 17.5,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "783cabdeee76b26b88c666e89bc46a32f947ab9522a9c0ad4c272eb8da089b8a"
+  },
+  "synthetic-crowded-uncommon": {
+    "rules": {
+      "font": 21,
+      "requested": 22,
+      "lineH": 25,
+      "bottom": 676,
+      "painted": {
+        "left": 108,
+        "top": 525.75,
+        "right": 444.4617462158203,
+        "bottom": 670.75
+      },
+      "overflow": {
+        "vertical": 8,
+        "horizontal": 0,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": false,
+          "reason": "multiple",
+          "protected": false,
+          "fallback": false,
+          "measuredWidth": 1550.8068084716797,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.75,
+            "bottom": 545.75
+          },
+          "paintedRight": 440.57672119140625,
+          "text": "Reveal the top three cards of your deck."
+        },
+        {
+          "y": 551,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 550.75,
+            "bottom": 570.75
+          },
+          "paintedRight": 444.4617462158203,
+          "text": " Put one of them into your hand. Discard"
+        },
+        {
+          "y": 576,
+          "left": 108,
+          "right": 379.23299194335937,
+          "painted": {
+            "top": 575.75,
+            "bottom": 595.75
+          },
+          "paintedRight": 366.5137939453125,
+          "text": " the rest. Then you may rescue"
+        },
+        {
+          "y": 601,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 600.75,
+            "bottom": 620.75
+          },
+          "paintedRight": 318.8728485107422,
+          "text": " a Bystander. Each player"
+        },
+        {
+          "y": 626,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 625.75,
+            "bottom": 645.75
+          },
+          "paintedRight": 361.4268341064453,
+          "text": " draws a card. You may defeat"
+        },
+        {
+          "y": 651,
+          "left": 108,
+          "right": 368.90999999999997,
+          "painted": {
+            "top": 650.75,
+            "bottom": 670.75
+          },
+          "paintedRight": 269.46888732910156,
+          "text": " a Villain in the city."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 11.64,
+      "requested": 18,
+      "lineH": 15,
+      "bottom": 707.015625,
+      "painted": {
+        "left": 107,
+        "top": 676.75,
+        "right": 361.9782409667969,
+        "bottom": 703.75
+      },
+      "overflow": {
+        "vertical": 39.015625,
+        "horizontal": 1,
+        "belowRegion": true,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 677.015625,
+          "left": 108,
+          "right": 384.0459161376953,
+          "painted": {
+            "top": 676.75,
+            "bottom": 688.75
+          },
+          "paintedRight": 361.9782409667969,
+          "text": "Every victory begins with a hero willing to take the first"
+        },
+        {
+          "y": 692.015625,
+          "left": 108,
+          "right": 468,
+          "painted": {
+            "top": 692.75,
+            "bottom": 703.75
+          },
+          "paintedRight": 135.48948669433594,
+          "text": " step."
+        }
+      ]
+    },
+    "flavorY": 677.015625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": true,
+      "gapPasses": 1,
+      "targetReached": false,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 37.75,
+      "fullyClipped": true
+    },
+    "paintedGap": 6,
+    "flavorClipped": 37.75,
+    "contourSlack": 6.42316589355471,
+    "pngHash": "56398b8207f04f9a139f7e7c8e601ade09ecc9f9808bc033137dddc9fc877ea8"
+  },
+  "synthetic-long-word-uncommon": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 552,
+      "painted": {
+        "left": 108,
+        "top": 525.5,
+        "right": 1266.7410888671875,
+        "bottom": 542.5
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 814.7410888671875,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": false,
+          "fallback": true,
+          "measuredWidth": 1157.0670166015625,
+          "availableWidth": 344
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 525.5,
+            "bottom": 542.5
+          },
+          "paintedRight": 1266.7410888671875,
+          "text": "UnbreakableTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextTextText"
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 73.5,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "172f8ecc0e168bb99322c83de619bc87440f9df12cb3f0a9d72cbc203cd6478f"
+  },
+  "synthetic-headers-uncommon": {
+    "rules": {
+      "font": 22,
+      "requested": 22,
+      "lineH": 26,
+      "bottom": 616.52,
+      "painted": {
+        "left": 107,
+        "top": 516.5,
+        "right": 355.9798583984375,
+        "bottom": 607.02
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [
+        {
+          "index": 0,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 199.80787658691406,
+          "availableWidth": 344
+        },
+        {
+          "index": 1,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 247.9798583984375,
+          "availableWidth": 276.81
+        },
+        {
+          "index": 2,
+          "eligible": true,
+          "reason": "single",
+          "protected": true,
+          "fallback": false,
+          "measuredWidth": 147.33387756347656,
+          "availableWidth": 264.09
+        }
+      ],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452,
+          "painted": {
+            "top": 516.5,
+            "bottom": 551.5
+          },
+          "paintedRight": 307.80787658691406,
+          "text": "Fight: You get+2[attack]."
+        },
+        {
+          "y": 562.76,
+          "left": 108,
+          "right": 384.81,
+          "painted": {
+            "top": 553.26,
+            "bottom": 588.26
+          },
+          "paintedRight": 355.9798583984375,
+          "text": "Versatile 2: You get+1[recruit]."
+        },
+        {
+          "y": 590.52,
+          "left": 108,
+          "right": 372.09,
+          "painted": {
+            "top": 590.02,
+            "bottom": 607.02
+          },
+          "paintedRight": 255.33387756347656,
+          "text": "KO: Draw a card."
+        }
+      ]
+    },
+    "flavor": {
+      "font": 13.64,
+      "requested": 18,
+      "lineH": 18,
+      "bottom": 652.765625,
+      "painted": {
+        "left": 108,
+        "top": 616,
+        "right": 358.59129333496094,
+        "bottom": 648
+      },
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "blocks": [],
+      "contourResolved": true,
+      "lines": [
+        {
+          "y": 616.765625,
+          "left": 108,
+          "right": 366.6419158935547,
+          "painted": {
+            "top": 616,
+            "bottom": 630
+          },
+          "paintedRight": 358.59129333496094,
+          "text": "Every victory begins with a hero willing to take"
+        },
+        {
+          "y": 634.765625,
+          "left": 108,
+          "right": 367.85,
+          "painted": {
+            "top": 634,
+            "bottom": 648
+          },
+          "paintedRight": 187.74710083007812,
+          "text": " the first step."
+        }
+      ]
+    },
+    "flavorY": 616.765625,
+    "flavorPlacement": {
+      "targetBottom": 648,
+      "minPaintedGap": 6,
+      "targetConverged": true,
+      "targetIterations": 3,
+      "gapFallback": false,
+      "gapPasses": 0,
+      "targetReached": true,
+      "clipEdge": 666,
+      "paintedBottomBeyondClip": 0,
+      "fullyClipped": false
+    },
+    "paintedGap": 8.980000000000018,
+    "flavorClipped": 0,
+    "contourSlack": 9.258706665039085,
+    "pngHash": "8478bbc06266aff3ba29e85f564433ff929e48ac8944f1312fc398e2a71b1b40"
+  }
+}

@@ -2238,6 +2238,41 @@ function getHeroCostContour() {
   return { rows, clearance: 3 };
 }
 
+// Common/Uncommon templates have a baked badge with the same solid rim but a
+// broader shadow. This conservative envelope was measured on all ten frames;
+// it is not a recovered alpha matte. Transform only the badge witness, never
+// the actual image or the cost number/asterisk drawn on the card.
+function getEmbeddedHeroCostContour() {
+  const canvas = document.createElement('canvas');
+  canvas.width = CW; canvas.height = CH;
+  const ctx = canvas.getContext('2d', { willReadFrequently: true });
+  const cp = P.cost, cfg = STAT_NUMBERS.cost || {};
+  const cx = (cp.x0 + cp.x1) / 2 + (cfg.offsetX || 0);
+  const cy = (cp.y0 + cp.y1) / 2 + (cfg.offsetY || 0);
+  drawCenteredAssetBounds(ctx, 'cost_rare', cx, cy);
+  const pixels = ctx.getImageData(0, 0, CW, CH).data;
+  const badgeRows = new Float64Array(CH); badgeRows.fill(Infinity);
+  for (let y = 0; y < CH; y++) {
+    for (let x = 0; x < CW; x++) {
+      if (pixels[(y * CW + x) * 4 + 3] > 64) { badgeRows[y] = x; break; }
+    }
+  }
+  ctx.clearRect(0, 0, CW, CH);
+  drawOverlayStatNumbers(ctx, { costOnly: true });
+  const numbers = ctx.getImageData(0, 0, CW, CH).data;
+  const rows = new Float64Array(CH);
+  for (let y = 0; y < CH; y++) {
+    const sourceY = (y - cy) / 1.06 + cy;
+    const edge = Math.min(badgeRows[Math.floor(sourceY)] ?? Infinity,
+      badgeRows[Math.ceil(sourceY)] ?? Infinity);
+    rows[y] = cx + (edge - cx) * 1.06 - 2;
+    for (let x = 0; x < CW; x++) {
+      if (numbers[(y * CW + x) * 4 + 3] > 64) { rows[y] = Math.min(rows[y], x); break; }
+    }
+  }
+  return { rows, clearance: 3 };
+}
+
 function contourRightForBand(contour, top, bottom) {
   const { rows, clearance } = contour;
   let right = Infinity;
@@ -2458,10 +2493,19 @@ function layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones=[], options={
       drewText = true;
       continue;
     }
-    const fragments = unit.fragments.map(measureFragment);
+    let fragments = unit.fragments.map(measureFragment);
     const width = fragments.reduce((sum, fragment) => sum + fragment.metrics.width, 0);
     const bounds = curBounds();
-    if (!protect && cx + width > bounds.right && cx > bounds.left) nextLine(lh);
+    if (!protect && cx + width > bounds.right && cx > bounds.left) {
+      nextLine(lh);
+      // A word carries its preceding separator so inter-word spacing is measured
+      // with its style. On a soft wrap that separator belongs to the old line,
+      // not to the new line's indentation. Preserve explicit-break indentation
+      // and nonbreaking spaces; remeasure the trimmed fragment for exact painting.
+      fragments = unit.fragments.map((fragment, index) => measureFragment(index === 0
+        ? { ...fragment, t: fragment.t.replace(/^[ \t\r\n\f]+/, '') }
+        : fragment));
+    }
     for (const fragment of fragments) {
       const m = fragment.metrics;
       const item = { type: 'text', text: fragment.t, font: fragment.font, underline: fragment.u,
@@ -2616,6 +2660,31 @@ function drawAdaptiveTextBlock(ctx, cfg) {
 
   // Preserve normal vertical fitting first. Only a protection gain can justify
   // the additional allowance; impossible long phrases cannot drive shrinking.
+  // Common/Uncommon only: a short final soft-wrapped line can sometimes be
+  // removed using the normal fitting allowance. Never collapse a paragraph to
+  // one line, cross explicit breaks, or worsen any measured overflow.
+  if (cfg.balanceShortLastLine && abilityBlocks.length === 1 && measured.abilityLayout.lines.length >= 3) {
+    const original = measured;
+    const last = original.abilityLayout.lines.at(-1);
+    const occupied = last.items.length ? Math.max(...last.items.map(item => item.x + item.width)) - last.left : 0;
+    if (occupied > 0 && occupied < (last.right - last.left) * 0.3) {
+      const amounts = result => [result.overflow, result.abilityLayout.overflow.vertical,
+        result.abilityLayout.overflow.horizontal, result.flavorLayout?.overflow.vertical || 0,
+        result.flavorLayout?.overflow.horizontal || 0];
+      const limits = amounts(original);
+      for (let size = abilitySize - 0.5; size >= minAbilitySize; size -= 0.5) {
+        abilitySize = size;
+        const trial = measure();
+        if (trial.abilityLayout.lines.length >= 2 && trial.abilityLayout.lines.length < original.abilityLayout.lines.length
+            && amounts(trial).every((value, index) => value <= limits[index] + 0.001)) {
+          measured = trial;
+          break;
+        }
+      }
+      abilitySize = measured.abilityLayout.effectiveFontSize;
+    }
+  }
+
   const baseline = measured;
   const protectedCount = result => result.abilityLayout.blocks.filter(block => block.protected).length;
   const overflowAmounts = result => [result.overflow, result.abilityLayout.overflow.vertical,
@@ -2750,6 +2819,8 @@ function drawText(ctx) {
   const flRuns = parseRTE(document.getElementById('f-flavor'));
   const useCalibratedRareText = isRare && (st.layout === 'single' || st.layout === 'multicolor');
   const rareHeroContour = useCalibratedRareText ? getHeroCostContour() : null;
+  const useEmbeddedHeroText = st.layout === 'single' && (st.rar === 'common' || st.rar === 'uncommon');
+  const heroTextContour = useEmbeddedHeroText ? getEmbeddedHeroCostContour() : rareHeroContour;
   drawAdaptiveTextBlock(ctx, {
     abRuns,
     flRuns,
@@ -2758,15 +2829,17 @@ function drawText(ctx) {
     w: resolvedTxtW,
     abSz,
     flSz,
-    avoidZones,
+    avoidZones: useEmbeddedHeroText ? [] : avoidZones,
+    options: useEmbeddedHeroText ? { rightContour: heroTextContour } : {},
+    balanceShortLastLine: useEmbeddedHeroText,
     // Single-color and multicolor rare Heroes share the same cost composition.
-    abilityLayout: rareHeroContour ? {
-      width: 330,
+    abilityLayout: heroTextContour ? {
+      width: useEmbeddedHeroText ? 344 : 330,
       avoidZones: [],
-      options: { lineAdvanceRatio: 27 / 22, rightContour: rareHeroContour }
+      options: { lineAdvanceRatio: (useEmbeddedHeroText ? 26 : 27) / 22, rightContour: heroTextContour }
     } : null,
-    finalFlavorLayout: rareHeroContour ? {
-      targetBottom: 648, minPaintedGap: 6, rightContour: rareHeroContour
+    finalFlavorLayout: heroTextContour ? {
+      targetBottom: 648, minPaintedGap: 6, rightContour: heroTextContour
     } : null,
     preferredFlavorGap: 68,
     minFlavorGap: 6,

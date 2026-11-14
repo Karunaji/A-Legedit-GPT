@@ -1,5 +1,7 @@
 # A Legedit GPT Handoff
 
+> Milestone update, 14 November 2026: accepted together with soft-wrap alignment and inline scales 1.40/1.10. Earlier status/results below describe their original stage. Use `tools/accepted-rendering-production.cjs` for current production; `tools/common-uncommon-production.cjs --historical` isolates the original calibration. See `tools/ACCEPTED-RENDERING-VALIDATION.md`.
+
 ## Latest change: ability Attack/Recruit scale 1.60 (uncommitted)
 
 - Accepted recovery checkpoint: `a8232b2`, rare Hero rules/flavor calibration. Do not rewrite it. Current icon work remains uncommitted.
@@ -242,6 +244,12 @@ Use this if resuming elsewhere:
 - If the app seems to use stale template PNGs, fully close and reopen it to clear in-memory asset cache.
 - If PowerShell blocks `npm`, use `npm.cmd`.
 - The thread history does not travel with the folder; this file is the portable handoff.
+
+## Common/Uncommon single-color Hero calibration (12 November 2026, uncommitted)
+
+Following broader Second Edition comparisons, standard single-color Common and Uncommon Heroes now use26/22 ordinary advance, full-painted-band avoidance of a measured conservative embedded-badge envelope, and a preferred flavor bottom648 with6 painted units below rules. The original x108/y526,344 upper rules width, requested font controls, icon scale, font floors, actual badge and numbers remain unchanged. A scoped one-block short-last-line refinement uses only the existing normal font allowance; explicit blocks and short protected clauses retain their semantics. Rare, multicolor, Split and all other families are unchanged.
+
+See `tools/COMMON-UNCOMMON-PRODUCTION-VALIDATION.md` and the persistent PDF/HTML/data in `tools/review-artifacts/common-uncommon-wrap-calibration/`. Run `node_modules/.bin/electron.cmd tools/common-uncommon-production.cjs` for the permanent regression check against checkpoint `d60d70a`. Two dense official examples still need a smaller user-selected size to reproduce their printed wraps; no aggressive automatic shrinking was added. This supersedes the earlier330-width/rarity-specific flavor-target proposal. Work is deliberately uncommitted for review.
 
 ## Rare multicolor Hero production transfer (uncommitted)
 
