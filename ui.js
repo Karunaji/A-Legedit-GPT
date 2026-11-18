@@ -76,51 +76,61 @@ function imageHasTransparentPixels(img) {
   }
   return false;
 }
+let teamIconLoadId = 0;
+function resetPendingTeamIcon() {
+  teamIconLoadId++;
+  st.pendingTeamImg = null;
+  st.pendingTeamSrc = null;
+  setPendingTeamButtonEnabled(false);
+  document.getElementById('team-icon-file').value = '';
+  setTeamIconStatus('');
+}
 function loadTeamIcon(e) {
   const f = e.target.files[0]; if (!f) return;
+  resetPendingTeamIcon();
+  // Clear the input immediately so choosing this same file again triggers change.
+  e.target.value = '';
+  const requestId = teamIconLoadId;
+  const current = () => requestId === teamIconLoadId;
+  const fail = message => {
+    if (!current()) return;
+    resetPendingTeamIcon();
+    setTeamIconStatus(message, 'error');
+  };
   const nameEl = document.getElementById('team-icon-name');
   if (!nameEl.value.trim()) nameEl.value = f.name.replace(/\.[^.]+$/, '');
-  setPendingTeamButtonEnabled(false);
   setTeamIconStatus('Loading icon...');
   const r = new FileReader();
   r.onload = ev => {
+    if (!current()) return;
     const i = new Image();
     i.onload = () => {
+      if (!current()) return;
       st.pendingTeamImg = i;
       st.pendingTeamSrc = ev.target.result;
       setPendingTeamButtonEnabled(true);
       const hasAlpha = imageHasTransparentPixels(i);
+      const next = ' Click Add to List to use it.';
       if (hasAlpha === false && /\.png$/i.test(f.name)) {
-        setTeamIconStatus('PNG loaded, but no transparent pixels were found. Any checkerboard/background is part of the image.', 'warn');
-      } else if (hasAlpha === true) {
-        setTeamIconStatus('Transparent image loaded.');
+        setTeamIconStatus('PNG loaded, but no transparent pixels were found. Any checkerboard/background is part of the image.' + next, 'warn');
       } else {
-        setTeamIconStatus('Image loaded.');
+        setTeamIconStatus((hasAlpha === true ? 'Transparent image loaded.' : 'Image loaded.') + next);
       }
     };
-    i.onerror = () => {
-      st.pendingTeamImg = null;
-      st.pendingTeamSrc = null;
-      setPendingTeamButtonEnabled(false);
-      setTeamIconStatus('Could not load this image. Try a standard PNG or JPG file.', 'error');
-    };
+    i.onerror = () => fail('Could not load this image. Try a standard PNG or JPG file.');
     i.src = ev.target.result;
   };
-  r.onerror = () => {
-    st.pendingTeamImg = null;
-    st.pendingTeamSrc = null;
-    setPendingTeamButtonEnabled(false);
-    setTeamIconStatus('Could not read this image file.', 'error');
-  };
-  r.readAsDataURL(f);
+  r.onerror = () => fail('Could not read this image file. Try saving it locally and uploading again.');
+  r.onabort = () => fail('Icon loading was interrupted. Please choose the file again.');
+  try { r.readAsDataURL(f); }
+  catch (_) { fail('Could not read this image file. Please choose the file again.'); }
 }
 function addCustomTeam() {
   if (!st.pendingTeamImg) return;
   const name = document.getElementById('team-icon-name').value.trim() || 'Custom Icon';
   const id = `custom_${_customTeamCounter++}`;
   st.customTeams.push({id, name, img: st.pendingTeamImg, src: st.pendingTeamSrc || st.pendingTeamImg.src || null});
-  st.pendingTeamImg = null;
-  st.pendingTeamSrc = null;
+  resetPendingTeamIcon();
   document.getElementById('team-icon-name').value = '';
   document.getElementById('team-icon-file').value = '';
   setPendingTeamButtonEnabled(false);

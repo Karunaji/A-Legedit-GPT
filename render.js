@@ -2101,7 +2101,7 @@ function parseRTE(el) {
 // their own line transition. Empty blocks still occupy a line.
 function parseAbilityRTE(root) {
   const hardBreak = () => ({ br: true, fullLine: true });
-  const isBlock = node => node.nodeType === 1 && /^(DIV|P)$/.test(node.tagName);
+  const isBlock = node => node.nodeType === 1 && /^(DIV|P|HR)$/.test(node.tagName);
   function inline(node, marks) {
     if (node.nodeType === 3) {
       const result = [];
@@ -2133,7 +2133,8 @@ function parseAbilityRTE(root) {
     let occupied = false, previousBlock = false;
     for (const node of container.childNodes) {
       const block = isBlock(node);
-      const content = block ? children(node, marks, true) : inline(node, marks);
+      const content = node.nodeName === 'HR' ? [{ divider: true }]
+        : block ? children(node, marks, true) : inline(node, marks);
       if (!block && !content.length) continue;
       if (occupied && (previousBlock || (block && !result[result.length - 1]?.br))) result.push(hardBreak());
       result.push(...content);
@@ -2149,6 +2150,7 @@ function parseAbilityRTE(root) {
 
 // Classification is a rendering hint only; never rewrite saved HTML or runs.
 function classifyAbilityBlock(runs) {
+  if (runs.some(run => run.divider)) return { eligible: false, reason: 'divider' };
   let text = runs.map(run => run.icon ? '\uFFFC' : (run.t || '')).join('').trim();
   if (!text) return { eligible: false, reason: 'empty' };
   let ambiguousAcronym = false;
@@ -2192,7 +2194,7 @@ function getLayoutUnits(runs) {
     word = [];
   };
   for (const run of runs) {
-    if (run.br || run.icon) {
+    if (run.br || run.icon || run.divider) {
       flush();
       units.push(run);
       continue;
@@ -2319,7 +2321,7 @@ function layoutRuns(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
 // Resolve spacing inside layout, rerunning wrapping/boundary sampling at the
 // resolved origins. Never translate an already-wrapped drawing after the fact.
 function layoutRunsWithIconSpacing(ctx, runs, x, y, maxW, sz, avoidZones=[], options={}) {
-  if (!options.abilityBlocks || !runs.some(run => run.icon)) {
+  if (!options.abilityBlocks || !runs.some(run => run.icon || run.divider)) {
     return layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones, options);
   }
   const savedFont = ctx.font;
@@ -2475,6 +2477,18 @@ function layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones=[], options={
     }
     prevWasBr = false;
     if (unit.empty) continue;
+    if (unit.divider) {
+      const bounds = curBounds();
+      const item = { type: 'divider', x: bounds.left, y: cy + lh * 0.45,
+        width: Math.max(0, bounds.width), height: 1 };
+      items.push(item);
+      line().items.push(item);
+      // Include the rule in painted-band contour and neighboring-line clearance.
+      line().hasIcon = true;
+      includeBounds(item.x, item.y, item.x + item.width, item.y + item.height);
+      drewText = true;
+      continue;
+    }
     if (unit.space) {
       cx += measureFragment(unit.space).metrics.width;
       continue;
@@ -2535,7 +2549,10 @@ function layoutRunsAtOrigins(ctx, runs, x, y, maxW, sz, avoidZones=[], options={
 // Drawing consumes the final measured positions; it never measures or wraps again.
 function drawRuns(ctx, layout, color) {
   for (const item of layout.items) {
-    if (item.type === 'icon') {
+    if (item.type === 'divider') {
+      ctx.fillStyle = color;
+      ctx.fillRect(item.x, item.y, item.width, item.height);
+    } else if (item.type === 'icon') {
       if (item.img && item.bounds) {
         const b = item.bounds;
         ctx.drawImage(item.img, b.sx, b.sy, b.sw, b.sh, item.x, item.y, item.width, item.height);
@@ -2551,7 +2568,7 @@ function drawRuns(ctx, layout, color) {
 }
 
 function runsHaveVisibleContent(runs) {
-  return runs.some(run => (run.t && run.t.trim()) || run.icon);
+  return runs.some(run => (run.t && run.t.trim()) || run.icon || run.divider);
 }
 
 // Final placement only: do not feed this layout back into rules/font selection.

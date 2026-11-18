@@ -179,6 +179,7 @@
         <select id="ability-team-icon-select" class="rb" style="max-width:110px">
           <option value="">Team icon...</option>
         </select>
+        <button class="rb" onmousedown="event.preventDefault()" onclick="insertAbilityDivider('f-ability')" title="Insert a horizontal divider between ability sections">Divider</button>
         <button class="rb" onclick="insertTeamIconFromPicker('f-ability','ability-team-icon-select')">Team</button>
         <span style="font-size:10px;color:#4a5568;margin-left:3px">Select text then click</span>
       </div>
@@ -287,7 +288,8 @@
             <select id="split-ability-team-icon-select-1" class="rb" style="max-width:110px">
               <option value="">Team icon...</option>
             </select>
-            <button class="rb" onclick="insertTeamIconFromPicker('split-ability-1','split-ability-team-icon-select-1')">Team</button>
+            <button class="rb" onmousedown="event.preventDefault()" onclick="insertAbilityDivider('split-ability-1')" title="Insert a horizontal divider between ability sections">Divider</button>
+        <button class="rb" onclick="insertTeamIconFromPicker('split-ability-1','split-ability-team-icon-select-1')">Team</button>
           </div>
           <div class="rte" id="split-ability-1" contenteditable="true" oninput="onSplitAbilityInput('1', event)">Ability text 1.</div>
         </div>
@@ -389,7 +391,8 @@
             <select id="split-ability-team-icon-select-2" class="rb" style="max-width:110px">
               <option value="">Team icon...</option>
             </select>
-            <button class="rb" onclick="insertTeamIconFromPicker('split-ability-2','split-ability-team-icon-select-2')">Team</button>
+            <button class="rb" onmousedown="event.preventDefault()" onclick="insertAbilityDivider('split-ability-2')" title="Insert a horizontal divider between ability sections">Divider</button>
+        <button class="rb" onclick="insertTeamIconFromPicker('split-ability-2','split-ability-team-icon-select-2')">Team</button>
           </div>
           <div class="rte" id="split-ability-2" contenteditable="true" oninput="onSplitAbilityInput('2', event)">Ability text 2.</div>
         </div>

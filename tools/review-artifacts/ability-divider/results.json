@@ -1,0 +1,251 @@
+{
+  "checks": [
+    "parse First<hr>Second",
+    "HTML round trip First<hr>Second",
+    "parse <div>First</div><hr><div>Second</div>",
+    "HTML round trip <div>First</div><hr><div>Second</div>",
+    "parse <hr>Second",
+    "HTML round trip <hr>Second",
+    "parse First<hr>",
+    "HTML round trip First<hr>",
+    "parse <hr><hr>",
+    "HTML round trip <hr><hr>",
+    "f-ability insertion",
+    "f-ability parsed insertion",
+    "f-ability undo",
+    "f-ability redo",
+    "f-ability delayed autoformat",
+    "f-ability native deletion",
+    "f-ability replace selected text",
+    "split-ability-1 insertion",
+    "split-ability-1 parsed insertion",
+    "split-ability-1 undo",
+    "split-ability-1 redo",
+    "split-ability-1 delayed autoformat",
+    "split-ability-1 native deletion",
+    "split-ability-1 replace selected text",
+    "split-ability-2 insertion",
+    "split-ability-2 parsed insertion",
+    "split-ability-2 undo",
+    "split-ability-2 redo",
+    "split-ability-2 delayed autoformat",
+    "split-ability-2 native deletion",
+    "split-ability-2 replace selected text",
+    "plain positioned divider",
+    "plain bounds",
+    "plain converges",
+    "plain vertical separation",
+    "stepped positioned divider",
+    "stepped bounds",
+    "stepped converges",
+    "stepped vertical separation",
+    "contour positioned divider",
+    "contour bounds",
+    "contour converges",
+    "contour clearance",
+    "contour vertical separation",
+    "left-boundary positioned divider",
+    "left-boundary bounds",
+    "left-boundary converges",
+    "left-boundary vertical separation",
+    "split rendered textboxes",
+    "split canvas divider",
+    "villain rendered textboxes",
+    "villain canvas divider",
+    "scheme rendered textboxes",
+    "scheme canvas divider"
+  ],
+  "metrics": {
+    "common-before": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452
+        },
+        {
+          "y": 556.76,
+          "left": 108,
+          "right": 397.53
+        }
+      ],
+      "divider": []
+    },
+    "common-after": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 452
+        },
+        {
+          "y": 552,
+          "left": 108,
+          "right": 452
+        },
+        {
+          "y": 578,
+          "left": 108,
+          "right": 375.27
+        }
+      ],
+      "divider": [
+        {
+          "type": "divider",
+          "x": 108,
+          "y": 563.7,
+          "width": 344,
+          "height": 1
+        }
+      ]
+    },
+    "rare-before": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 556.76,
+          "left": 108,
+          "right": 408
+        }
+      ],
+      "divider": []
+    },
+    "rare-after": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 0,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 380
+        }
+      ],
+      "divider": [
+        {
+          "type": "divider",
+          "x": 108,
+          "y": 565.15,
+          "width": 330,
+          "height": 1
+        }
+      ]
+    },
+    "rare-badge-before": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 384
+        },
+        {
+          "y": 607,
+          "left": 108,
+          "right": 373
+        }
+      ],
+      "divider": []
+    },
+    "rare-badge-after": {
+      "font": 22,
+      "overflow": {
+        "vertical": 0,
+        "horizontal": 1,
+        "belowRegion": false,
+        "missingIcons": []
+      },
+      "lines": [
+        {
+          "y": 526,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 553,
+          "left": 108,
+          "right": 438
+        },
+        {
+          "y": 580,
+          "left": 108,
+          "right": 384
+        },
+        {
+          "y": 607,
+          "left": 108,
+          "right": 373
+        },
+        {
+          "y": 634,
+          "left": 108,
+          "right": 373
+        }
+      ],
+      "divider": [
+        {
+          "type": "divider",
+          "x": 108,
+          "y": 619.15,
+          "width": 265,
+          "height": 1
+        }
+      ]
+    }
+  }
+}

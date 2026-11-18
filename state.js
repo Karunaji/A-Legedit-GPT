@@ -1058,6 +1058,7 @@ function applyProjectData(project) {
     villainGroup: project.shared?.villainGroup ?? fallbackCard.subtitle ?? defaults.villainGroup,
     villainGroupSize: normalizeVillainFamilyGroupSize(project.shared?.villainGroupSize ?? fallbackCard.subtitleSize ?? defaults.villainGroupSize, projectType)
   };
+  if (typeof resetPendingTeamIcon === 'function') resetPendingTeamIcon();
   st.customTeams = deserializeCustomTeams(project.customTeams);
   cardSortMode = project.cardSortMode || 'manual';
   cards = project.cards.map((card, index) => {
@@ -2213,6 +2214,24 @@ function openKeywordList() {
 function closeKeywordList() { document.getElementById('keyword-list-modal').classList.remove('open'); }
 function insertIcon(tokenKey) {
   insertIconInto('f-ability', tokenKey);
+}
+function insertAbilityDivider(targetId) {
+  const editor = document.getElementById(targetId);
+  if (!editor || !(targetId === 'f-ability' || /^split-ability-[12]$/.test(targetId))) return;
+  if (editor.dataset.composing === 'true') return;
+  cancelAbilityAutoFormat(targetId);
+  editor.focus();
+  const selection = window.getSelection();
+  if (!selection.rangeCount || !editor.contains(selection.getRangeAt(0).commonAncestorContainer)) {
+    const range = document.createRange();
+    range.selectNodeContents(editor);
+    range.collapse(false);
+    selection.removeAllRanges();
+    selection.addRange(range);
+  }
+  // Native editing transaction preserves selection replacement and undo/redo.
+  document.execCommand('insertHorizontalRule', false, null);
+  render();
 }
 function getEditorInlineIconSrc(iconKey) {
   const key = String(iconKey || '').toLowerCase();
